@@ -11502,3 +11502,5 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'liste' not found. 'liste' is
 2025-03-15 17:07:14,549 - INFO - autoreload - Watching for file changes with StatReloader
 2025-03-15 17:44:56,301 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Stagiaire\views.py changed, reloading.
 2025-03-15 17:58:45,056 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-15 19:15:50,353 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-15 19:15:58,871 - INFO - basehttp - "GET / HTTP/1.1" 200 9848

@@ -178,7 +178,8 @@ def login_view(request):
         print("Méthode GET détectée. Affichage du formulaire.")
         form = LoginForm()
 
-    return render(request, "Employee/login.html", {"form": form, "error": error_message})
+    return render(request, 'Employee/login.html', {'form': form, 'error': error_message})
+
 
 def logout_view(request):
     """Affiche la page d'accueil avec la gestion du personnel et la vérification d'activation."""

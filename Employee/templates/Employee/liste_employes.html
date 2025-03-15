@@ -16,7 +16,6 @@
                     <th>Prénom</th>
                     <th>Grade</th>
                     <th>Spécialité</th>
-                    <th>Fonction</th>
                     <th>Matricule</th>
                     <th>Sexe</th>
                     <th>Téléphone</th>
@@ -36,7 +35,6 @@
                         <td>{{ employe.first_name }}</td>
                         <td>{{ employe.grade }}</td>
                         <td>{{ employe.specialty }}</td>
-                        <td>{{ employe.function }}</td>
                         <td>{{ employe.matricule }}</td>
                         <td>{{ employe.sexe }}</td>
                         <td>
@@ -47,17 +45,17 @@
                         </td>
                         <td>{{ employe.adresse }}</td>
                         <td>{{ employe.get_status_display }}</td>
-                        <td>{{ employe.start_date }}</td>
-                        <td>{{ employe.retirement_date }}</td>
+                        <td>{{ employe.start_date|date:'Y-m-d' }}</td>
+                        <td>{{ employe.retirement_date|date:'Y-m-d'  }}</td>
                         <td>{{ employe.observation }}</td>
                         <td>
-                            <a href="{% url 'Employee:update' employe.id %}" class="btn btn-warning btn-sm">Modifier</a>
-                            <a href="{% url 'Employee:delete' employe.id %}" class="btn btn-danger btn-sm">Supprimer</a>
+                            <a href="{% url 'Employee:update' employe.id %}" class="btn btn-warning btn-sm mb-1">Modifier</a>
+                            <a href="{% url 'Employee:delete' employe.id %}" class="btn btn-danger btn-sm  mb-1">Supprimer</a>
                         </td>
                     </tr>
                 {% empty %}
                     <tr>
-                        <td colspan="15" class="text-center text-muted">Aucun employé trouvé.</td>
+                        <td colspan="14" class="text-center text-muted">Aucun employé trouvé.</td>
                     </tr>
                 {% endfor %}
             </tbody>

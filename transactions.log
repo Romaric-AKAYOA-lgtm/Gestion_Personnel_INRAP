@@ -11054,3 +11054,6 @@ django.urls.exceptions.NoReverseMatch: 'responsable_organisation_unite' is not a
 2025-03-14 23:30:51,236 - INFO - basehttp - "GET /home HTTP/1.1" 200 12693
 2025-03-15 00:09:00,863 - INFO - autoreload - Watching for file changes with StatReloader
 2025-03-15 00:24:45,604 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-15 01:08:40,795 - WARNING - log - Not Found: /favicon.ico
+2025-03-15 01:08:40,815 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 3493
+2025-03-15 16:05:13,099 - INFO - autoreload - Watching for file changes with StatReloader

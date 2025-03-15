@@ -1,0 +1,55 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+
+<!-- Modal structure -->
+<div class="modal fade show" id="directeurModal" tabindex="-1" aria-labelledby="directeurModalLabel" aria-hidden="true" style="display: block;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary">
+                <h5 class="modal-title text-white" id="directeurModalLabel">
+                    {{ form.instance.pk|yesno:"Modifier une specialité,Créer une specialité" }}
+                </h5>
+             </div>
+            <div class="modal-body">
+                {% if form.errors %}
+                <div class="alert alert-danger">
+                    {% for field in form %}
+                        {% if field.errors %}
+                            <strong>{{ field.label }}</strong> : {{ field.errors|striptags }}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+                <form method="POST" class="needs-validation" novalidate>
+                    {% csrf_token %}
+
+                    <div class="mb-3">
+                        <label for="designation" class="form-label">Designation</label>
+                        <input type="text" class="form-control" id="designation" name="designation" required>
+                    </div>
+                    <div class="text-end">
+                        <a href="{% url 'specialite:specialite' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
+                        <button type="submit" class="btn btn-primary px-4 py-2 btn-sm">
+                            {{ form.instance.pk|yesno:"Modifier,Créer" }}
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script to trigger modal -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Show the modal automatically on page load
+        var myModal = new bootstrap.Modal(document.getElementById('directeurModal'), {
+            keyboard: false,
+            backdrop: 'static' // Disables closing the modal by clicking outside
+        });
+        myModal.show();
+    });
+</script>
+
+{% endblock %}

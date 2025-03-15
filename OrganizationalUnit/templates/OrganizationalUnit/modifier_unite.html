@@ -1,0 +1,96 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+
+<!-- Modal structure for Editing -->
+<div class="modal fade show" id="modalUnite" tabindex="-1" aria-labelledby="modalUniteLabel" aria-hidden="true" style="display: block;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-warning text-white">
+                <h5 class="modal-title" id="modalUniteLabel">Modifier une Unité Organisationnelle</h5>
+            </div>
+            <div class="modal-body">
+                {% if form.errors %}
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <strong>Erreur(s) :</strong>
+                    <ul>
+                        {% for field in form %}
+                            {% if field.errors %}
+                                <li><strong>{{ field.label }}</strong> : {{ field.errors|striptags }}</li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endif %}
+                <form action="{% url 'OrganizationalUnit:update' unite.id %}" method="POST">
+                    {% csrf_token %}
+
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nom</label>
+                        <input type="text" class="form-control input-focus-blue {% if form.name.errors %}is-invalid{% endif %}" id="name" name="name" value="{{ form.name.value }}" required>
+                        {% if form.name.errors %}
+                            <div class="invalid-feedback">{{ form.name.errors }}</div>
+                        {% endif %}
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="unit_type" class="form-label">Type d'Unité</label>
+                        <select class="form-select input-focus-blue {% if form.unit_type.errors %}is-invalid{% endif %}" id="unit_type" name="unit_type" required>
+                            <option value="" selected>-- Sélectionnez un type d'unité --</option>
+                            {% for type_key, type_value in unite_dict.items %}
+                                <option value="{{ type_key }}" {% if type_key == form.unit_type.value %}selected{% endif %}>{{ type_value }}</option>
+                            {% endfor %}
+                        </select>
+                        {% if form.unit_type.errors %}
+                            <div class="invalid-feedback">{{ form.unit_type.errors }}</div>
+                        {% endif %}
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="parent" class="form-label">Unité Parente</label>
+                        <select class="form-select input-focus-blue {% if form.parent.errors %}is-invalid{% endif %}" id="parent" name="parent" required>
+                            <option value="" selected>-- Sélectionnez une unité --</option>
+                            {% for unite_id, unite_name in organizational_units_dict.items %}
+                                <option value="{{ unite_id }}" {% if unite_id == form.parent.value %}selected{% endif %}>
+                                    {{ unite_name }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                        {% if form.parent.errors %}
+                            <div class="invalid-feedback">{{ form.parent.errors }}</div>
+                        {% endif %}
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description</label>
+                        <textarea class="form-control input-focus-blue {% if form.description.errors %}is-invalid{% endif %}" id="description" name="description" rows="4" required>{{ form.description.value }}</textarea>
+                        {% if form.description.errors %}
+                            <div class="invalid-feedback">{{ form.description.errors }}</div>
+                        {% endif %}
+                    </div>
+
+                    <div class="text-end">
+                        <a href="{% url 'OrganizationalUnit:list' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
+                        <button type="submit" class="btn btn-warning px-4 py-2 btn-sm">Modifier</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var myModal = new bootstrap.Modal(document.getElementById('modalUnite'));
+        myModal.show();
+    });
+
+    function fermerModal() {
+        var modalEl = document.getElementById('modalUnite');
+        var modal = bootstrap.Modal.getInstance(modalEl);
+        modal.hide();
+    }
+</script>
+
+{% endblock %}

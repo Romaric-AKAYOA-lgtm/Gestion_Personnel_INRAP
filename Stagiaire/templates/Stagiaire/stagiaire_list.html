@@ -1,0 +1,61 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+
+<div class="container mt-4">
+    <h1 class="text-center mb-4 text-white">Liste des Stagiaires</h1>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <a href="{% url 'stagiaire:create_stagiaire' %}" class="btn btn-primary">Ajouter un Stagiaire</a>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped table-hover text-center">
+            <thead class="table-dark">
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Date de Naissance</th>
+                <th>Email</th>
+                <th>Téléphone</th>
+                <th>Université</th>
+                <th>Formation</th>
+                <th>Date de Début de Stage</th>
+                <th>Date de Fin de Stage</th>
+                <th>Statut</th>
+                <th>Evaluation</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody class="bg-white">
+            {% for stagiaire in stagiaires %}
+                <tr>
+                    <td>{{ stagiaire.nom }}</td>
+                    <td>{{ stagiaire.prenom }}</td>
+                    <td>{{ stagiaire.date_naissance }}</td>
+                    <td>
+                        <a href="mailto:{{ stagiaire.email }}">{{ stagiaire.email }}</a>
+                    </td>
+                    <td>
+                        <a href="tel:{{ stagiaire.telephone }}">{{ stagiaire.telephone }}</a>
+                    </td>
+                    <td>{{ stagiaire.universite }}</td>
+                    <td>{{ stagiaire.formation }}</td>
+                    <td>{{ stagiaire.date_debut_stage }}</td>
+                    <td>{{ stagiaire.date_fin_stage }}</td>
+                    <td>{{ stagiaire.get_statut_display }}</td>
+                    <td>{{ stagiaire.evaluation_stage }}</td>
+                    <td>
+                        <a href="{% url 'stagiaire:modify_stagiaire' id=stagiaire.id %}" class="btn btn-warning btn-sm">Modifier</a>
+                        <a href="{% url 'stagiaire:delete_stagiaire' id=stagiaire.id %}" class="btn btn-danger btn-sm">Supprimer</a>
+                    </td>
+                </tr>
+            {% empty %}
+                <tr>
+                    <td colspan="12" class="text-center text-muted">Aucun stagiaire trouvé.</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+</div>
+
+{% endblock %}

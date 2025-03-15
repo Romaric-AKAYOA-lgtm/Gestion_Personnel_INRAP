@@ -1,0 +1,40 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+
+<div class="container mt-4">
+    <h1 class="text-center mb-4 text-white">Liste des Responsables d'Unités Organisationnelles</h1>
+    <a href="{% url 'RespensableOrganisationUnite:create' %}" class="btn btn-primary mb-2">Ajouter un Responsable</a>
+    <div class="table-responsive">
+        <table class="table table-striped table-hover text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Unité Organisationnelle</th>
+                   <th>Fonction</th>
+                    <th>Date de Début</th>
+                    <th>Date de Fin</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white">
+                {% for responsable in responsables %}
+                <tr>
+                    <td>{{ responsable.id }}</td>
+                    <td>{{ responsable.organizational_unit.name }}</td>
+                     <td>{{ responsable.function.name }}</td>
+                    <td>{{ responsable.date_debut }}</td>
+                    <td>{{ responsable.date_fin }}</td>
+                    <td>
+                        <a href="{% url 'RespensableOrganisationUnite:update' responsable.id %}" class="btn btn-warning btn-sm mb-1">Modifier</a>
+                        <a href="{% url 'RespensableOrganisationUnite:delete' responsable.id %}" class="btn btn-danger btn-sm mb-1"
+                           onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce responsable ?')">Supprimer</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}

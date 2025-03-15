@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Confirmation de Suppression</h1>
+  <p>Êtes-vous sûr de vouloir supprimer le responsable {{ responsable.responsable.first_name }} {{ responsable.responsable.last_name }} de l'unité {{ responsable.organizational_unit.name }} ?</p>
+  
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">Confirmer la Suppression</button>
+    <a href="{% url 'RespensableOrganisationUnite:list' %}" class="btn btn-secondary">Annuler</a>
+  </form>
+{% endblock %}

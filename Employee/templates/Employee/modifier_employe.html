@@ -1,0 +1,126 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+<div class="container mt-4">
+    <!-- Modal Modifier Employé -->
+    <div class="modal fade show" id="modalEmployeeEdit" tabindex="-1" aria-labelledby="modalEmployeeEditLabel" aria-hidden="true" style="display: block;">
+        <div class="modal-dialog modal-lg"> <!-- Large width -->
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-white">
+                    <h5 class="modal-title" id="modalEmployeeEditLabel">Modifier un Employé</h5>
+                </div>
+                <div class="modal-body">
+                    {% if form.errors %}
+                    <div class="alert alert-danger">
+                        {% for field in form %}
+                            {% if field.errors %}
+                                <strong>{{ field.label }}</strong> : {{ field.errors|striptags }}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                    <form action="{% url 'Employee:update' form.instance.pk %}" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
+                        {% csrf_token %}
+                        
+                        <div class="mb-3">
+                            <label for="first_name" class="form-label">Prénom</label>
+                            <input type="text" class="form-control input-focus-blue" id="first_name" name="first_name" value="{{ form.first_name.value }}" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="last_name" class="form-label">Nom</label>
+                            <input type="text" class="form-control input-focus-blue" id="last_name" name="last_name" value="{{ form.last_name.value }}" required>
+                        </div>
+
+                        
+                        <div class="mb-3">
+                            <label for="date_of_birth" class="form-label">Date de Naissance</label>
+                            <input type="date" class="form-control input-focus-blue" id="date_of_birth" name="date_of_birth" value="{{ form.date_of_birth|date:'mm-dd-yyyy' }}"  required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="start_date" class="form-label">Date de Prise de Service</label>
+                            <input type="date" class="form-control input-focus-blue" id="start_date" name="start_date"value="{{ form.start_date|date:'Y-m-d'}}"  requsired>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="grade" class="form-label">Grade</label>
+                            <input type="text" class="form-control input-focus-blue" id="grade" name="grade"  value="{{ form.grade.value }}"required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="echelon" class="form-label">Échelon</label>
+                            <input type="text" class="form-control input-focus-blue" id="echelon" name="echelon"value="{{ form.echelon.value }}" >
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="matricule" class="form-label">Matricule</label>
+                            <input type="text" class="form-control input-focus-blue" id="matricule" name="matricule" value="{{ form.matricule.value }}" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for=" specialty" class="form-label">Spécialité</label>
+                            <select class="form-select input-focus-blue" id= specialty" name=" specialty" value="{{ form.specialty.value }}"required>
+                                {% for specialite  in specialite %}
+                                    <option value="{{ specialite.id }}" {% if form.specialite.value == specialite.id %}selected{% endif %}>{{ specialite.designation }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control input-focus-blue" id="email" name="email"value="{{ form.email.value }}"  required>
+                        </div>
+                       
+                        <div class="mb-3">
+                            <label for="num_tel" class="form-label">Numéro de Téléphone</label>
+                            <input type="tel" class="form-control input-focus-blue" id="num_tel" name="num_tel" value="{{ form.num_tel.value }}" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="sexe" class="form-label">Sexe</label>
+                            <select class="form-select input-focus-blue" id="sexe" name="sexe"value="{{ form.sexe.value }}"  required>
+                                <option value="Masculin" {% if form.sexe.value == 'Masculin' %}selected{% endif %}>Masculin</option>
+                                <option value="Féminin" {% if form.sexe.value == 'Féminin' %}selected{% endif %}>Féminin</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="image" class="form-label">Photo</label>
+                            <input type="file" class="form-control input-focus-blue" id="image" name="image"value="{{ form.image.value }}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="observation" class="form-label">Observation</label>
+                            <input type="texte" class="form-control input-focus-blue" id="observation" name="observation"value="{{ form.observation.value }}">
+                        </div>
+
+                        <!-- Ajoutez ici les autres champs similaires à ceux de l'ajout -->
+
+                        <div class="text-end">
+                            <a href="{% url 'Employee:list' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
+                            <button type="submit" class="btn btn-warning px-4 py-2 btn-sm">Modifier</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+     window.onload = function() {
+        var myModal = new bootstrap.Modal(document.getElementById("modalEmployeeEdit"), {
+            keyboard: false
+        });
+        myModal.show();
+    }
+    function fermerModal() {
+        var modal = document.getElementById('modalEmployeeEdit');
+        modal.style.display = 'none';
+        modal.classList.remove('show');
+        document.body.classList.remove('modal-open');
+        var backdrop = document.querySelector('.modal-backdrop');
+        if (backdrop) {
+            backdrop.remove();
+        }
+    }
+</script>
+{% endblock %}

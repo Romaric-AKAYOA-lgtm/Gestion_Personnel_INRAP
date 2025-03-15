@@ -1,0 +1,139 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+
+<!-- Modal structure -->
+<div class="modal fade show" id="stagiaireModal" tabindex="-1" aria-labelledby="stagiaireModalLabel" aria-hidden="true" style="display: block;">
+    <div class="modal-dialog modal-lg">  <!-- Augmentation de la largeur du modal -->
+        <div class="modal-content">
+            <div class="modal-header bg-primary">
+                <h5 class="modal-title text-white" id="stagiaireModalLabel">
+                    {{ form.instance.pk|yesno:"Modifier un Stagiaire,Créer un Stagiaire" }}
+                </h5>
+            </div>
+            <div class="modal-body">
+                {% if form.errors %}
+                <div class="alert alert-danger">
+                    {% for field in form %}
+                        {% if field.errors %}
+                            <strong>{{ field.label }}</strong> : {{ field.errors|striptags }}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+                
+                <form method="POST" class="needs-validation" novalidate>
+                    {% csrf_token %}
+                    
+                    <div class="row">
+                        <!-- Première colonne -->
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="nom" class="form-label">Nom</label>
+                                <input type="text" class="form-control" id="nom" name="nom" value="{{ form.nom.value|default_if_none:'' }}" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="prenom" class="form-label">Prénom</label>
+                                <input type="text" class="form-control" id="prenom" name="prenom" value="{{ form.prenom.value|default_if_none:'' }}" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="date_naissance" class="form-label">Date de Naissance</label>
+                                <input type="date" class="form-control" id="date_naissance" name="date_naissance" value="{{ form.date_naissance.value|default_if_none:'' }}" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" value="{{ form.email.value|default_if_none:'' }}" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="telephone" class="form-label">Téléphone</label>
+                                <input type="text" class="form-control" id="telephone" name="telephone" value="{{ form.telephone.value|default_if_none:'' }}" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="adresse" class="form-label">Adresse</label>
+                                <input type="text" class="form-control" id="adresse" name="adresse" value="{{ form.adresse.value|default_if_none:'' }}">
+                            </div>
+                        </div>
+
+                        <!-- Deuxième colonne -->
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="universite" class="form-label">Université</label>
+                                <input type="text" class="form-control" id="universite" name="universite" value="{{ form.universite.value|default_if_none:'' }}">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="formation" class="form-label">Formation</label>
+                                <input type="text" class="form-control" id="formation" name="formation" value="{{ form.formation.value|default_if_none:'' }}">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="date_debut_stage" class="form-label">Date de Début du Stage</label>
+                                <input type="date" class="form-control" id="date_debut_stage" name="date_debut_stage" value="{{ form.date_debut_stage.value|default_if_none:'' }}" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="date_fin_stage" class="form-label">Date de Fin du Stage</label>
+                                <input type="date" class="form-control" id="date_fin_stage" name="date_fin_stage" value="{{ form.date_fin_stage.value|default_if_none:'' }}" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="tuteur_entreprise" class="form-label">Tuteur en Entreprise</label>
+                                <input type="text" class="form-control" id="tuteur_entreprise" name="tuteur_entreprise" value="{{ form.tuteur_entreprise.value|default_if_none:'' }}">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="statut" class="form-label">Statut</label>
+                                <select class="form-control" id="statut" name="statut">
+                                    <option value="En cours" {% if form.statut.value == "En cours" %}selected{% endif %}>En cours</option>
+                                    <option value="Terminé" {% if form.statut.value == "Terminé" %}selected{% endif %}>Terminé</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Deuxième section en pleine largeur -->
+                    <div class="mb-3">
+                        <label for="evaluation_stage" class="form-label">Évaluation du Stage</label>
+                        <textarea class="form-control" id="evaluation_stage" name="evaluation_stage">{{ form.evaluation_stage.value|default_if_none:'' }}</textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="competences" class="form-label">Compétences</label>
+                        <textarea class="form-control" id="competences" name="competences">{{ form.competences.value|default_if_none:'' }}</textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="commentaires" class="form-label">Commentaires</label>
+                        <textarea class="form-control" id="commentaires" name="commentaires">{{ form.commentaires.value|default_if_none:'' }}</textarea>
+                    </div>
+
+                    <div class="text-end">
+                        <a href="{% url 'stagiaire:stagiaire_list' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
+                        <button type="submit" class="btn btn-primary px-4 py-2 btn-sm">
+                            {{ form.instance.pk|yesno:"Modifier,Créer" }}
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script to trigger modal -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Show the modal automatically on page load
+        var myModal = new bootstrap.Modal(document.getElementById('stagiaireModal'), {
+            keyboard: false,
+            backdrop: 'static' // Désactive la fermeture du modal en cliquant à l'extérieur
+        });
+        myModal.show();
+    });
+</script>
+
+{% endblock %}

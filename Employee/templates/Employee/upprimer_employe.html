@@ -1,0 +1,45 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+<div class="container mt-4">
+    <!-- Modal Supprimer Employé -->
+    <div class="modal fade show" id="modalEmployeeDelete" tabindex="-1" aria-labelledby="modalEmployeeDeleteLabel" aria-hidden="true" style="display: block;">
+        <div class="modal-dialog modal-sm"> <!-- Small width -->
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="modalEmployeeDeleteLabel">Supprimer un Employé</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Êtes-vous sûr de vouloir supprimer cet employé ?</p>
+                    <form action="{% url 'employee:delete' employee.id %}" method="POST">
+                        {% csrf_token %}
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-danger px-4 py-2 btn-sm">Supprimer</button>
+                            <a href="{% url 'employee:list' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+     window.onload = function() {
+        var myModal = new bootstrap.Modal(document.getElementById("modalEmployeeDelete"), {
+            keyboard: false
+        });
+        myModal.show();
+    }
+    function fermerModal() {
+        var modal = document.getElementById('modalEmployeeDelete');
+        modal.style.display = 'none';
+        modal.classList.remove('show');
+        document.body.classList.remove('modal-open');
+        var backdrop = document.querySelector('.modal-backdrop');
+        if (backdrop) {
+            backdrop.remove();
+        }
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+
+<div class="container mt-4">
+
+    <!-- Modal Modifier avec les détails du Directeur -->
+    <div class="modal fade show" id="modifierModal" tabindex="-1" aria-labelledby="modifierModalLabel" aria-hidden="true" style="display: block;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title text-white" id="modifierModalLabel">Détails de la spécialité </h5>
+                 </div>
+                <div class="modal-body">
+                    <p><strong>Designation:</strong> {{ specialite.designation }}</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="{% url 'specialite:modifier' specialite.id %}" class="btn btn-warning">Modifier</a>
+                    <a href="{% url 'specialite:specialite' %}" class="btn btn-secondary">Retour à la liste</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Supprimer -->
+    <div class="modal fade" id="supprimerModal" tabindex="-1" aria-labelledby="supprimerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger">
+                    <h5 class="modal-title text-white" id="supprimerModalLabel">Supprimer la spécialité</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Êtes-vous sûr de vouloir supprimer {{ specialiste.designation }}  ? Cette action est irréversible.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="{% url 'specialite:supprimer' specialite.id %}" class="btn btn-danger">Supprimer</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script pour afficher automatiquement le modal de modification lors du chargement de la page -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var modal = new bootstrap.Modal(document.getElementById('modifierModal'), {
+                keyboard: false,
+                backdrop: 'static' // Désactive la fermeture du modal en cliquant en dehors
+            });
+            modal.show();
+        });
+    </script>
+
+</div>
+
+{% endblock %}

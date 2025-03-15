@@ -1,0 +1,98 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+
+<div class="container mt-4">
+
+    <!-- Modal Ajouter Congé -->
+    <div class="modal fade show" id="modalConge" tabindex="-1" aria-labelledby="modalCongeLabel" aria-hidden="true" style="display: block;">
+        <div class="modal-dialog modal-lg"> <!-- Largeur augmentée -->
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="modalCongeLabel">Ajouter un congé</h5>
+                </div>
+                <form action="{% url 'conge:ajouter_conge' %}" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
+                    {% csrf_token %}
+                    <div class="modal-body">
+                        {% if form.errors %}
+                        <div class="alert alert-danger">
+                            {% for field in form %}
+                                {% if field.errors %}
+                                    <strong>{{ field.label }}</strong> : {{ field.errors|striptags }}
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+
+                        <div class="mb-3">
+                            <label for="employe" class="form-label">Travailleur</label>
+                            <select class="form-select" id="employe" name="employe" required>
+                                <option value="" disabled selected>Choisir un travailleur</option>
+                                {% for employe in form.employe.field.queryset %}
+                                    <option value="{{ employe.id }}">{{ employe.last_name}} {{ employe.first_name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="type" class="form-label">Type de congé</label>
+                            <select class="form-select" id="type" name="type" required>
+                                <option value="annuel">Annuel</option>
+                                <option value="maladie">Maladie</option>
+                                <option value="maternité">Maternité</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="date_debut" class="form-label">Date de début</label>
+                            <input type="date" class="form-control input-focus-blue" id="date_debut" name="date_debut" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="date_fin" class="form-label">Date de fin</label>
+                            <input type="date" class="form-control input-focus-blue" id="date_fin" name="date_fin" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="statut" class="form-label">Statut</label>
+                            <select class="form-select" id="statut" name="statut" required>
+                                <option value="True">Approuvé</option>
+                                <option value="False">Non approuvé</option>
+                            </select>
+                        </div>
+
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-primary px-4 py-2 btn-sm">Envoyer</button>
+                            <a href="{% url 'conge:liste_conges' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Script pour ouvrir et fermer proprement le modal -->
+<script>
+    window.onload = function() {
+        var myModal = new bootstrap.Modal(document.getElementById("modalConge"), {
+            keyboard: false
+        });
+        myModal.show();
+    }
+
+    function fermerModal() {
+        var modal = document.getElementById('modalConge');
+        modal.style.display = 'none';
+        modal.classList.remove('show');
+        document.body.classList.remove('modal-open');
+        var backdrop = document.querySelector('.modal-backdrop');
+        if (backdrop) {
+            backdrop.remove();
+        }
+    }
+</script>
+
+{% endblock %}

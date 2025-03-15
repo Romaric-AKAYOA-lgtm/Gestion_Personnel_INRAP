@@ -1,0 +1,76 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+
+<!-- Modal de Modification de Congé -->
+<div class="modal fade show" id="modalModifierConge" tabindex="-1" aria-labelledby="modalModifierCongeLabel" aria-hidden="true" style="display: block;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-warning text-white">
+                <h5 class="modal-title" id="modalModifierCongeLabel">Modifier le Congé</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Formulaire de modification du congé -->
+                <form method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
+                    {% csrf_token %}
+                    
+                    <div class="mb-3">
+                        <label for="employe" class="form-label">Travailleur</label>
+                        <select class="form-select" id="employe" name="employe" required>
+                            {% for employe in form.employe.field.queryset %}
+                                <option value="{{ employe.id }}" {% if employe.id == conge.employe.id %}selected{% endif %}>
+                                    {{ employe.last_name }} {{ employe.first_name }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="type" class="form-label">Type de congé</label>
+                        <select class="form-select" id="type" name="type" required>
+                            <option value="annuel" {% if conge.type == 'annuel' %}selected{% endif %}>Annuel</option>
+                            <option value="maladie" {% if conge.type == 'maladie' %}selected{% endif %}>Maladie</option>
+                            <option value="maternité" {% if conge.type == 'maternité' %}selected{% endif %}>Maternité</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="date_debut" class="form-label">Date de début</label>
+                        <input type="date" class="form-control input-focus-blue" id="date_debut" name="date_debut" value="{{ conge.date_debut|date:'Y-m-d' }}" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="date_fin" class="form-label">Date de fin</label>
+                        <input type="date" class="form-control input-focus-blue" id="date_fin" name="date_fin" value="{{ conge.date_fin|date:'Y-m-d' }}" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="statut" class="form-label">Statut</label>
+                        <select class="form-select" id="statut" name="statut" required>
+                            <option value="True" {% if conge.statut == True %}selected{% endif %}>Approuvé</option>
+                            <option value="False" {% if conge.statut == False %}selected{% endif %}>Non approuvé</option>
+                        </select>
+                    </div>
+
+                    <div class="text-end mt-3">
+                        <button type="submit" class="btn btn-warning">Modifier</button>
+                        <a href="{% url 'conge:liste_conges' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script pour afficher automatiquement le modal -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Affichage automatique du modal lorsque la page se charge
+    window.onload = function() {
+        var myModal = new bootstrap.Modal(document.getElementById('modalModifierConge'));
+        myModal.show();
+    };
+</script>
+
+{% endblock %}

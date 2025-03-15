@@ -1,0 +1,86 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+
+<!-- Modal structure for Editing -->
+<div class="modal fade show" id="stagiaireModal" tabindex="-1" aria-labelledby="stagiaireModalLabel" aria-hidden="true" style="display: block;">
+    <div class="modal-dialog modal-lg">  <!-- Augmentation de la largeur du modal -->
+        <div class="modal-content">
+            <div class="modal-header bg-warning">
+                <h5 class="modal-title text-white" id="stagiaireModalLabel">
+                    Modifier un stagiaire
+                </h5>
+            </div>
+            <div class="modal-body">
+                {% if form.errors %}
+                <div class="alert alert-danger">
+                    {% for field in form %}
+                        {% if field.errors %}
+                            <strong>{{ field.label }}</strong> : {{ field.errors|striptags }}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                <form method="POST" action="{% url 'stagiaire:modify_stagiaire' form.instance.pk %}" class="needs-validation" novalidate>
+                    {% csrf_token %}
+
+                    <div class="row">
+                        <!-- Première colonne -->
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="first_name" class="form-label">Prénom</label>
+                                <input type="text" class="form-control" id="first_name" name="first_name" value="{{ form.first_name.value }}" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="last_name" class="form-label">Nom</label>
+                                <input type="text" class="form-control" id="last_name" name="last_name" value="{{ form.last_name.value }}" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" value="{{ form.email.value }}" required>
+                            </div>
+                        </div>
+
+                        <!-- Deuxième colonne -->
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="phone_number" class="form-label">Numéro de téléphone</label>
+                                <input type="text" class="form-control" id="phone_number" name="phone_number" value="{{ form.phone_number.value }}" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="start_date" class="form-label">Date de début</label>
+                                <input type="date" class="form-control" id="start_date" name="start_date" value="{{ form.start_date.value }}" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Boutons -->
+                    <div class="text-end mt-3">
+                        <a href="{% url 'stagiaire:stagiaire_list' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
+                        <button type="submit" class="btn btn-warning px-4 py-2 btn-sm">
+                            Modifier
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script to trigger modal -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Show the modal automatically on page load
+        var myModal = new bootstrap.Modal(document.getElementById('stagiaireModal'), {
+            keyboard: false,
+            backdrop: 'static' // Désactive la fermeture du modal en cliquant à l'extérieur
+        });
+        myModal.show();
+    });
+</script>
+
+{% endblock %}

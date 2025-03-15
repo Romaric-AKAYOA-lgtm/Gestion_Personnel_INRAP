@@ -1,0 +1,67 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+<div class="container mt-4">
+    <h1 class="text-center mb-4 text-white">Liste des employés</h1>
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <a href="{% url 'Employee:create' %}" class="btn btn-primary">Ajouter un Employé</a>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-hover text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Grade</th>
+                    <th>Spécialité</th>
+                    <th>Fonction</th>
+                    <th>Matricule</th>
+                    <th>Sexe</th>
+                    <th>Téléphone</th>
+                    <th>Email</th>
+                    <th>Adresse</th>
+                    <th>Statut</th>
+                    <th>Prise de Service</th>
+                    <th>Retraite</th>
+                    <th>Observation</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white">
+                {% for employe in employes %}
+                    <tr>
+                        <td>{{ employe.last_name }}</td>
+                        <td>{{ employe.first_name }}</td>
+                        <td>{{ employe.grade }}</td>
+                        <td>{{ employe.specialty }}</td>
+                        <td>{{ employe.function }}</td>
+                        <td>{{ employe.matricule }}</td>
+                        <td>{{ employe.sexe }}</td>
+                        <td>
+                            <a href="tel:{{ employe.num_tel }}">{{ employe.num_tel }}</a>
+                        </td>
+                        <td>
+                            <a href="mailto:{{ employe.email }}">{{ employe.email }}</a>
+                        </td>
+                        <td>{{ employe.adresse }}</td>
+                        <td>{{ employe.get_status_display }}</td>
+                        <td>{{ employe.start_date }}</td>
+                        <td>{{ employe.retirement_date }}</td>
+                        <td>{{ employe.observation }}</td>
+                        <td>
+                            <a href="{% url 'Employee:update' employe.id %}" class="btn btn-warning btn-sm">Modifier</a>
+                            <a href="{% url 'Employee:delete' employe.id %}" class="btn btn-danger btn-sm">Supprimer</a>
+                        </td>
+                    </tr>
+                {% empty %}
+                    <tr>
+                        <td colspan="15" class="text-center text-muted">Aucun employé trouvé.</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

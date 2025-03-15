@@ -1,0 +1,97 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+
+<!-- Modal structure -->
+<div class="modal fade show" id="uniteModal" tabindex="-1" aria-labelledby="uniteModalLabel" aria-hidden="true" style="display: block;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary">
+                <h5 class="modal-title text-white" id="uniteModalLabel">
+                    {{ form.instance.pk|yesno:"Modifier une unité organisationnelle,Créer une unité organisationnelle" }}
+                </h5>
+             </div>
+            <div class="modal-body">
+                {% if form.errors %}
+                <div class="alert alert-danger">
+                    {% for field in form %}
+                        {% if field.errors %}
+                            <strong>{{ field.label }}</strong> : {{ field.errors|striptags }}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+                <form method="POST" class="needs-validation" novalidate>
+                    {% csrf_token %}
+                    
+                    <!-- Nom de l'unité -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nom de l'unité</label>
+                        <input type="text" class="form-control {% if form.name.errors %}is-invalid{% endif %}" id="name" name="name" required>
+                        {% if form.name.errors %}
+                            <div class="invalid-feedback">{{ form.name.errors }}</div>
+                        {% endif %}
+                    </div>
+
+                    <!-- Désignation -->
+                    <div class="mb-3">
+                        <label for="designation" class="form-label">Désignation</label>
+                        <textarea class="form-control {% if form.designation.errors %}is-invalid{% endif %}" id="designation" name="designation" rows="4"></textarea>
+                        {% if form.designation.errors %}
+                            <div class="invalid-feedback">{{ form.designation.errors }}</div>
+                        {% endif %}
+                    </div>
+
+                    <!-- Unité -->
+                    <div class="mb-3">
+                        <label for="unite" class="form-label">Unité</label>
+                        <select class="form-select {% if form.unite.errors %}is-invalid{% endif %}" id="unite" name="unite" required>
+                            {% for unite in form.unite.field.queryset %}
+                                <option value="{{ unite.id }}" {% if unite.id == form.unite.value %}selected{% endif %}>{{ unite.name }}</option>
+                            {% endfor %}
+                        </select>
+                        {% if form.unite.errors %}
+                            <div class="invalid-feedback">{{ form.unite.errors }}</div>
+                        {% endif %}
+                    </div>
+
+                    <!-- Unité parente -->
+                    <div class="mb-3">
+                        <label for="parent" class="form-label">Unité parente</label>
+                        <select class="form-select {% if form.parent.errors %}is-invalid{% endif %}" id="parent" name="parent">
+                            <option value="" {% if not form.parent.value %}selected{% endif %}>Aucune</option>
+                            {% for parent in form.parent.field.queryset %}
+                                <option value="{{ parent.id }}" {% if parent.id == form.parent.value %}selected{% endif %}>{{ parent.get_full_hierarchy }}</option>
+                            {% endfor %}
+                        </select>
+                        {% if form.parent.errors %}
+                            <div class="invalid-feedback">{{ form.parent.errors }}</div>
+                        {% endif %}
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="text-end">
+                        <a href="{% url 'OrganizationalUnit:list' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
+                        <button type="submit" class="btn btn-primary px-4 py-2 btn-sm">
+                            {{ form.instance.pk|yesno:"Modifier,Créer" }}
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script to trigger modal -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Show the modal automatically on page load
+        var myModal = new bootstrap.Modal(document.getElementById('uniteModal'), {
+            keyboard: false,
+            backdrop: 'static' // Disables closing the modal by clicking outside
+        });
+        myModal.show();
+    });
+</script>
+
+{% endblock %}

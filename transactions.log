@@ -11504,3 +11504,4 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'liste' not found. 'liste' is
 2025-03-15 17:58:45,056 - INFO - autoreload - Watching for file changes with StatReloader
 2025-03-15 19:15:50,353 - INFO - autoreload - Watching for file changes with StatReloader
 2025-03-15 19:15:58,871 - INFO - basehttp - "GET / HTTP/1.1" 200 9848
+2025-03-15 21:23:05,302 - INFO - autoreload - Watching for file changes with StatReloader

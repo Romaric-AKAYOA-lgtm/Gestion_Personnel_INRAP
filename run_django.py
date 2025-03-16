@@ -1,6 +1,7 @@
 import os
 import sys
 import webbrowser
+import django.db.backends
 import threading  # Importer le module threading
 
 def run_django_server():

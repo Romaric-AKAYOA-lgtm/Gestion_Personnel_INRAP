@@ -776,10 +776,6 @@
    'c:\\users\\daii '
    'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\calendar.py',
    'PYMODULE'),
-  ('cgi',
-   'c:\\users\\daii '
-   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\cgi.py',
-   'PYMODULE'),
   ('chunk',
    'c:\\users\\daii '
    'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\chunk.py',
@@ -1047,6 +1043,14 @@
   ('django.conf.locale.ca.formats',
    'c:\\users\\daii '
    'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\conf\\locale\\ca\\formats.py',
+   'PYMODULE'),
+  ('django.conf.locale.ckb',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\conf\\locale\\ckb\\__init__.py',
+   'PYMODULE'),
+  ('django.conf.locale.ckb.formats',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\conf\\locale\\ckb\\formats.py',
    'PYMODULE'),
   ('django.conf.locale.cs',
    'c:\\users\\daii '
@@ -1399,6 +1403,14 @@
   ('django.conf.locale.mn.formats',
    'c:\\users\\daii '
    'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\conf\\locale\\mn\\formats.py',
+   'PYMODULE'),
+  ('django.conf.locale.ms',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\conf\\locale\\ms\\__init__.py',
+   'PYMODULE'),
+  ('django.conf.locale.ms.formats',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\conf\\locale\\ms\\formats.py',
    'PYMODULE'),
   ('django.conf.locale.nb',
    'c:\\users\\daii '
@@ -2588,6 +2600,54 @@
    'c:\\users\\daii '
    'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\contrib\\postgres\\constraints.py',
    'PYMODULE'),
+  ('django.contrib.postgres.expressions',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\contrib\\postgres\\expressions.py',
+   'PYMODULE'),
+  ('django.contrib.postgres.fields',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\contrib\\postgres\\fields\\__init__.py',
+   'PYMODULE'),
+  ('django.contrib.postgres.fields.array',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\contrib\\postgres\\fields\\array.py',
+   'PYMODULE'),
+  ('django.contrib.postgres.fields.citext',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\contrib\\postgres\\fields\\citext.py',
+   'PYMODULE'),
+  ('django.contrib.postgres.fields.hstore',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\contrib\\postgres\\fields\\hstore.py',
+   'PYMODULE'),
+  ('django.contrib.postgres.fields.jsonb',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\contrib\\postgres\\fields\\jsonb.py',
+   'PYMODULE'),
+  ('django.contrib.postgres.fields.ranges',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\contrib\\postgres\\fields\\ranges.py',
+   'PYMODULE'),
+  ('django.contrib.postgres.fields.utils',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\contrib\\postgres\\fields\\utils.py',
+   'PYMODULE'),
+  ('django.contrib.postgres.forms',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\contrib\\postgres\\forms\\__init__.py',
+   'PYMODULE'),
+  ('django.contrib.postgres.forms.array',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\contrib\\postgres\\forms\\array.py',
+   'PYMODULE'),
+  ('django.contrib.postgres.forms.hstore',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\contrib\\postgres\\forms\\hstore.py',
+   'PYMODULE'),
+  ('django.contrib.postgres.forms.ranges',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\contrib\\postgres\\forms\\ranges.py',
+   'PYMODULE'),
   ('django.contrib.postgres.functions',
    'c:\\users\\daii '
    'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\contrib\\postgres\\functions.py',
@@ -2920,6 +2980,10 @@
    'c:\\users\\daii '
    'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\core\\cache\\backends\\memcached.py',
    'PYMODULE'),
+  ('django.core.cache.backends.redis',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\core\\cache\\backends\\redis.py',
+   'PYMODULE'),
   ('django.core.cache.utils',
    'c:\\users\\daii '
    'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\core\\cache\\utils.py',
@@ -2940,9 +3004,17 @@
    'c:\\users\\daii '
    'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\core\\checks\\compatibility\\__init__.py',
    'PYMODULE'),
+  ('django.core.checks.compatibility.django_4_0',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\core\\checks\\compatibility\\django_4_0.py',
+   'PYMODULE'),
   ('django.core.checks.database',
    'c:\\users\\daii '
    'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\core\\checks\\database.py',
+   'PYMODULE'),
+  ('django.core.checks.files',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\core\\checks\\files.py',
    'PYMODULE'),
   ('django.core.checks.messages',
    'c:\\users\\daii '
@@ -3010,7 +3082,27 @@
    'PYMODULE'),
   ('django.core.files.storage',
    'c:\\users\\daii '
-   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\core\\files\\storage.py',
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\core\\files\\storage\\__init__.py',
+   'PYMODULE'),
+  ('django.core.files.storage.base',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\core\\files\\storage\\base.py',
+   'PYMODULE'),
+  ('django.core.files.storage.filesystem',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\core\\files\\storage\\filesystem.py',
+   'PYMODULE'),
+  ('django.core.files.storage.handler',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\core\\files\\storage\\handler.py',
+   'PYMODULE'),
+  ('django.core.files.storage.memory',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\core\\files\\storage\\memory.py',
+   'PYMODULE'),
+  ('django.core.files.storage.mixins',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\core\\files\\storage\\mixins.py',
    'PYMODULE'),
   ('django.core.files.temp',
    'c:\\users\\daii '
@@ -3151,6 +3243,10 @@
   ('django.core.management.commands.migrate',
    'c:\\users\\daii '
    'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\core\\management\\commands\\migrate.py',
+   'PYMODULE'),
+  ('django.core.management.commands.optimizemigration',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\core\\management\\commands\\optimizemigration.py',
    'PYMODULE'),
   ('django.core.management.commands.runserver',
    'c:\\users\\daii '
@@ -3440,6 +3536,10 @@
    'c:\\users\\daii '
    'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\db\\backends\\postgresql\\operations.py',
    'PYMODULE'),
+  ('django.db.backends.postgresql.psycopg_any',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\db\\backends\\postgresql\\psycopg_any.py',
+   'PYMODULE'),
   ('django.db.backends.postgresql.schema',
    'c:\\users\\daii '
    'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\db\\backends\\postgresql\\schema.py',
@@ -3451,6 +3551,10 @@
   ('django.db.backends.sqlite3',
    'c:\\users\\daii '
    'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\db\\backends\\sqlite3\\__init__.py',
+   'PYMODULE'),
+  ('django.db.backends.sqlite3._functions',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\db\\backends\\sqlite3\\_functions.py',
    'PYMODULE'),
   ('django.db.backends.sqlite3.base',
    'c:\\users\\daii '
@@ -3531,10 +3635,6 @@
   ('django.db.migrations.operations.special',
    'c:\\users\\daii '
    'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\db\\migrations\\operations\\special.py',
-   'PYMODULE'),
-  ('django.db.migrations.operations.utils',
-   'c:\\users\\daii '
-   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\django\\db\\migrations\\operations\\utils.py',
    'PYMODULE'),
   ('django.db.migrations.optimizer',
    'c:\\users\\daii '
@@ -4548,6 +4648,10 @@
    'c:\\users\\daii '
    'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\importlib\\_bootstrap_external.py',
    'PYMODULE'),
+  ('importlib._common',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\importlib\\_common.py',
+   'PYMODULE'),
   ('importlib.abc',
    'c:\\users\\daii '
    'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\importlib\\abc.py',
@@ -4559,6 +4663,10 @@
   ('importlib.metadata',
    'c:\\users\\daii '
    'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\importlib\\metadata.py',
+   'PYMODULE'),
+  ('importlib.resources',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\importlib\\resources.py',
    'PYMODULE'),
   ('importlib.util',
    'c:\\users\\daii '
@@ -5168,6 +5276,94 @@
    'c:\\users\\daii '
    'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\typing_extensions.py',
    'PYMODULE'),
+  ('tzdata',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\zoneinfo\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Africa',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\zoneinfo\\Africa\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.America',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\zoneinfo\\America\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.America.Argentina',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\zoneinfo\\America\\Argentina\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.America.Indiana',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\zoneinfo\\America\\Indiana\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.America.Kentucky',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\zoneinfo\\America\\Kentucky\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.America.North_Dakota',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\zoneinfo\\America\\North_Dakota\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Antarctica',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\zoneinfo\\Antarctica\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Arctic',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\zoneinfo\\Arctic\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Asia',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\zoneinfo\\Asia\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Atlantic',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\zoneinfo\\Atlantic\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Australia',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\zoneinfo\\Australia\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Brazil',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\zoneinfo\\Brazil\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Canada',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\zoneinfo\\Canada\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Chile',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\zoneinfo\\Chile\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Etc',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\zoneinfo\\Etc\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Europe',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\zoneinfo\\Europe\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Indian',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\zoneinfo\\Indian\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Mexico',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\zoneinfo\\Mexico\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.Pacific',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\zoneinfo\\Pacific\\__init__.py',
+   'PYMODULE'),
+  ('tzdata.zoneinfo.US',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\site-packages\\tzdata\\zoneinfo\\US\\__init__.py',
+   'PYMODULE'),
   ('unite',
    'C:\\Users\\DAII '
    'IATITUDE\\Desktop\\Projet\\Gestion_Personnel_INRAP\\unite\\__init__.py',
@@ -5479,4 +5675,20 @@
   ('zipimport',
    'c:\\users\\daii '
    'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\zipimport.py',
+   'PYMODULE'),
+  ('zoneinfo',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\zoneinfo\\__init__.py',
+   'PYMODULE'),
+  ('zoneinfo._common',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\zoneinfo\\_common.py',
+   'PYMODULE'),
+  ('zoneinfo._tzpath',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\zoneinfo\\_tzpath.py',
+   'PYMODULE'),
+  ('zoneinfo._zoneinfo',
+   'c:\\users\\daii '
+   'iatitude\\appdata\\local\\programs\\python\\python39\\lib\\zoneinfo\\_zoneinfo.py',
    'PYMODULE')])

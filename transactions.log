@@ -11505,3 +11505,168 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'liste' not found. 'liste' is
 2025-03-15 19:15:50,353 - INFO - autoreload - Watching for file changes with StatReloader
 2025-03-15 19:15:58,871 - INFO - basehttp - "GET / HTTP/1.1" 200 9848
 2025-03-15 21:23:05,302 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-17 18:30:20,180 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-17 18:34:18,976 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-17 18:41:28,969 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-17 18:43:46,394 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py changed, reloading.
+2025-03-17 18:43:51,436 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-17 18:44:19,833 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py changed, reloading.
+2025-03-17 18:44:24,088 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-17 18:45:13,242 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py changed, reloading.
+2025-03-17 18:45:19,077 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-17 18:46:30,271 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py changed, reloading.
+2025-03-17 18:46:34,810 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-17 18:47:31,072 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py changed, reloading.
+2025-03-17 18:47:54,564 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-17 18:48:14,666 - ERROR - log - Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py", line 181, in login_view
+    return render(request, 'Employee/login.html', {'form': form, 'error': error_message})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'generate_employee_pd' not found. 'generate_employee_pd' is not a valid view function or pattern name.
+2025-03-17 18:48:14,702 - ERROR - basehttp - "GET / HTTP/1.1" 500 148119
+2025-03-17 18:48:15,548 - ERROR - log - Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py", line 181, in login_view
+    return render(request, 'Employee/login.html', {'form': form, 'error': error_message})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'generate_employee_pd' not found. 'generate_employee_pd' is not a valid view function or pattern name.
+2025-03-17 18:48:15,564 - ERROR - basehttp - "GET / HTTP/1.1" 500 147696
+2025-03-17 18:49:15,444 - INFO - basehttp - "GET / HTTP/1.1" 200 9989
+2025-03-17 18:49:21,196 - INFO - basehttp - "GET /static/image/congo-2697382_1920.jpg HTTP/1.1" 200 566668
+2025-03-17 18:49:21,202 - INFO - basehttp - "GET /static/image/buildings-6956678_1920.jpg HTTP/1.1" 200 617712
+2025-03-17 18:49:40,328 - INFO - basehttp - "POST / HTTP/1.1" 302 0
+2025-03-17 18:49:40,497 - INFO - basehttp - "GET /home HTTP/1.1" 200 12834
+2025-03-17 18:49:41,065 - INFO - basehttp - "GET /media/employe/Capture_d%C3%A9cran_2025-03-08_160658_4hQfFbY.png HTTP/1.1" 200 83657
+2025-03-17 18:50:44,812 - INFO - basehttp - "GET /home HTTP/1.1" 200 12813
+2025-03-17 18:50:50,985 - INFO - basehttp - "GET /Employee/employee/pdf/ HTTP/1.1" 200 2181
+2025-03-17 18:51:57,672 - INFO - basehttp - "GET /home HTTP/1.1" 200 12813
+2025-03-17 18:52:13,260 - INFO - basehttp - "GET /home HTTP/1.1" 200 12813
+2025-03-17 18:53:15,435 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py changed, reloading.
+2025-03-17 18:53:20,398 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-17 18:53:26,878 - INFO - basehttp - "GET /home HTTP/1.1" 200 12813
+2025-03-17 18:53:27,884 - INFO - basehttp - "GET /home HTTP/1.1" 200 12813
+2025-03-17 18:53:30,654 - ERROR - log - Internal Server Error: /Employee/employee/pdf/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\styles.py", line 231, in __getitem__
+    return self.byAlias[key]
+KeyError: 'RIGHT'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\styles.py", line 234, in __getitem__
+    return self.byName[key]
+KeyError: 'RIGHT'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py", line 282, in generate_employee_pdf
+    footer = Paragraph(footer_text, style=getSampleStyleSheet()['RIGHT'])
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\styles.py", line 236, in __getitem__
+    raise KeyError("Style '%s' not found in stylesheet" % key)
+KeyError: "Style 'RIGHT' not found in stylesheet"
+2025-03-17 18:53:30,669 - ERROR - basehttp - "GET /Employee/employee/pdf/ HTTP/1.1" 500 82945
+2025-03-17 18:53:39,935 - ERROR - log - Internal Server Error: /Employee/employee/pdf/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\styles.py", line 231, in __getitem__
+    return self.byAlias[key]
+KeyError: 'RIGHT'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\styles.py", line 234, in __getitem__
+    return self.byName[key]
+KeyError: 'RIGHT'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py", line 282, in generate_employee_pdf
+    footer = Paragraph(footer_text, style=getSampleStyleSheet()['RIGHT'])
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\reportlab\lib\styles.py", line 236, in __getitem__
+    raise KeyError("Style '%s' not found in stylesheet" % key)
+KeyError: "Style 'RIGHT' not found in stylesheet"
+2025-03-17 18:53:39,942 - ERROR - basehttp - "GET /Employee/employee/pdf/ HTTP/1.1" 500 82945
+2025-03-17 18:54:14,695 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py changed, reloading.
+2025-03-17 18:54:18,957 - INFO - autoreload - Watching for file changes with StatReloader

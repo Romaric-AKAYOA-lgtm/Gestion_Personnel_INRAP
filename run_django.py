@@ -1,8 +1,16 @@
 import os
 import sys
+from reportlab.platypus import SimpleDocTemplate, Table, TableStyle  # Assurez-vous que l'import est correct
 import webbrowser
 import django.db.backends
-import threading  # Importer le module threading
+import threading  # Importation du module threading
+
+# Pour vérifier si reportlab est bien installé et faire une réinstallation si nécessaire
+try:
+    from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
+except ImportError:
+    print("Le module reportlab n'est pas installé ou mal installé. Installation en cours...")
+    os.system('pip install reportlab')
 
 def run_django_server():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Gestion_Personnel_INRAP.settings')

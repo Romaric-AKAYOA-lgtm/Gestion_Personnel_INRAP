@@ -166,8 +166,9 @@
                 <a href="{% url 'OrganizationalUnit:list' %}"><i class="fas fa-cogs"></i> <span>Services</span></a>
                 <a href="{% url 'stagiaire:stagiaire_list' %}"><i class="fas fa-users"></i> <span>Stagiaire</span></a>
                 <a href="{% url 'RespensableOrganisationUnite:list' %}"><i class="fas fa-users"></i> <span>Agent Service</span></a>
-                <a href="{% url 'Employee:list' %}"><i class="fas fa-users"></i> <span>Employés</span></a>
+                <a href="{% url 'Employee:list' %}"><i class="fas fa-users"></i> <span>Employés</span></a>   
                  <a href="{% url 'Employee:login' %}"><i class="fas fa-sign-out-alt"></i><span> Se Déconnecter</span></a>
+                 <a href="{% url 'Employee:generate_employee_pdf' %}"><i class="fas fa-sign-out-alt"></i><span> Imprimer PDF</span></a>
            </div>
             
             <!-- Contenu principal (colonne droite) -->

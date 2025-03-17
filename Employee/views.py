@@ -196,3 +196,99 @@ def logout_view(request):
     return redirect("Employee:login")  # Rediriger vers la page de connexion
 
 
+from django.shortcuts import render
+from django.http import HttpResponse
+from reportlab.lib.pagesizes import letter
+from reportlab.lib import colors
+from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib.units import inch  # Assurez-vous que 'inch' est bien importé ici
+from .models import Employee
+from datetime import datetime
+
+def generate_employee_pdf(request):
+    # Filtrage des employés : ceux qui sont actifs, et ceux qui sont en retraite et dont la date n'est pas atteinte
+    current_date = datetime.today().date()
+
+    active_employees = Employee.objects.filter(status='active')
+    retired_employees = Employee.objects.filter(status='retired', retirement_date__gt=current_date)
+
+    # Création du document PDF
+    response = HttpResponse(content_type='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename="employees_report.pdf"'
+
+    buffer = SimpleDocTemplate(response, pagesize=letter)
+    elements = []
+
+    # Ajouter l'entête INRAP et République du Congo
+    header = Paragraph("<b>INRAP</b>", style=getSampleStyleSheet()['Title'])
+    header2 = Paragraph("<b>République du Congo</b>", style=getSampleStyleSheet()['Title'])
+    elements.append(header)
+    elements.append(header2)
+
+    # Ajouter un espace avant le tableau
+    elements.append(Spacer(1, 0.25 * inch))  # Utilisation de 'inch' ici
+
+    # Définir les données du tableau : entêtes + données
+    data = [
+        ['Nom', 'Prénom', 'Matricule', 'Grade', 'Spécialité', 'Date de Prise de Service', 'Date de Retraite']
+    ]
+
+    # Ajout des employés actifs
+    for employee in active_employees:
+        data.append([ 
+            employee.last_name, 
+            employee.first_name, 
+            employee.matricule, 
+            employee.grade, 
+            employee.specialty, 
+            employee.start_date, 
+            'Non applicable'
+        ])
+
+    # Ajout des employés en retraite
+    for employee in retired_employees:
+        data.append([ 
+            employee.last_name, 
+            employee.first_name, 
+            employee.matricule, 
+            employee.grade, 
+            employee.specialty, 
+            employee.start_date, 
+            employee.retirement_date
+        ])
+
+    # Création du tableau
+    table = Table(data)
+
+    # Style du tableau
+    style = TableStyle([
+        ('BACKGROUND', (0, 0), (-1, 0), colors.grey),
+        ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+        ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+        ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+        ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
+        ('BACKGROUND', (0, 1), (-1, -1), colors.beige),
+        ('GRID', (0, 0), (-1, -1), 1, colors.black),
+    ])
+
+    table.setStyle(style)
+
+    # Ajouter le tableau au PDF
+    elements.append(table)
+
+    # Ajouter la concaténation de Brazzaville et de la date système en bas à droite
+    footer_text = f"Brazzaville - {datetime.now().strftime('%d/%m/%Y')}"
+    footer = Paragraph(footer_text, style=getSampleStyleSheet()['Normal'])
+    elements.append(Spacer(1, 0.5 * inch))  # Ajouter de l'espace avant le footer
+
+    # Alignement du footer à droite
+    footer_table = Table([[footer]], colWidths=[400])
+    footer_table.setStyle([('ALIGN', (0, 0), (-1, -1), 'RIGHT')])
+    
+    # Ajouter le footer
+    elements.append(footer_table)
+
+    # Générer le PDF
+    buffer.build(elements)
+    return response

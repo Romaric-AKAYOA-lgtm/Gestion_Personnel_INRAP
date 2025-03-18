@@ -11670,3 +11670,4 @@ KeyError: "Style 'RIGHT' not found in stylesheet"
 2025-03-17 18:53:39,942 - ERROR - basehttp - "GET /Employee/employee/pdf/ HTTP/1.1" 500 82945
 2025-03-17 18:54:14,695 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py changed, reloading.
 2025-03-17 18:54:18,957 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-18 07:14:33,690 - INFO - autoreload - Watching for file changes with StatReloader

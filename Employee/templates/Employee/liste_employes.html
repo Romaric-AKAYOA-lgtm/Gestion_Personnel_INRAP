@@ -6,6 +6,26 @@
 
     <div class="d-flex justify-content-between align-items-center mb-3">
         <a href="{% url 'Employee:create' %}" class="btn btn-primary">Ajouter un Employé</a>
+        <!-- Formulaire de recherche pour Employee -->
+        <form action="{% url 'Employee:recherche' %}" method="get" class="d-flex">
+            <!-- Champ pour sélectionner le critère de recherche -->
+            <select name="criteres" class="form-select me-2" aria-label="Critère de recherche">
+                <option value="last_name">Nom</option>
+                <option value="first_name">Prénom</option>
+                <option value="email">Email</option>
+                <option value="num_tel">Numéro de téléphone</option>
+                <option value="matricule">Matricule</option>
+                <option value="status">Statut</option>
+                <!-- Ajouter d'autres critères si nécessaire -->
+            </select>
+
+            <!-- Champ pour la valeur de recherche -->
+            <input type="text" name="query" class="form-control me-2" placeholder="Rechercher un employé" aria-label="Recherche">
+            
+            <button type="submit" class="btn btn-secondary">
+                <i class="bi bi-search"></i> Rechercher
+            </button>
+        </form>
     </div>
 
     <div class="table-responsive">

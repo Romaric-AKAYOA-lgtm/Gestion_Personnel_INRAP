@@ -11671,3 +11671,121 @@ KeyError: "Style 'RIGHT' not found in stylesheet"
 2025-03-17 18:54:14,695 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py changed, reloading.
 2025-03-17 18:54:18,957 - INFO - autoreload - Watching for file changes with StatReloader
 2025-03-18 07:14:33,690 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-18 07:15:32,415 - INFO - basehttp - "GET / HTTP/1.1" 200 9968
+2025-03-18 07:15:44,636 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-03-18 07:15:44,668 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-03-18 07:15:44,701 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-03-18 07:15:44,743 - INFO - basehttp - "GET /static/image/congo-2697382_1920.jpg HTTP/1.1" 200 566668
+2025-03-18 07:15:45,384 - INFO - basehttp - "GET /static/image/buildings-6956678_1920.jpg HTTP/1.1" 200 617712
+2025-03-18 07:15:46,512 - WARNING - log - Not Found: /favicon.ico
+2025-03-18 07:15:46,518 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 3710
+2025-03-19 10:50:05,578 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-19 10:51:22,946 - INFO - basehttp - "GET / HTTP/1.1" 200 9968
+2025-03-19 10:51:41,431 - INFO - basehttp - "POST / HTTP/1.1" 302 0
+2025-03-19 10:51:41,504 - INFO - basehttp - "GET /home HTTP/1.1" 200 12813
+2025-03-19 10:51:42,417 - INFO - basehttp - "GET /media/employe/Capture_d%C3%A9cran_2025-03-08_160658_4hQfFbY.png HTTP/1.1" 200 83657
+2025-03-19 10:53:13,397 - INFO - basehttp - "GET /home HTTP/1.1" 200 12813
+2025-03-19 10:53:18,740 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 8673
+2025-03-19 10:53:28,749 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 8754
+2025-03-19 10:53:31,297 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 10678
+2025-03-19 10:53:40,477 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 8754
+2025-03-19 10:53:45,808 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 8673
+2025-03-19 10:53:47,386 - INFO - basehttp - "GET /unite/creer/ HTTP/1.1" 200 9416
+2025-03-19 10:53:58,075 - INFO - basehttp - "POST /unite/creer/ HTTP/1.1" 302 0
+2025-03-19 10:53:58,104 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 9045
+2025-03-19 10:53:59,898 - INFO - basehttp - "GET /unite/creer/ HTTP/1.1" 200 9416
+2025-03-19 10:54:12,429 - INFO - basehttp - "POST /unite/creer/ HTTP/1.1" 302 0
+2025-03-19 10:54:12,456 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 9606
+2025-03-19 10:54:15,549 - INFO - basehttp - "GET /unite/creer/ HTTP/1.1" 200 9416
+2025-03-19 10:54:39,044 - INFO - basehttp - "POST /unite/creer/ HTTP/1.1" 302 0
+2025-03-19 10:54:39,070 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 10166
+2025-03-19 10:54:40,981 - INFO - basehttp - "GET /unite/creer/ HTTP/1.1" 200 9416
+2025-03-19 10:55:19,637 - INFO - basehttp - "POST /unite/creer/ HTTP/1.1" 302 0
+2025-03-19 10:55:19,671 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 10732
+2025-03-19 10:55:24,243 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 8754
+2025-03-19 10:55:36,395 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 11038
+2025-03-19 10:56:56,746 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 11073
+2025-03-19 10:57:18,371 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 8754
+2025-03-19 10:57:33,501 - INFO - basehttp - "GET /home HTTP/1.1" 200 12813
+2025-03-19 10:57:35,010 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 10732
+2025-03-19 10:59:55,680 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\urls.py changed, reloading.
+2025-03-19 10:59:58,247 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-19 11:02:17,070 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py changed, reloading.
+2025-03-19 11:02:19,442 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-19 11:05:33,390 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py changed, reloading.
+2025-03-19 11:05:35,875 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-19 11:08:02,692 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 10732
+2025-03-19 11:09:30,232 - INFO - basehttp - "GET /stagiairelist/ HTTP/1.1" 200 8780
+2025-03-19 11:09:34,233 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 8681
+2025-03-19 11:09:42,771 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10922
+2025-03-19 11:09:50,579 - INFO - basehttp - "GET /Employee/recherche/?criteres=last_name&query=AKAYOA HTTP/1.1" 200 9302
+2025-03-19 11:09:59,546 - INFO - basehttp - "GET /Employee/1/update/ HTTP/1.1" 200 14081
+2025-03-19 11:10:06,396 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 10922
+2025-03-19 11:13:16,697 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Stagiaire\urls.py changed, reloading.
+2025-03-19 11:13:19,870 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-19 11:14:35,420 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Stagiaire\views.py changed, reloading.
+2025-03-19 11:14:37,594 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-19 11:28:18,680 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Stagiaire\views.py changed, reloading.
+2025-03-19 11:28:22,227 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-19 11:29:48,535 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Stagiaire\urls.py changed, reloading.
+2025-03-19 11:29:50,943 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-19 11:30:00,727 - INFO - basehttp - "GET /stagiairelist/ HTTP/1.1" 200 9886
+2025-03-19 11:30:08,058 - INFO - basehttp - "GET /stagiairerecherche/?criteres=nom&query=AKAYOA HTTP/1.1" 200 8668
+2025-03-19 11:30:11,165 - INFO - basehttp - "GET /stagiairelist/ HTTP/1.1" 200 9886
+2025-03-19 11:30:53,034 - INFO - basehttp - "GET /stagiairelist/ HTTP/1.1" 200 9886
+2025-03-19 11:30:55,458 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 8754
+2025-03-19 11:30:57,342 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 9248
+2025-03-19 11:30:59,154 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 8608
+2025-03-19 11:31:00,500 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 8681
+2025-03-19 11:31:21,945 - INFO - basehttp - "GET /Employee/employee/pdf/ HTTP/1.1" 200 2181
+2025-03-19 11:39:01,190 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\urls.py changed, reloading.
+2025-03-19 11:39:05,119 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-19 11:40:57,752 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-19 11:41:00,641 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-19 11:42:49,220 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-19 11:42:51,375 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-19 11:43:29,600 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-19 11:43:32,176 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-19 11:45:51,523 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\urls.py changed, reloading.
+2025-03-19 11:45:53,577 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-19 11:47:11,087 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 8761
+2025-03-19 11:47:16,501 - INFO - basehttp - "GET /imprimer/options/ HTTP/1.1" 200 10589
+2025-03-19 11:47:41,046 - INFO - basehttp - "GET /imprimer/rapports/?print_options=stagiaires&print_options=active_employees&print_options=on_leave_employees&print_options=retiring_employees HTTP/1.1" 200 7901
+2025-03-19 11:48:24,945 - INFO - basehttp - "GET /imprimer/rapports/?print_options=stagiaires&print_options=active_employees&print_options=on_leave_employees&print_options=retiring_employees HTTP/1.1" 200 7901
+2025-03-19 11:49:21,913 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-19 11:49:26,911 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-19 11:51:22,353 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-19 11:51:24,590 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-19 11:51:37,037 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-19 11:51:39,175 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-19 11:55:31,708 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-19 11:56:09,015 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-19 11:56:42,431 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-19 11:57:19,648 - INFO - basehttp - "GET /imprimer/options/ HTTP/1.1" 200 10589
+2025-03-19 11:57:29,058 - ERROR - log - Internal Server Error: /imprimer/rapports/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 161, in print_results
+    data.append([employee.nom, employee.prenom, employee.status])
+AttributeError: 'Employee' object has no attribute 'nom'
+2025-03-19 11:57:29,063 - ERROR - basehttp - "GET /imprimer/rapports/?print_options=stagiaires&print_options=active_employees&print_options=on_leave_employees&print_options=retiring_employees HTTP/1.1" 500 68007
+2025-03-19 12:02:16,805 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-19 12:02:19,904 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-19 12:03:02,593 - INFO - basehttp - "GET /imprimer/rapports/?print_options=stagiaires&print_options=active_employees&print_options=on_leave_employees&print_options=retiring_employees HTTP/1.1" 200 2136
+2025-03-19 12:03:48,792 - INFO - basehttp - "GET /imprimer/rapports/?print_options=stagiaires&print_options=active_employees&print_options=on_leave_employees&print_options=retiring_employees HTTP/1.1" 200 2136
+2025-03-19 12:04:46,412 - INFO - basehttp - "GET /imprimer/options/ HTTP/1.1" 200 10609
+2025-03-19 12:05:24,598 - INFO - basehttp - "GET /imprimer/options/ HTTP/1.1" 200 10622
+2025-03-19 12:08:18,865 - INFO - basehttp - "GET /imprimer/options/ HTTP/1.1" 200 11011
+2025-03-19 12:08:39,493 - INFO - basehttp - "GET /home HTTP/1.1" 200 13315
+2025-03-19 12:08:44,113 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 9183
+2025-03-19 12:08:46,085 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 9110
+2025-03-19 12:08:47,682 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 9750
+2025-03-19 12:08:49,539 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 9750
+2025-03-19 12:08:50,472 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 9256
+2025-03-19 12:08:51,486 - INFO - basehttp - "GET /stagiairelist/ HTTP/1.1" 200 10388
+2025-03-19 12:08:52,735 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 9380
+2025-03-19 12:08:54,600 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 9380
+2025-03-19 12:08:56,113 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 11423

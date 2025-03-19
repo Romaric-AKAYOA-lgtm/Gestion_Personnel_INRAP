@@ -16,4 +16,5 @@ urlpatterns = [
      path('employee/pdf/', views.generate_employee_pdf, name='generate_employee_pdf'),
     path('', views.login_view, name='login'),
     path('logout/', views.logout_view, name='logout'),
+     path('recherche/', views.employee_search, name='recherche'),  # Ajout de la route de recherche
 ]

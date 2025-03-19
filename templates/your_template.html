@@ -1,0 +1,57 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+<div class="container mt-4">
+
+    <!-- Bouton pour afficher la modal d'impression -->
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#printModal">
+        Imprimer
+    </button>
+
+    <!-- Modal pour sélectionner les options d'impression -->
+    <div class="modal fade" id="printModal" tabindex="-1" aria-labelledby="printModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="printModalLabel">Sélectionnez les options d'impression</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="{% url 'print_results' %}" method="GET">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="stagiaires" id="stagiaires" name="print_options">
+                            <label class="form-check-label" for="stagiaires">
+                                Liste des stagiaires
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="active_employees" id="active_employees" name="print_options">
+                            <label class="form-check-label" for="active_employees">
+                                Employés actifs
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="on_leave_employees" id="on_leave_employees" name="print_options">
+                            <label class="form-check-label" for="on_leave_employees">
+                                Employés en congé
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="retiring_employees" id="retiring_employees" name="print_options">
+                            <label class="form-check-label" for="retiring_employees">
+                                Employés partant à la retraite cette année
+                            </label>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                            <button type="submit" class="btn btn-primary">Imprimer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

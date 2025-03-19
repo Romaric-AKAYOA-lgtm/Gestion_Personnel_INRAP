@@ -1,9 +1,10 @@
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from itertools import count
 from django.shortcuts import render, redirect
 from django.db.models import Q
 from django.utils.timezone import now
-
+from django.http import HttpResponse
+from django.template.loader import render_to_string
 from Activation.models import Activation
 from Conge.models import Conge
 from Employee.models import Employee
@@ -11,6 +12,7 @@ from Employee.views import get_username_from_session
 from OrganizationalUnit.models import OrganizationalUnit  # Si le modèle est dans le même fichier
 # OU
 from Activation.views import activation_view
+from Stagiaire.models import Stagiaire
 
 def home_view(request):
     """Affiche la page d'accueil avec la gestion du personnel et la vérification d'activation."""
@@ -103,3 +105,90 @@ def fiche_employe_view(request, employe_id):
     return render(request, "fiche_employe.html", {
         'employe': employe,
     })
+
+
+from django.shortcuts import render
+from datetime import datetime
+
+def print_options(request):
+    # Récupérer les données nécessaires
+    stagiaires = Stagiaire.objects.all()
+    active_employees = Employee.objects.filter(status='active')
+    on_leave_employees = Employee.objects.filter(status='on_leave')
+    retiring_employees = Employee.objects.filter(retirement_date__year=datetime.now().year)
+
+    return render(request, 'your_template.html', {
+        'stagiaires': stagiaires,
+        'active_employees': active_employees,
+        'on_leave_employees': on_leave_employees,
+        'retiring_employees': retiring_employees
+    })
+import io
+from datetime import datetime
+from django.http import HttpResponse
+from reportlab.lib.pagesizes import A4
+from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
+from reportlab.lib import colors
+
+def print_results(request):
+    # Récupérer les options sélectionnées
+    print_options = request.GET.getlist('print_options')
+
+    # Créer le buffer pour le PDF
+    buffer = io.BytesIO()
+    doc = SimpleDocTemplate(buffer, pagesize=A4)
+
+    # Créer la liste des données à inclure dans le PDF
+    data = []
+    
+    # Titre
+    data.append(['', '', 'Rapport d\'Impression'])
+
+    # Vérification des options et ajout des sections correspondantes
+    if 'stagiaires' in print_options:
+        stagiaires = Stagiaire.objects.all()
+        data.append(['', '', 'Stagiaires'])
+        data.append(['Nom', 'Prénom', 'Date de Naissance'])
+        for stagiaire in stagiaires:
+            data.append([stagiaire.nom, stagiaire.prenom, stagiaire.date_naissance.strftime("%d/%m/%Y")])
+
+    if 'active_employees' in print_options:
+        active_employees = Employee.objects.filter(status='active')
+        data.append(['', '', 'Employés Actifs'])
+        data.append(['Nom', 'Prénom', 'Statut'])
+        for employee in active_employees:
+            data.append([employee.first_name, employee.last_name, employee.status])
+
+    if 'on_leave_employees' in print_options:
+        on_leave_employees = Employee.objects.filter(status='on_leave')
+        data.append(['', '', 'Employés en Congé'])
+        data.append(['Nom', 'Prénom', 'Statut'])
+        for employee in on_leave_employees:
+            data.append([employee.first_name, employee.last_name, employee.status])
+
+    if 'retiring_employees' in print_options:
+        retiring_employees = Employee.objects.filter(retirement_date__year=datetime.now().year)
+        data.append(['', '', 'Employés Partant à la Retraite'])
+        data.append(['Nom', 'Prénom', 'Date de Retraite'])
+        for employee in retiring_employees:
+            data.append([employee.first_name, employee.last_name, employee.retirement_date.strftime("%d/%m/%Y")])
+
+    # Créer le tableau
+    table = Table(data)
+    table.setStyle(TableStyle([
+        ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),
+        ('BACKGROUND', (0, 0), (-1, 0), colors.grey),
+        ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+        ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+        ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
+        ('BACKGROUND', (0, 1), (-1, -1), colors.whitesmoke),
+        ('GRID', (0, 0), (-1, -1), 1, colors.black),
+    ]))
+
+    # Ajouter le tableau au document
+    doc.build([table])
+
+    # Retourner la réponse HTTP avec le PDF généré
+    response = HttpResponse(buffer.getvalue(), content_type='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename="rapport_impression.pdf"'
+    return response

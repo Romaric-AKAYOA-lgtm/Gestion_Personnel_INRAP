@@ -292,3 +292,60 @@ def generate_employee_pdf(request):
     # Générer le PDF
     buffer.build(elements)
     return response
+
+def employee_search(request):
+    username = get_username_from_session(request)
+
+    # Assurez-vous que le nom d'utilisateur est disponible dans la session
+    if not username:
+        return redirect('login')  # Redirige vers la page de connexion si pas de nom d'utilisateur dans la session
+
+    # Récupérer les paramètres de recherche
+    query = request.GET.get('query', '')  # Recherche globale
+    critere = request.GET.get('criteres', '')  # Critère de recherche sélectionné (username, first_name, email, etc.)
+    
+    # Initialisation de la queryset avec tous les employés
+    employees = Employee.objects.all()
+
+    # Si un critère et un terme de recherche sont saisis, filtrer en fonction du critère
+    if critere and query:
+        if critere == 'username':
+            employees = employees.filter(username__icontains=query)
+        elif critere == 'first_name':
+            employees = employees.filter(first_name__icontains=query)
+        elif critere == 'last_name':
+            employees = employees.filter(last_name__icontains=query)
+        elif critere == 'email':
+            employees = employees.filter(email__icontains=query)
+        elif critere == 'num_tel':
+            employees = employees.filter(num_tel__icontains=query)
+        elif critere == 'matricule':
+            employees = employees.filter(matricule__icontains=query)
+        elif critere == 'status':
+            employees = employees.filter(status__icontains=query)
+    elif query:
+        # Si un terme de recherche est saisi sans critère, effectuer une recherche globale
+        employees = employees.filter(username__icontains=query) | employees.filter(first_name__icontains=query) | employees.filter(last_name__icontains=query) | employees.filter(email__icontains=query)
+
+    # Ajouter d'autres filtres si nécessaire, par exemple date_debut, date_fin, etc.
+    date_debut = request.GET.get('date_debut', '')
+    date_fin = request.GET.get('date_fin', '')
+    
+    # Appliquer les filtres supplémentaires uniquement si les champs sont remplis
+    if date_debut:
+        employees = employees.filter(start_date__gte=date_debut)
+    if date_fin:
+        employees = employees.filter(retirement_date__lte=date_fin)
+
+    # Si aucune condition n'est remplie, on retourne un message disant qu'il n'y a pas de résultats
+    if not employees:
+        employees = None  # Pas d'employés trouvés
+
+    return render(request, 'employee/search.html', {
+        'employees': employees,
+        'username': username,
+        'query': query,
+        'criteres': critere,
+        'date_debut': date_debut,
+        'date_fin': date_fin,
+    })

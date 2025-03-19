@@ -12,4 +12,5 @@ urlpatterns = [
     
     # URL pour la modification d'un stagiaire
     path('modify/<int:id>/', views.modify_stagiaire, name='modify_stagiaire'),  # Modification du stagiaire par son ID
+     path('recherche/', views.stagiaire_search, name='recherche'),  # Ajout de la route de recherche
 ]

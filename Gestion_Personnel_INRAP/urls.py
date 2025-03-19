@@ -11,6 +11,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
      path('', login_view, name='login'),
     path('home', views.home_view, name='home'),  
+     path('imprimer/options/', views.print_options, name='print_options'),
+    path('imprimer/rapports/', views.print_results, name='print_results'),
      path('unite/', include('unite.urls')),
     path('OrganizationalUnit/', include('OrganizationalUnit.urls')),
     path('Employee/', include('Employee.urls')),
@@ -20,7 +22,4 @@ urlpatterns = [
     path('conge/', include('Conge.urls')),
     path('RespensableOrganisationUnite/', include('RespensableOrganisationUnite.urls')),
     path ('stagiaire', include('Stagiaire.urls'))
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-
-
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 

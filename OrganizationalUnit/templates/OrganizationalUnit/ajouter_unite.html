@@ -47,7 +47,7 @@
                         <label for="unite" class="form-label">Unité</label>
                         <select class="form-select {% if form.unite.errors %}is-invalid{% endif %}" id="unite" name="unite" required>
                             {% for unite in form.unite.field.queryset %}
-                                <option value="{{ unite.id }}" {% if unite.id == form.unite.value %}selected{% endif %}>{{ unite.name }}</option>
+                                <option value="{{ unite.id }}" {% if unite.id == form.unite.value %}selected{% endif %}>{{ unite.designation }}</option>
                             {% endfor %}
                         </select>
                         {% if form.unite.errors %}

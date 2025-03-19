@@ -143,14 +143,24 @@
 </head>
 <body>
 
-    <!-- En-tête -->
-    <header class="bg-white">
-        <img src="{% static 'image/administration-1867877_1280.jpg' %}" alt="INRAP" width="50">
-        <h1 class="text-center">Institut National de Recherche et d'Action Pédagogiques</h1>
-        <img src="{% static 'image/congo-2697382_1920.jpg' %}" alt="Congo Brazzaville" width="50">
-    </header>
+        <!-- En-tête -->
+        <header class="bg-white py-3 shadow">
+            <div class="container-fluid  d-flex justify-content-between align-items-center">
+                <!-- Logo de l'INRAP -->
+                <img src="{% static 'image/administration-1867877_1280.jpg' %}" alt="INRAP" class="img-fluid" width="70">
+
+                <!-- Titre centré -->
+                <h1 class="text-center flex-grow-1 fw-bold text-primary">
+                    Institut National de Recherche et d'Action Pédagogiques
+                </h1>
+
+                <!-- Logo du Congo -->
+                <img src="{% static 'image/congo-2697382_1920.jpg' %}" alt="Congo Brazzaville" class="img-fluid" width="70">
+            </div>
+        </header>
+
     
-    <div class="container-fluid">
+    <div class="container-fluid  text-center">
         <div class="row">
             <!-- Barre latérale (colonne gauche) -->
             <div class="col-md-2 sidebar" id="sidebar">
@@ -168,6 +178,8 @@
                 <a href="{% url 'RespensableOrganisationUnite:list' %}"><i class="fas fa-users"></i> <span>Agent Service</span></a>
                 <a href="{% url 'Employee:list' %}"><i class="fas fa-users"></i> <span>Employés</span></a>   
                  <a href="{% url 'Employee:login' %}"><i class="fas fa-sign-out-alt"></i><span> Se Déconnecter</span></a>
+                 <a href="{% url 'print_options' %}" class="text-center">Ouvrir le modal d'impression</a>
+
                  <a href="{% url 'Employee:generate_employee_pdf' %}"><i class="fas fa-sign-out-alt"></i><span> Imprimer PDF</span></a>
            </div>
             

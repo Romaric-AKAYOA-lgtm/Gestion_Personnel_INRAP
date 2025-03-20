@@ -1,0 +1,72 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+
+<div class="container mt-4">
+
+    <!-- Modal pour afficher les résultats de la recherche -->
+    <div class="modal fade show" id="modalSearchResults" tabindex="-1" aria-labelledby="modalSearchResultsLabel" aria-hidden="true" style="display: block;">
+        <div class="modal-dialog modal-lg"> <!-- Largeur augmentée -->
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="modalSearchResultsLabel">Résultats de la recherche</h5>
+                </div>
+                <div class="modal-body">
+                    {% if results %}
+                        <ul class="list-group">
+                            {% for responsable in results %}
+                                <li class="list-group-item">
+                                    {% if responsable.responsable %}
+                                        {{ responsable.responsable.first_name }} {{ responsable.responsable.last_name }}
+                                    {% else %}
+                                        <em>Responsable inconnu</em>
+                                    {% endif %}
+
+                                    - 
+
+                                    {% if responsable.organizational_unit %}
+                                        {{ responsable.organizational_unit.name }}
+                                    {% else %}
+                                        <em>Unité inconnue</em>
+                                    {% endif %}
+
+                                    {% if responsable.function %}
+                                        ({{ responsable.function.titre }})
+                                    {% else %}
+                                        <em>Fonction inconnue</em>
+                                    {% endif %}
+
+                                    <a href="{% url 'responsable_unite:update' responsable.id %}" class="btn btn-warning btn-sm float-end ms-2">Modifier</a>
+                                    <a href="{% url 'responsable_unite:delete' responsable.id %}" class="btn btn-danger btn-sm float-end">Supprimer</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <p>Aucun responsable trouvé pour "{{ query }}"</p>
+                    {% endif %}
+                </div>
+                <div class="modal-footer">
+                    <a href="{% url 'RespensableOrganisationUnite:list' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Script pour afficher le modal de façon automatique à la fin de la page -->
+{% if results %}
+    <script>
+        window.onload = function() {
+            var modalElement = document.getElementById("modalSearchResults");
+            if (modalElement) {
+                var myModal = new bootstrap.Modal(modalElement, {
+                    keyboard: false
+                });
+                myModal.show();
+            }
+        };
+    </script>
+{% endif %}
+
+{% endblock %}

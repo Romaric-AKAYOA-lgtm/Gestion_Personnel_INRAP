@@ -12,4 +12,5 @@ urlpatterns = [
     path('<int:id>/update/', views.modifier_RespensableOrganisationUnitet, name='update'),
     # Suppression d'une unité organisationnelle
     path('<int:id>/delete/', views.supprimer_RespensableOrganisationUnite, name='delete'),
+    path('search/', views.search_responsable_unite, name='search_responsable_unite'),
 ]

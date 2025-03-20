@@ -9,4 +9,5 @@ urlpatterns = [
     path('<int:id>/', views.fonction_detail, name='information'),
    path('<int:id>/modifier/', views.modifier_fonction, name='modifier'),
     path('<int:id>/supprimer/', views.supprimer_fonction,  name='supprimer'),
+     path('recherche/', views.fonction_search, name='recherche'),
 ]

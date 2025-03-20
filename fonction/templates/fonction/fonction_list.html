@@ -9,6 +9,20 @@
         <a href="{% url 'fonction:creer' %}" class="btn btn-primary">
             <i class="bi bi-person-plus"></i> Créer une fonction
         </a>
+                        <!-- Formulaire de recherche pour une spécialite -->
+                        <form method="GET" action="{% url 'fonction:recherche' %}"  class="d-flex">
+                            <!-- Champ pour sélectionner le critère de recherche -->
+                            <select name="criteres" class="form-select me-2" aria-label="Critère de recherche">
+                                <option value="designation">Designation</option>
+                                <!-- Ajouter d'autres critères si nécessaire -->
+                            </select>
+                            <!-- Champ pour la valeur de recherche -->
+                            <input type="text" name="query" class="form-control me-2" placeholder="Rechercher un employé" aria-label="Recherche">
+                            
+                            <button type="submit" class="btn btn-secondary">
+                                <i class="bi bi-search"></i> Rechercher
+                            </button>
+                        </form>
     </div>
 
     <div class="table-responsive">

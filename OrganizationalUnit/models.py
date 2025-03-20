@@ -1,8 +1,5 @@
 from django.db import models
-from dateutil.relativedelta import relativedelta
 from django.apps import apps
-
-from Employee.models import Employee
 from unite.models import Unite  # Import différé pour éviter l'importation circulaire
 
 class OrganizationalUnit(models.Model):

@@ -44,3 +44,24 @@ def supprimer_RespensableOrganisationUnite(request, id):
         return redirect('RespensableOrganisationUnite:list')  # Rediriger vers la liste des responsables
 
     return render(request, 'respensableorganisationunite/supprimer.html', {'responsable': responsable})
+
+
+def search_responsable_unite(request):
+    query = request.GET.get("query", "")
+    filter_by = request.GET.get("filter", "")
+
+    results = ResponsableOrganisationUnite.objects.all()
+
+    if query:
+        if filter_by == "organizational_unit":
+            results = results.filter(organizational_unit__name__icontains=query)
+        elif filter_by == "responsable":
+            results = results.filter(responsable__first_name__icontains=query) | results.filter(responsable__last_name__icontains=query)
+        elif filter_by == "function":
+            results = results.filter(function__titre__icontains=query)
+        elif filter_by == "date_debut":
+            results = results.filter(date_debut__icontains=query)
+        elif filter_by == "date_fin":
+            results = results.filter(date_fin__icontains=query)
+
+    return render(request, "RespensableOrganisationUnite/search.html", {"results": results, "query": query, "filter": filter_by})

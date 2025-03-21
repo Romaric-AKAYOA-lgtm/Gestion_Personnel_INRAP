@@ -1,0 +1,93 @@
+{% extends 'template_base.html' %}
+
+{% block contenue %}
+  <div class="container mt-5">
+    <!-- Modal Bootstrap -->
+    <div class="modal fade show" id="sectionsModal" tabindex="-1" role="dialog" aria-labelledby="sectionsModalLabel" aria-hidden="true" style="display: block;">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-primary text-white">
+            <h5 class="modal-title" id="sectionsModalLabel">Sélectionner les sections à imprimer</h5>
+        </div>
+          <div class="modal-body">
+            <form id="sectionsForm">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="sections" value="employes" id="employes">
+                <label class="form-check-label" for="employes">
+                  Liste des Employés
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="sections" value="employes_recents" id="employes_recents">
+                <label class="form-check-label" for="employes_recents">
+                  Employés récents (moins de 6 mois)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="sections" value="employes_en_conge" id="employes_en_conge">
+                <label class="form-check-label" for="employes_en_conge">
+                  Employés en congé
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="sections" value="employes_revenant_de_conge" id="employes_revenant_de_conge">
+                <label class="form-check-label" for="employes_revenant_de_conge">
+                  Employés revenant de congé
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="sections" value="employes_depart_retraite" id="employes_depart_retraite">
+                <label class="form-check-label" for="employes_depart_retraite">
+                  Employés en départ pour la retraite (cette année)
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="sections" value="employes_retraites" id="employes_retraites">
+                <label class="form-check-label" for="employes_retraites">
+                  Employés déjà retraités
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="sections" value="stagiaires" id="stagiaires">
+                <label class="form-check-label" for="stagiaires">
+                  Liste des Stagiaires
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a href="{% url 'home' %}"class="btn btn-secondary px-4 py-2 btn-sm"> Acceuil</a>
+            <button type="button" class="btn btn-primary" id="generateReportBtn">Générer le rapport</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Ouvrir automatiquement la modale après le chargement de la page
+    document.addEventListener('DOMContentLoaded', function() {
+      var myModal = new bootstrap.Modal(document.getElementById('sectionsModal'), {
+        keyboard: false,
+        backdrop: 'static' // Empêche la fermeture en cliquant à l'extérieur
+      });
+      myModal.show();
+    });
+
+    // Gérer l'envoi du formulaire quand le bouton "Générer le rapport" est cliqué
+    document.getElementById("generateReportBtn").onclick = function() {
+      // Récupérer les sections sélectionnées
+      const selectedSections = Array.from(document.querySelectorAll('input[name="sections"]:checked'))
+                                     .map(checkbox => checkbox.value);
+
+      // Construire l'URL avec les sections sélectionnées
+      const url = `/export_to_word/?sections=${selectedSections.join('&sections=')}`;
+
+      // Rediriger vers l'URL pour générer le fichier Word
+      window.location.href = url;
+
+      // Fermer le modal après soumission
+      $('#sectionsModal').modal('hide');
+    }
+  </script>
+{% endblock %}

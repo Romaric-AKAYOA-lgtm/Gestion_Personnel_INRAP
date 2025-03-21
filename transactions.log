@@ -13309,3 +13309,727 @@ django.template.exceptions.TemplateDoesNotExist: responsable_unite/search.html
 2025-03-20 18:22:57,822 - ERROR - basehttp - "GET /RespensableOrganisationUnite/search/?filter=organizational_unit&query=AKAYOA HTTP/1.1" 500 84968
 2025-03-20 18:23:56,002 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py changed, reloading.
 2025-03-20 18:23:58,163 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-20 18:24:02,779 - ERROR - log - Internal Server Error: /RespensableOrganisationUnite/search/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'responsable_unite'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py", line 67, in search_responsable_unite
+    return render(request, "RespensableOrganisationUnite/search.html", {"results": results, "query": query, "filter": filter_by})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'responsable_unite' is not a registered namespace
+2025-03-20 18:24:02,786 - ERROR - basehttp - "GET /RespensableOrganisationUnite/search/?filter=organizational_unit&query=AKAYOA HTTP/1.1" 500 166092
+2025-03-20 18:24:04,097 - ERROR - log - Internal Server Error: /RespensableOrganisationUnite/search/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'responsable_unite'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py", line 67, in search_responsable_unite
+    return render(request, "RespensableOrganisationUnite/search.html", {"results": results, "query": query, "filter": filter_by})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'responsable_unite' is not a registered namespace
+2025-03-20 18:24:04,102 - ERROR - basehttp - "GET /RespensableOrganisationUnite/search/?filter=organizational_unit&query=AKAYOA HTTP/1.1" 500 166092
+2025-03-20 18:24:53,566 - INFO - basehttp - "GET /RespensableOrganisationUnite/search/?filter=organizational_unit&query=AKAYOA HTTP/1.1" 200 9171
+2025-03-20 18:24:55,952 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 10858
+2025-03-20 18:25:19,479 - INFO - basehttp - "GET /home HTTP/1.1" 200 13304
+2025-03-21 08:35:21,244 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 08:37:01,655 - INFO - basehttp - "GET / HTTP/1.1" 200 10459
+2025-03-21 08:37:03,698 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-03-21 08:37:03,701 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-03-21 08:37:03,714 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-03-21 08:37:03,725 - INFO - basehttp - "GET /static/image/congo-2697382_1920.jpg HTTP/1.1" 200 566668
+2025-03-21 08:37:03,775 - INFO - basehttp - "GET /static/image/buildings-6956678_1920.jpg HTTP/1.1" 200 617712
+2025-03-21 08:37:04,009 - WARNING - log - Not Found: /favicon.ico
+2025-03-21 08:37:04,011 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 3989
+2025-03-21 08:37:26,957 - INFO - basehttp - "POST / HTTP/1.1" 302 0
+2025-03-21 08:37:27,025 - INFO - basehttp - "GET /home HTTP/1.1" 200 13304
+2025-03-21 08:37:27,130 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-03-21 08:37:27,171 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-03-21 08:37:27,194 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-03-21 08:37:27,219 - INFO - basehttp - "GET /media/employe/Capture_d%C3%A9cran_2025-03-08_160658_4hQfFbY.png HTTP/1.1" 200 83657
+2025-03-21 08:37:33,885 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 10858
+2025-03-21 08:37:48,337 - INFO - basehttp - "GET /RespensableOrganisationUnite/search/?filter=responsable&query=AKAYOA HTTP/1.1" 200 9171
+2025-03-21 08:37:54,470 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 10858
+2025-03-21 08:38:00,063 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 10858
+2025-03-21 08:38:02,389 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 10858
+2025-03-21 08:38:06,292 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 11412
+2025-03-21 08:38:10,715 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 10858
+2025-03-21 08:38:14,721 - INFO - basehttp - "GET /RespensableOrganisationUnite/search/?filter=&query=AKAYOA HTTP/1.1" 200 9171
+2025-03-21 08:38:17,218 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 10858
+2025-03-21 08:38:35,573 - INFO - basehttp - "GET /home HTTP/1.1" 200 13304
+2025-03-21 08:40:31,584 - INFO - basehttp - "GET /home HTTP/1.1" 200 13304
+2025-03-21 08:53:11,437 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 08:53:14,414 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 08:53:31,877 - INFO - basehttp - "GET /home HTTP/1.1" 200 13304
+2025-03-21 08:53:33,234 - INFO - basehttp - "GET /home HTTP/1.1" 200 13304
+2025-03-21 08:53:43,996 - INFO - basehttp - "GET /home HTTP/1.1" 200 13304
+2025-03-21 08:55:42,773 - INFO - basehttp - "GET /home HTTP/1.1" 200 13304
+2025-03-21 08:57:35,417 - INFO - basehttp - "GET /home HTTP/1.1" 200 13304
+2025-03-21 08:59:06,772 - INFO - basehttp - "GET /home HTTP/1.1" 200 13304
+2025-03-21 08:59:48,045 - INFO - basehttp - "GET /home HTTP/1.1" 200 13298
+2025-03-21 08:59:49,492 - INFO - basehttp - "GET /home HTTP/1.1" 200 13298
+2025-03-21 09:07:56,991 - INFO - basehttp - "GET /home HTTP/1.1" 200 10152
+2025-03-21 09:08:19,107 - INFO - basehttp - "GET /home HTTP/1.1" 200 13300
+2025-03-21 09:08:20,792 - INFO - basehttp - "GET /home HTTP/1.1" 200 13300
+2025-03-21 09:11:27,518 - INFO - basehttp - "GET /home HTTP/1.1" 200 14064
+2025-03-21 09:11:27,833 - WARNING - log - Not Found: /employe/Capture_décran_2025-03-08_160658_4hQfFbY.png
+2025-03-21 09:11:27,840 - WARNING - basehttp - "GET /employe/Capture_d%C3%A9cran_2025-03-08_160658_4hQfFbY.png HTTP/1.1" 404 4161
+2025-03-21 09:12:04,673 - INFO - basehttp - "GET /home HTTP/1.1" 200 13300
+2025-03-21 09:15:43,214 - INFO - basehttp - "GET /home HTTP/1.1" 200 13313
+2025-03-21 09:15:44,604 - INFO - basehttp - "GET /home HTTP/1.1" 200 13313
+2025-03-21 09:15:46,187 - INFO - basehttp - "GET /home HTTP/1.1" 200 13313
+2025-03-21 09:17:03,506 - INFO - basehttp - "GET /home HTTP/1.1" 200 13313
+2025-03-21 09:30:20,147 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 09:30:23,637 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 09:31:05,387 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 09:31:06,986 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 09:35:13,510 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\urls.py changed, reloading.
+2025-03-21 09:35:15,436 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 09:41:22,845 - WARNING - log - Not Found: /imprimer/options/
+2025-03-21 09:41:22,851 - WARNING - basehttp - "GET /imprimer/options/ HTTP/1.1" 404 3871
+2025-03-21 09:54:51,120 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 09:54:54,004 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 09:55:56,273 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\urls.py changed, reloading.
+2025-03-21 09:55:58,161 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 09:56:41,839 - WARNING - log - Not Found: /imprimer/options/
+2025-03-21 09:56:41,841 - WARNING - basehttp - "GET /imprimer/options/ HTTP/1.1" 404 3992
+2025-03-21 09:57:43,132 - WARNING - log - Not Found: /imprimer/options/
+2025-03-21 09:57:43,133 - WARNING - basehttp - "GET /imprimer/options/ HTTP/1.1" 404 3992
+2025-03-21 09:57:44,061 - WARNING - log - Not Found: /imprimer/options/
+2025-03-21 09:57:44,064 - WARNING - basehttp - "GET /imprimer/options/ HTTP/1.1" 404 3992
+2025-03-21 09:57:44,739 - WARNING - log - Not Found: /imprimer/options/
+2025-03-21 09:57:44,740 - WARNING - basehttp - "GET /imprimer/options/ HTTP/1.1" 404 3992
+2025-03-21 09:59:16,955 - WARNING - log - Not Found: /imprimer/options/
+2025-03-21 09:59:16,956 - WARNING - basehttp - "GET /imprimer/options/ HTTP/1.1" 404 3992
+2025-03-21 09:59:18,054 - WARNING - log - Not Found: /imprimer/options/
+2025-03-21 09:59:18,055 - WARNING - basehttp - "GET /imprimer/options/ HTTP/1.1" 404 3992
+2025-03-21 10:06:28,514 - INFO - basehttp - "GET /home HTTP/1.1" 200 13301
+2025-03-21 10:06:34,599 - INFO - basehttp - "GET /export HTTP/1.1" 200 11234
+2025-03-21 10:06:47,433 - ERROR - log - Internal Server Error: /export_to_word/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 111, in export_to_word
+    doc.add_paragraph(f"{emp.first_name} {emp.last_name} - {emp.function}")
+AttributeError: 'Employee' object has no attribute 'function'
+2025-03-21 10:06:47,435 - ERROR - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge HTTP/1.1" 500 66440
+2025-03-21 10:12:35,879 - ERROR - log - Internal Server Error: /export_to_word/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 111, in export_to_word
+    doc.add_paragraph(f"{emp.first_name} {emp.last_name} - {emp.function}")
+AttributeError: 'Employee' object has no attribute 'function'
+2025-03-21 10:12:35,882 - ERROR - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge HTTP/1.1" 500 66577
+2025-03-21 10:12:41,001 - INFO - basehttp - "GET /export HTTP/1.1" 200 11031
+2025-03-21 10:12:42,681 - INFO - basehttp - "GET /export HTTP/1.1" 200 11031
+2025-03-21 10:12:54,653 - INFO - basehttp - "GET /export HTTP/1.1" 200 11031
+2025-03-21 10:18:19,919 - INFO - basehttp - "GET /export HTTP/1.1" 200 11224
+2025-03-21 10:18:46,832 - ERROR - log - Internal Server Error: /export_to_word/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 111, in export_to_word
+    doc.add_paragraph(f"{emp.first_name} {emp.last_name} - {emp.function}")
+AttributeError: 'Employee' object has no attribute 'function'
+2025-03-21 10:18:46,838 - ERROR - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge HTTP/1.1" 500 66440
+2025-03-21 10:20:18,179 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 10:20:22,227 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 10:20:30,678 - INFO - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge HTTP/1.1" 200 36995
+2025-03-21 10:22:25,423 - INFO - basehttp - "GET /export HTTP/1.1" 200 11224
+2025-03-21 10:22:29,252 - INFO - basehttp - "GET /export_to_word/?sections=employes HTTP/1.1" 200 36958
+2025-03-21 10:28:17,541 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 10:28:21,411 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 10:29:27,474 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 10:29:29,449 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 10:32:00,618 - INFO - basehttp - "GET /export HTTP/1.1" 200 12609
+2025-03-21 10:32:21,880 - ERROR - log - Internal Server Error: /export_to_word/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 165, in export_to_word
+    stagiaires = Stagiaire.objects.filter(year__lte=this_year)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'year' into field. Choices are: adresse, commentaires, competences, date_debut_stage, date_fin_stage, date_inscription, date_naissance, email, evaluation_stage, formation, id, nom, prenom, statut, telephone, tuteur_entreprise, tuteur_entreprise_id, universite
+2025-03-21 10:32:21,887 - ERROR - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 500 113673
+2025-03-21 10:39:27,913 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 10:39:32,214 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 10:39:42,576 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 10:39:44,571 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 10:39:52,542 - ERROR - log - Internal Server Error: /export_to_word/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 160, in export_to_word
+    stagiaires = Stagiaire.objects.filter(year__lte=this_year)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'year' into field. Choices are: adresse, commentaires, competences, date_debut_stage, date_fin_stage, date_inscription, date_naissance, email, evaluation_stage, formation, id, nom, prenom, statut, telephone, tuteur_entreprise, tuteur_entreprise_id, universite
+2025-03-21 10:39:52,553 - ERROR - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 500 113810
+2025-03-21 10:43:06,531 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 10:43:10,521 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 10:49:36,009 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 10:49:42,315 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 10:49:58,005 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 10:50:08,118 - INFO - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 200 37059
+2025-03-21 10:50:59,129 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 10:51:02,274 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 10:52:01,159 - INFO - basehttp - "GET /export HTTP/1.1" 200 12609
+2025-03-21 10:52:07,264 - INFO - basehttp - "GET /export_to_word/?sections=employes_revenant_de_conge HTTP/1.1" 200 36927
+2025-03-21 10:58:58,256 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 10:59:00,798 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 10:59:06,085 - INFO - basehttp - "GET /export HTTP/1.1" 200 12609
+2025-03-21 10:59:16,736 - INFO - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 200 37352
+2025-03-21 11:03:57,759 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 11:04:01,894 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 11:04:11,507 - INFO - basehttp - "GET /export HTTP/1.1" 200 12609
+2025-03-21 11:04:23,976 - INFO - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 200 37687
+2025-03-21 11:05:09,601 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 11:05:11,189 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 11:06:43,507 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 11:06:45,884 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 11:06:50,074 - INFO - basehttp - "GET /export HTTP/1.1" 200 12609
+2025-03-21 11:06:58,377 - INFO - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 200 37960
+2025-03-21 11:09:39,991 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 11:09:42,067 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 11:09:58,346 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 11:10:00,435 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 11:16:19,472 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 11:16:23,797 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 11:16:41,854 - INFO - basehttp - "GET /export HTTP/1.1" 200 12609
+2025-03-21 11:16:56,563 - ERROR - log - Internal Server Error: /export_to_word/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 259, in export_to_word
+    paragraph.add_run(f"{username.first_name} {username.last_name}")  # Nom et prénom de l'employé connecté
+AttributeError: 'str' object has no attribute 'first_name'
+2025-03-21 11:16:56,565 - ERROR - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 500 72392
+2025-03-21 11:25:07,838 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 11:25:11,459 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 11:25:51,887 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 11:25:53,483 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 11:26:00,236 - ERROR - log - Internal Server Error: /export_to_word/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 115, in export_to_word
+    employee = Employee.objects.get(user__username=username)  # 'user' est la relation avec le modèle User
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: adresse, conge, date_of_birth, echelon, email, first_name, grade, id, image, last_name, matricule, num_tel, observation, password, place_of_birth, responsableorganisationunite, retirement_date, sexe, specialty, specialty_id, start_date, status, username
+2025-03-21 11:26:00,244 - ERROR - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 500 116080
+2025-03-21 11:29:02,417 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 11:29:04,319 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 11:30:29,525 - ERROR - log - Internal Server Error: /export_to_word/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 115, in export_to_word
+    employee = Employee.objects.get(user__username=username)  # 'user' est la relation avec le modèle User
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: adresse, conge, date_of_birth, echelon, email, first_name, grade, id, image, last_name, matricule, num_tel, observation, password, place_of_birth, responsableorganisationunite, retirement_date, sexe, specialty, specialty_id, start_date, status, username
+2025-03-21 11:30:29,535 - ERROR - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 500 116080
+2025-03-21 11:31:34,393 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 11:31:36,315 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 11:31:41,184 - ERROR - log - Internal Server Error: /export_to_word/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 115, in export_to_word
+    employee = Employee.objects.get(user__username=username)  # 'user' est la relation avec le modèle User
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: adresse, conge, date_of_birth, echelon, email, first_name, grade, id, image, last_name, matricule, num_tel, observation, password, place_of_birth, responsableorganisationunite, retirement_date, sexe, specialty, specialty_id, start_date, status, username
+2025-03-21 11:31:41,193 - ERROR - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 500 116080
+2025-03-21 11:38:10,125 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 11:38:13,817 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 11:47:48,225 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 11:47:54,469 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 11:48:02,609 - ERROR - log - Internal Server Error: /export_to_word/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 116, in export_to_word
+    employee = Employee.objects.get(user__username=username)  # 'user' est la relation avec le modèle User
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: adresse, conge, date_of_birth, echelon, email, first_name, grade, id, image, last_name, matricule, num_tel, observation, password, place_of_birth, responsableorganisationunite, retirement_date, sexe, specialty, specialty_id, start_date, status, username
+2025-03-21 11:48:02,622 - ERROR - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 500 116080
+2025-03-21 11:48:28,990 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 11:48:31,921 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 11:48:34,649 - ERROR - log - Internal Server Error: /export_to_word/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 116, in export_to_word
+    employee = Employee.objects.get(user__username=username)  # 'user' est la relation avec le modèle User
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: adresse, conge, date_of_birth, echelon, email, first_name, grade, id, image, last_name, matricule, num_tel, observation, password, place_of_birth, responsableorganisationunite, retirement_date, sexe, specialty, specialty_id, start_date, status, username
+2025-03-21 11:48:34,664 - ERROR - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 500 115943
+2025-03-21 11:59:31,290 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 11:59:35,275 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 11:59:43,110 - ERROR - log - Internal Server Error: /export_to_word/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 116, in export_to_word
+    employee = Employee.objects.get(user__username=username)  # 'user' est la relation avec le modèle User
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: adresse, conge, date_of_birth, echelon, email, first_name, grade, id, image, last_name, matricule, num_tel, observation, password, place_of_birth, responsableorganisationunite, retirement_date, sexe, specialty, specialty_id, start_date, status, username
+2025-03-21 11:59:43,120 - ERROR - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 500 116080
+2025-03-21 11:59:44,160 - ERROR - log - Internal Server Error: /export_to_word/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 116, in export_to_word
+    employee = Employee.objects.get(user__username=username)  # 'user' est la relation avec le modèle User
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: adresse, conge, date_of_birth, echelon, email, first_name, grade, id, image, last_name, matricule, num_tel, observation, password, place_of_birth, responsableorganisationunite, retirement_date, sexe, specialty, specialty_id, start_date, status, username
+2025-03-21 11:59:44,173 - ERROR - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 500 116080
+2025-03-21 11:59:44,978 - ERROR - log - Internal Server Error: /export_to_word/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 116, in export_to_word
+    employee = Employee.objects.get(user__username=username)  # 'user' est la relation avec le modèle User
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: adresse, conge, date_of_birth, echelon, email, first_name, grade, id, image, last_name, matricule, num_tel, observation, password, place_of_birth, responsableorganisationunite, retirement_date, sexe, specialty, specialty_id, start_date, status, username
+2025-03-21 11:59:44,982 - ERROR - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 500 116080
+2025-03-21 11:59:45,652 - ERROR - log - Internal Server Error: /export_to_word/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 116, in export_to_word
+    employee = Employee.objects.get(user__username=username)  # 'user' est la relation avec le modèle User
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 623, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: adresse, conge, date_of_birth, echelon, email, first_name, grade, id, image, last_name, matricule, num_tel, observation, password, place_of_birth, responsableorganisationunite, retirement_date, sexe, specialty, specialty_id, start_date, status, username
+2025-03-21 11:59:45,660 - ERROR - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 500 116080
+2025-03-21 12:13:13,358 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 12:13:16,118 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 12:13:45,150 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 12:13:47,473 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 12:13:54,229 - INFO - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 200 37991
+2025-03-21 12:13:56,712 - INFO - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 200 37991
+2025-03-21 12:14:09,754 - INFO - basehttp - "GET /export HTTP/1.1" 200 12609
+2025-03-21 12:14:20,091 - INFO - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 200 37991
+2025-03-21 12:16:15,439 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 12:16:17,993 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 12:16:21,956 - INFO - basehttp - "GET /export HTTP/1.1" 200 12614
+2025-03-21 12:16:32,953 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-21 12:16:35,344 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-21 12:17:21,690 - INFO - basehttp - "GET /export HTTP/1.1" 200 12458
+2025-03-21 12:17:36,650 - INFO - basehttp - "GET /export HTTP/1.1" 200 12469
+2025-03-21 12:18:57,681 - INFO - basehttp - "GET /export HTTP/1.1" 200 12333
+2025-03-21 12:19:08,111 - INFO - basehttp - "GET /export HTTP/1.1" 200 12333
+2025-03-21 12:19:58,323 - INFO - basehttp - "GET /export HTTP/1.1" 200 12333
+2025-03-21 12:21:36,111 - INFO - basehttp - "GET /export HTTP/1.1" 200 12289
+2025-03-21 12:21:38,001 - INFO - basehttp - "GET /export HTTP/1.1" 200 12289
+2025-03-21 12:21:58,754 - INFO - basehttp - "GET /export HTTP/1.1" 200 12301
+2025-03-21 12:22:00,411 - INFO - basehttp - "GET /export HTTP/1.1" 200 12301
+2025-03-21 12:22:19,564 - INFO - basehttp - "GET /export HTTP/1.1" 200 12300
+2025-03-21 12:23:40,846 - INFO - basehttp - "GET /export HTTP/1.1" 200 12319
+2025-03-21 12:23:44,742 - INFO - basehttp - "GET /home HTTP/1.1" 200 13165
+2025-03-21 12:25:53,746 - INFO - basehttp - "GET /home HTTP/1.1" 200 13193
+2025-03-21 12:25:54,745 - INFO - basehttp - "GET /home HTTP/1.1" 200 13193
+2025-03-21 12:27:39,608 - INFO - basehttp - "GET /home HTTP/1.1" 200 13193
+2025-03-21 12:29:06,679 - INFO - basehttp - "GET /home HTTP/1.1" 200 13193
+2025-03-21 12:29:09,479 - INFO - basehttp - "GET /home HTTP/1.1" 200 13193
+2025-03-21 12:29:11,513 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 12016
+2025-03-21 12:29:13,439 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 12016
+2025-03-21 12:29:14,011 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 10088
+2025-03-21 12:29:15,223 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 10088
+2025-03-21 12:29:15,788 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 10664
+2025-03-21 12:29:17,060 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 10429
+2025-03-21 12:29:18,140 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 11292
+2025-03-21 12:29:19,322 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 10738
+2025-03-21 12:29:20,568 - INFO - basehttp - "GET /stagiairelist/ HTTP/1.1" 200 10257
+2025-03-21 12:29:22,289 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 10010
+2025-03-21 12:29:26,703 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 10010
+2025-03-21 12:29:29,830 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 10010
+2025-03-21 12:29:32,694 - INFO - basehttp - "GET /export HTTP/1.1" 200 12347
+2025-03-21 12:29:35,713 - INFO - basehttp - "GET /home HTTP/1.1" 200 13193
+2025-03-21 12:29:38,148 - INFO - basehttp - "GET /home HTTP/1.1" 200 13193
+2025-03-21 12:29:39,421 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 12016
+2025-03-21 12:29:43,398 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 10664
+2025-03-21 12:29:45,152 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 10429
+2025-03-21 12:29:46,481 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 11292
+2025-03-21 12:29:48,454 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 10738
+2025-03-21 12:29:50,002 - INFO - basehttp - "GET /stagiairelist/ HTTP/1.1" 200 10257
+2025-03-21 12:29:53,190 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 10010
+2025-03-21 12:29:58,020 - INFO - basehttp - "GET /export HTTP/1.1" 200 12347
+2025-03-21 12:30:05,146 - INFO - basehttp - "GET /home HTTP/1.1" 200 13193
+2025-03-21 12:30:10,039 - INFO - basehttp - "GET /Employee/ HTTP/1.1" 200 10339
+2025-03-21 12:30:39,847 - INFO - basehttp - "POST /Employee/ HTTP/1.1" 302 0
+2025-03-21 12:30:39,885 - INFO - basehttp - "GET /home HTTP/1.1" 200 13193
+2025-03-21 12:30:54,901 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 12016
+2025-03-21 12:30:56,542 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 10088
+2025-03-21 12:31:01,731 - INFO - basehttp - "GET /fonction/recherche/?criteres=designation&query=AKAYOA HTTP/1.1" 200 9033
+2025-03-21 12:31:10,897 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 10664
+2025-03-21 12:34:15,195 - INFO - basehttp - "GET /Employee/ HTTP/1.1" 200 10339
+2025-03-21 12:34:46,698 - INFO - basehttp - "POST /Employee/ HTTP/1.1" 200 10339
+2025-03-21 12:35:06,486 - INFO - basehttp - "POST /Employee/ HTTP/1.1" 302 0
+2025-03-21 12:35:06,511 - INFO - basehttp - "GET /admin/ HTTP/1.1" 302 0
+2025-03-21 12:35:06,594 - INFO - basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+2025-03-21 12:35:09,861 - INFO - basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+2025-03-21 12:35:09,862 - INFO - basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+2025-03-21 12:35:09,869 - INFO - basehttp - "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+2025-03-21 12:35:09,872 - INFO - basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 200 18559
+2025-03-21 12:35:09,887 - INFO - basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2025-03-21 12:35:09,890 - INFO - basehttp - "GET /static/admin/css/base.css HTTP/1.1" 200 21310
+2025-03-21 12:35:09,891 - INFO - basehttp - "GET /static/admin/css/login.css HTTP/1.1" 200 958
+2025-03-21 12:35:23,220 - INFO - basehttp - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2025-03-21 12:35:23,288 - INFO - basehttp - "GET /admin/ HTTP/1.1" 200 12986
+2025-03-21 12:35:23,391 - INFO - basehttp - "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+2025-03-21 12:35:23,415 - INFO - basehttp - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2025-03-21 12:35:23,438 - INFO - basehttp - "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2025-03-21 12:36:12,136 - INFO - basehttp - "GET /admin/Stagiaire/stagiaire/ HTTP/1.1" 200 12102
+2025-03-21 12:36:12,231 - INFO - basehttp - "GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+2025-03-21 12:36:12,243 - INFO - basehttp - "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+2025-03-21 12:36:12,255 - INFO - basehttp - "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+2025-03-21 12:36:12,264 - INFO - basehttp - "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2025-03-21 12:36:12,323 - INFO - basehttp - "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+2025-03-21 12:36:12,324 - INFO - basehttp - "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2025-03-21 12:36:12,337 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-21 12:36:12,341 - INFO - basehttp - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+2025-03-21 12:36:12,346 - INFO - basehttp - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2025-03-21 12:36:12,361 - INFO - basehttp - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+2025-03-21 12:36:12,396 - INFO - basehttp - "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+2025-03-21 12:36:12,501 - INFO - basehttp - "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2025-03-21 12:36:39,068 - INFO - basehttp - "GET /admin/ HTTP/1.1" 200 12986
+2025-03-21 12:36:39,702 - INFO - basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2025-03-21 12:36:39,761 - INFO - basehttp - "GET /admin/ HTTP/1.1" 200 12986
+2025-03-21 12:36:42,450 - INFO - basehttp - "GET /Employee/ HTTP/1.1" 200 10617
+2025-03-21 12:36:54,207 - INFO - basehttp - "POST /Employee/ HTTP/1.1" 302 0
+2025-03-21 12:36:54,251 - INFO - basehttp - "GET /home HTTP/1.1" 200 13471
+2025-03-21 12:38:49,625 - INFO - basehttp - "GET /home HTTP/1.1" 200 13471
+2025-03-21 12:40:37,929 - INFO - basehttp - "GET /home HTTP/1.1" 200 13471
+2025-03-21 12:40:42,467 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 12294
+2025-03-21 12:40:43,330 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 10942
+2025-03-21 12:41:30,961 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 10942
+2025-03-21 12:41:54,637 - INFO - basehttp - "GET /home HTTP/1.1" 200 13471
+2025-03-21 12:42:18,883 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 12294
+2025-03-21 12:42:19,622 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 10942
+2025-03-21 12:42:20,823 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 11570
+2025-03-21 12:42:21,743 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 11016

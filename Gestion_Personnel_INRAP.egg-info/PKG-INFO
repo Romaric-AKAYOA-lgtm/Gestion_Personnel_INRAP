@@ -1,9 +1,14 @@
 Metadata-Version: 1.2
 Name: Gestion-Personnel-INRAP
-Version: 0.1
-Summary: UNKNOWN
-Home-page: UNKNOWN
+Version: 1.0
+Summary: Application de gestion du personnel INRAP
+Home-page: https://github.com/TonRepo/Gestion_Personnel_INRAP
+Author: Ton Nom
+Author-email: ton.email@example.com
 License: UNKNOWN
 Description: UNKNOWN
 Platform: UNKNOWN
-Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6

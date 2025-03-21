@@ -101,13 +101,11 @@
         .main-content {
             margin-left: 240px;
             margin-top: 70px;
-       
             padding: 30px;
             flex: 1;
             transition: margin-left 0.3s ease;
             overflow-y: auto;
             height: calc(100vh - 150px);
-      
         }
         .main-content.collapsed {
             margin-left: 60px;
@@ -138,6 +136,20 @@
                 left: 10px;
                 z-index: 1001;
             }
+            .sidebar {
+                position: absolute;
+                top: 70px;
+                left: -240px;
+                width: 240px;
+                height: 100vh;
+                transition: all 0.3s;
+            }
+            .sidebar.show {
+                left: 0;
+            }
+            .main-content {
+                margin-left: 0;
+            }
         }
     </style>
 </head>
@@ -145,7 +157,7 @@
 
         <!-- En-tête -->
         <header class="bg-white py-3 shadow">
-            <div class="container-fluid  d-flex justify-content-between align-items-center">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
                 <!-- Logo de l'INRAP -->
                 <img src="{% static 'image/administration-1867877_1280.jpg' %}" alt="INRAP" class="img-fluid" width="70">
 
@@ -159,32 +171,29 @@
             </div>
         </header>
 
-    
-    <div class="container-fluid  ">
+    <div class="container-fluid">
         <div class="row">
             <!-- Barre latérale (colonne gauche) -->
             <div class="col-md-2 sidebar" id="sidebar">
                 <div class="sidebar-header">
-                    <!-- Bouton de bascule pour les grands écrans -->
-                    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+                    <!-- Bouton de bascule pour les petits écrans -->
+                    <button class="toggle-btn sidebar-toggle-btn" onclick="toggleSidebar()">☰</button>
                 </div>
                 <a href="{% url 'home' %}"><i class="fas fa-home"></i><span> Accueil</span></a>
                 <a href="{% url 'unite:unite' %}"><i class="fas fa-home"></i> <span>Unite</span></a>
                 <a href="{% url 'fonction:fonction' %}"><i class="fas fa-home"></i> <span>Fonction</span></a>
-                <a href="{% url 'conge:liste_conges' %}"><i class="fas fa-home"></i> <span>Congé</span></a>
                 <a href="{% url 'specialite:specialite' %}"><i class="fas fa-home"></i> <span>Spécialité</span></a>
                 <a href="{% url 'OrganizationalUnit:list' %}"><i class="fas fa-cogs"></i> <span>Services</span></a>
-                <a href="{% url 'stagiaire:stagiaire_list' %}"><i class="fas fa-users"></i> <span>Stagiaire</span></a>
-                <a href="{% url 'RespensableOrganisationUnite:list' %}"><i class="fas fa-users"></i> <span>Agent Service</span></a>
                 <a href="{% url 'Employee:list' %}"><i class="fas fa-users"></i> <span>Employés</span></a>   
-                 <a href="{% url 'Employee:login' %}"><i class="fas fa-sign-out-alt"></i><span> Se Déconnecter</span></a>
-                 <a href="{% url 'print_options' %}" class="text-center">Ouvrir le modal d'impression</a>
-
-                 <a href="{% url 'Employee:generate_employee_pdf' %}"><i class="fas fa-sign-out-alt"></i><span> Imprimer PDF</span></a>
-           </div>
+                <a href="{% url 'RespensableOrganisationUnite:list' %}"><i class="fas fa-users"></i> <span>Agent Service</span></a>
+                <a href="{% url 'stagiaire:stagiaire_list' %}"><i class="fas fa-users"></i> <span>Stagiaire</span></a>
+                <a href="{% url 'conge:liste_conges' %}"><i class="fas fa-home"></i> <span>Congé</span></a>
+                <a href="{% url 'export' %}"><i class="fas fa-sign-out-alt"></i><span>Imprimer</span></a>
+                <a href="{% url 'Employee:login' %}"><i class="fas fa-sign-out-alt"></i><span> Se Déconnecter</span></a>
+            </div>
             
             <!-- Contenu principal (colonne droite) -->
-            <div class="col-md-10 main-content " id="main-content">
+            <div class="col-md-10 main-content" id="main-content">
                 {% block contenue %}
                 <!-- Le contenu principal de chaque page ici -->
                 {% endblock %}
@@ -194,7 +203,7 @@
     
     <!-- Pied de page -->
     <footer class="">
-        <div class="container-fluid ">
+        <div class="container-fluid">
             <div class="row">
                 <!-- Colonne gauche avec largeur 6 -->
                 <div class="col-md-2">
@@ -208,7 +217,6 @@
                             {% endif %}
                         </div>
                     </div>
-                    <!-- Vous pouvez y ajouter des informations ou un logo -->
                 </div>
                 
             <!-- Colonne droite avec largeur 10 -->
@@ -224,7 +232,7 @@
         function toggleSidebar() {
             const sidebar = document.getElementById("sidebar");
             const mainContent = document.getElementById("main-content");
-            sidebar.classList.toggle("collapsed");
+            sidebar.classList.toggle("show");
             mainContent.classList.toggle("collapsed");
         }
     </script>

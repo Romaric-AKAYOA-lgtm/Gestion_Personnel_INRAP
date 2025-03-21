@@ -43,7 +43,6 @@
         <p class="lead">Optimisez la gestion de vos employés avec un suivi efficace et structuré.</p>
     </div>
 </div>
-
 <!-- Statistiques sous forme de cartes -->
 <div class="row text-center my-4">
     
@@ -52,54 +51,54 @@
             <h5 class="text-primary">Employés en congé</h5>
            {% for conge in employes_en_conge %}
             <li class="list-group-item">
-                
-                <h5 class="">{{ conge.employe.last_name}} {{ conge.employe.first_name }} </h5>
-                <p>Date debut:  {{ conge.date_debut}}</p>
+                <h5>{{ conge.employe.last_name}} {{ conge.employe.first_name }} </h5>
+                <p>Date début:  {{ conge.date_debut}}</p>
                 <p>Date de fin:  {{ conge.date_fin}}</p>
              </li>
             {% empty %}
-            <li class="list-group-item text-muted">Aucune employé en congé</li>
+            <li class="list-group-item text-muted">Aucun employé en congé</li>
             {% endfor %}
         </div>
     </div>
+    
     <div class="col-md-3">
         <div class="card shadow p-3">
             <h5 class="text-warning">Employés en retraite</h5>
-            {% for employer_retraiter in employes_en_retraite   %}
+            {% for employer_retraiter in employes_en_retraite %}
             <li class="list-group-item">
-                
-                <h5 class="">{{ employer_retraiter.last_name}} {{employer_retraiter.first_name }} </h5>
-                <p>Date De naissance:  {{ employer_retraiter.date_of_birth }}</p>
-                <p>Date debut service:  {{ employer_retraiter.start_date}}</p>
-                <p>Date de retaite:  {{ employer_retraiter.retirement_date}}</p>
+                <h5>{{ employer_retraiter.last_name}} {{ employer_retraiter.first_name }}</h5>
+                <p>Date de naissance:  {{ employer_retraiter.date_of_birth }}</p>
+                <p>Date début service:  {{ employer_retraiter.start_date}}</p>
+                <p>Date de retraite:  {{ employer_retraiter.retirement_date}}</p>
              </li>
             {% empty %}
-            <li class="list-group-item text-muted">Aucune employé en congé</li>
+            <li class="list-group-item text-muted">Aucun employé en retraite</li>
             {% endfor %}
          </div>
     </div>
+    
     <div class="col-md-3">
         <div class="card shadow p-3">
             <h5 class="text-success">Employés de retour</h5>
-            {% for conge in employes_de_retour   %}
+            {% for conge in employes_de_retour %}
             <li class="list-group-item">
-                
-                <h5 class="">{{ conge.employe.last_name}} {{ conge.employe.first_name }} </h5>
-                <p>Date debut:  {{ conge.date_debut}}</p>
+                <h5>{{ conge.employe.last_name}} {{ conge.employe.first_name }}</h5>
+                <p>Date début:  {{ conge.date_debut}}</p>
                 <p>Date de fin:  {{ conge.date_fin}}</p>
              </li>
             {% empty %}
-            <li class="list-group-item text-muted">Aucune employé en congé</li>
+            <li class="list-group-item text-muted">Aucun employé de retour</li>
             {% endfor %}
         </div>
     </div>
+    
     <div class="col-md-3">
         <div class="card shadow p-3">
             <h5 class="text-danger">Total Employés</h5>
             <div class="text-justify">
-                <p>Employés de moins de 30 ans :    {{tranche_30}} </p>
-                <p>Employés de 30 à 50 ans :   {{ tranche_50}}</p>
-                <p>Employés de 50 à  60 ans :  {{ tranche_50_plus}} </p>
+                <p>Employés de moins de 30 ans : {{ tranche_30 }} </p>
+                <p>Employés de 30 à 50 ans : {{ tranche_50 }}</p>
+                <p>Employés de 50 à 60 ans : {{ tranche_50_plus }} </p>
             </div>
         </div>
     </div>
@@ -117,7 +116,7 @@
                             style="width: 200px; height: 200px; object-fit: cover;" alt="{{ employe.nom }}">
                         <div class="mt-3 text-white">
                             <h5 class="text-white">{{ employe.last_name }} {{ employe.first_name }}</h5>
-                            <p class="text-white"><strong>Specialite:</strong> {{ employe.specialty }}</p>
+                            <p class="text-white"><strong>Spécialité:</strong> {{ employe.specialty }}</p>
                         </div>
                     </div>
                 </div>
@@ -142,7 +141,7 @@
             <ul class="list-group">
                 {% for unite in employes_par_unite %}
                 <li class="list-group-item">
-                    <strong>{{ unite.designation}}</strong>: {{ unite.nombre_employes }} employés
+                    <strong>{{ unite.designation }}</strong>: {{ unite.nombre_employes }} employés
                 </li>
                 {% empty %}
                 <li class="list-group-item text-muted">Aucune unité organisationnelle trouvée.</li>
@@ -158,7 +157,7 @@
         <div class="card shadow p-3">
             <h4 class="text-info">Unités Organisationnelles</h4>
             <ul class="list-group">
-                {% for unite in unites_organisationnelles %}
+                {% for unite in responsables_organisation_unite %}
                 <li class="list-group-item">{{ unite.name }}</li>
                 {% empty %}
                 <li class="list-group-item text-muted">Aucune unité organisationnelle enregistrée.</li>
@@ -167,6 +166,7 @@
         </div>
     </div>
 </div>
+
 
 <!-- Script pour recharger la page lorsqu'on y revient -->
 <script>

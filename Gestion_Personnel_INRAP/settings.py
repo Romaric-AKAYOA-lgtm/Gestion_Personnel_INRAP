@@ -71,12 +71,26 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'Gestion_Personnel_INRAP.wsgi.application'
-
+"""    
 # Database
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+ """
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'Gestion_Personnel_INRAP_db',  # Remplace par le nom de ta base
+        'USER': 'root',  # Par défaut dans XAMPP
+        'PASSWORD': '',  # Laisse vide si aucun mot de passe
+        'HOST': 'localhost',  
+        'PORT': '3306',  
+          'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }
     }
 }
 

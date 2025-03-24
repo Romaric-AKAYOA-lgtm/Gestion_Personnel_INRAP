@@ -57,7 +57,7 @@ class Employee(models.Model):
         choices=STATUS_CHOICES,
           blank=True,
         null=True,
-        default='active',
+        default='Actif',
         help_text="Statut de l'agent"
     )
     sexe = models.CharField(

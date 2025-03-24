@@ -63,9 +63,6 @@
                     <td>{{ responsable.date_debut }}</td>
                     <td>{{ responsable.date_fin }}</td>
                     <td class="">
-                        <a href="{% url 'RespensableOrganisationUnite:detail' responsable.id %}" class="btn btn-info btn-sm mb-1">
-                            <i class="bi bi-eye"></i> Détails
-                        </a>
                         <a href="{% url 'RespensableOrganisationUnite:update' responsable.id %}" class="btn btn-warning btn-sm mb-1">
                             <i class="bi bi-pencil"></i> Modifier
                         </a>

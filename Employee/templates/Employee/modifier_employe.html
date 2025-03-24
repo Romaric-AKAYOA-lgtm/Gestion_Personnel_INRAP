@@ -25,31 +25,31 @@
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label for="first_name" class="form-label">Prénom</label>
-                                <input type="text" class="form-control" id="first_name" name="first_name" value="{{ form.first_name.value }}" required>
+                                <input type="text" class="form-control" id="first_name" name="first_name" value="{{ form.first_name.value }}" >
                             </div>
                             <div class="col-md-6">
                                 <label for="last_name" class="form-label">Nom</label>
-                                <input type="text" class="form-control" id="last_name" name="last_name" value="{{ form.last_name.value }}" required>
+                                <input type="text" class="form-control" id="last_name" name="last_name" value="{{ form.last_name.value }}" >
                             </div>
                             <div class="col-md-6">
                                 <label for="date_of_birth" class="form-label">Date de Naissance</label>
-                                <input type="date" class="form-control" id="date_of_birth" name="date_of_birth" value="{{ form.date_of_birth.value|date:'Y-m-d' }}" required>
+                                <input type="date" class="form-control" id="date_of_birth" name="date_of_birth" value="{{ form.date_of_birth.value|date:'Y-m-d' }}" >
                             </div>
                             <div class="col-md-6">
                                 <label for="place_of_birth" class="form-label">Lieu de Naissance</label>
-                                <input type="text" class="form-control" id="place_of_birth" name="place_of_birth" value="{{ form.place_of_birth.value }}" required>
+                                <input type="text" class="form-control" id="place_of_birth" name="place_of_birth" value="{{ form.place_of_birth.value }}" >
                             </div>
                             <div class="col-md-6">
                                 <label for="start_date" class="form-label">Date de Prise de Service</label>
-                                <input type="date" class="form-control" id="start_date" name="start_date" value="{{ form.start_date.value|date:'Y-m-d' }}" required>
+                                <input type="date" class="form-control" id="start_date" name="start_date" value="{{ form.start_date.value|date:'Y-m-d' }}" >
                             </div>
                             <div class="col-md-6">
                                 <label for="matricule" class="form-label">Matricule</label>
-                                <input type="text" class="form-control" id="matricule" name="matricule" value="{{ form.matricule.value }}" required>
+                                <input type="text" class="form-control" id="matricule" name="matricule" value="{{ form.matricule.value }}" >
                             </div>
                             <div class="col-md-6">
                                 <label for="grade" class="form-label">Grade</label>
-                                <input type="text" class="form-control" id="grade" name="grade" value="{{ form.grade.value }}" required>
+                                <input type="text" class="form-control" id="grade" name="grade" value="{{ form.grade.value }}" >
                             </div>
                             <div class="col-md-6">
                                 <label for="echelon" class="form-label">Échelon</label>
@@ -57,7 +57,7 @@
                             </div>
                             <div class="col-md-6">
                                 <label for="specialty" class="form-label">Spécialité</label>
-                                <select class="form-select" id="specialty" name="specialty" required>
+                                <select class="form-select" id="specialty" name="specialty" >
                                     {% for specialite in specialite %}
                                         <option value="{{ specialite.id }}" {% if form.specialty.value == specialite.id %}selected{% endif %}>{{ specialite.designation }}</option>
                                     {% endfor %}
@@ -72,11 +72,11 @@
                             </div>
                             <div class="col-md-6">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" value="{{ form.email.value }}" required>
+                                <input type="email" class="form-control" id="email" name="email" value="{{ form.email.value }}" >
                             </div>
                             <div class="col-md-6">
                                 <label for="num_tel" class="form-label">Numéro de Téléphone</label>
-                                <input type="tel" class="form-control" id="num_tel" name="num_tel" value="{{ form.num_tel.value }}" required>
+                                <input type="tel" class="form-control" id="num_tel" name="num_tel" value="{{ form.num_tel.value }}" >
                             </div>
                             <div class="col-md-6">
                                 <label for="image" class="form-label">Photo</label>

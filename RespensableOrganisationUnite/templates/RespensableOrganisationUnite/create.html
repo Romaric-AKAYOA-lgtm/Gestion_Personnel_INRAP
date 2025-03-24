@@ -1,12 +1,12 @@
 {% extends 'template_base.html' %}
 
 {% block contenue %}
-<div class="container mt-4">
+<div class="container mt-4">   
     <div class="modal fade show" id="modalResponsable" tabindex="-1" aria-labelledby="modalResponsableLabel" aria-hidden="true" style="display: block;">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header bg-primary text-white">
-                    <h5 class="modal-title" id="modalResponsableLabel">Modifier un Responsable d'Unité Organisationnelle</h5>
+                    <h5 class="modal-title" id="modalResponsableLabel">Ajouter un Responsable d'Unité Organisationnelle</h5>
                 </div>
                 <div class="modal-body">
                     {% if form.errors %}
@@ -23,68 +23,52 @@
                     </div>
                     {% endif %}
 
-                 
                     <form action="{% url 'RespensableOrganisationUnite:create' %}" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
                         {% csrf_token %}
 
                         <div class="mb-3">
-                            <label for="unite" class="form-label">Unité Organisationnelle</label>
-                            <select class="form-select input-focus-blue" id="unite" name="unite" required>
+                            <label for="organizational_unit" class="form-label">Unité Organisationnelle</label>
+                            <select class="form-select" id="organizational_unit" name="organizational_unit" required>
                                 <option value="" selected>-- Sélectionnez une unité organisationnelle --</option>
-                                {% for  organizational_units_dic in  organizational_units_dic %}
-                                    <option value="{{ organizational_unit_id }}" {% if organizational_unit_id == form.unite.value %}selected{% endif %}>{{  organizational_units_dic.name }}</option>
+                                {% for organizational_unit in organizational_units %}
+                                    <option value="{{ organizational_unit.id }}" {% if form.unite.value == organizational_unit.id %}selected{% endif %}>{{ organizational_unit.name }}</option>
                                 {% endfor %}
                             </select>
-                            {% if form.unite.errors %}
-                                <div class="invalid-feedback">{{ form.unite.errors }}</div>
-                            {% endif %}
                         </div>
 
                         <div class="mb-3">
                             <label for="responsable" class="form-label">Responsable</label>
-                            <select class="form-select input-focus-blue" id="responsable" name="responsable" required>
+                            <select class="form-select" id="responsable" name="responsable" required>
                                 <option value="" selected>-- Sélectionnez un responsable --</option>
-                                {% for employee_id, employee_name in employee_dict.items %}
-                                    <option value="{{ employee_id }}" {% if employee_id == form.responsable.value %}selected{% endif %}>{{ employee_name }}</option>
+                                {% for employee in employees %}
+                                    <option value="{{ employee.id }}" {% if form.responsable.value == employee.id %}selected{% endif %}>{{ employee.full_name }}</option>
                                 {% endfor %}
                             </select>
-                            {% if form.responsable.errors %}
-                                <div class="invalid-feedback">{{ form.responsable.errors }}</div>
-                            {% endif %}
                         </div>
 
                         <div class="mb-3">
                             <label for="function" class="form-label">Fonction</label>
-                            <select class="form-select input-focus-blue" id="function" name="function" required>
+                            <select class="form-select" id="function" name="function" required>
                                 <option value="" selected>-- Sélectionnez une fonction --</option>
-                                {% for function_id, function_name in functions_dict.items %}
-                                    <option value="{{ function_id }}" {% if function_id == form.function.value %}selected{% endif %}>{{ function_name }}</option>
+                                {% for function in functions %}
+                                    <option value="{{ function.id }}" {% if form.function.value == function.id %}selected{% endif %}>{{ function.designation }}</option>
                                 {% endfor %}
                             </select>
-                            {% if form.function.errors %}
-                                <div class="invalid-feedback">{{ form.function.errors }}</div>
-                            {% endif %}
                         </div>
 
                         <div class="mb-3">
                             <label for="date_debut" class="form-label">Date de Début</label>
-                            <input type="date" class="form-control input-focus-blue" id="date_debut" name="date_debut" value="{{ form.date_debut.value }}" required>
-                            {% if form.date_debut.errors %}
-                                <div class="invalid-feedback">{{ form.date_debut.errors }}</div>
-                            {% endif %}
+                            <input type="date" class="form-control" id="date_debut" name="date_debut" value="{{ form.date_debut.value }}" required>
                         </div>
 
                         <div class="mb-3">
                             <label for="date_fin" class="form-label">Date de Fin</label>
-                            <input type="date" class="form-control input-focus-blue" id="date_fin" name="date_fin" value="{{ form.date_fin.value }}">
-                            {% if form.date_fin.errors %}
-                                <div class="invalid-feedback">{{ form.date_fin.errors }}</div>
-                            {% endif %}
+                            <input type="date" class="form-control" id="date_fin" name="date_fin" value="{{ form.date_fin.value }}">
                         </div>
 
                         <div class="text-end">
                             <a href="{% url 'RespensableOrganisationUnite:list' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
-                            <button type="submit" class="btn btn-primary px-4 py-2 btn-sm">Modifier</button>
+                            <button type="submit" class="btn btn-primary px-4 py-2 btn-sm">Ajouter</button>
                         </div>
                     </form>
                 </div>

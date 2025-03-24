@@ -2,17 +2,31 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 
 from Employee.models import Employee
+from Employee.views import get_username_from_session
 from OrganizationalUnit.models import OrganizationalUnit
 from fonction.models import Fonction
 from .models import ResponsableOrganisationUnite
 from .forms import ResponsableOrganisationUniteForm
 # Liste des Responsables
 def liste_RespensableOrganisationUnite(request):
+    username = get_username_from_session(request)
+    # Vérification de l'authentification de l'utilisateur
+    if not username:
+        return redirect('OrganizationalUnit:login')  #
     responsables = ResponsableOrganisationUnite.objects.all()  # Récupérer tous les responsables
-    return render(request, 'respensableorganisationunite/list.html', {'responsables': responsables})
+    return render(request, 'respensableorganisationunite/list.html', {'responsables': responsables, 'username':username })
 
 # Ajouter un Responsable
 def ajouter_RespensableOrganisationUnite(request):
+    username = get_username_from_session(request)
+
+    # Vérification de l'authentification de l'utilisateur
+    if not username:
+        return redirect('OrganizationalUnit:login')  #
+    organizational_units = OrganizationalUnit.objects.all().order_by('name')
+    employees = Employee.objects.filter(status='Actif')
+    functions = Fonction.objects.all().order_by('designation')
+    
     if request.method == 'POST':
         form = ResponsableOrganisationUniteForm(request.POST)
         if form.is_valid():
@@ -21,16 +35,25 @@ def ajouter_RespensableOrganisationUnite(request):
             return redirect('RespensableOrganisationUnite:list')
     else:
         form = ResponsableOrganisationUniteForm()
-    return render(request, 'respensableorganisationunite/create.html', {'form': form})
+    
+    return render(request, 'respensableorganisationunite/create.html', {
+        'organizational_units': organizational_units,
+        'employees': employees,
+        'functions': functions,
+        'username':username , 
+        'form': form
+    })
 
 # Modifier un Responsable
 def modifier_RespensableOrganisationUnitet(request, id):
+    username = get_username_from_session(request)
+
+    # Vérification de l'authentification de l'utilisateur
+    if not username:
+        return redirect('OrganizationalUnit:login')  #
     organizational_units = OrganizationalUnit.objects.all()
-    employees = Employee.objects.all()
+    employees = Employee.objects.filter(status='Actif')
     functions = Fonction.objects.all()
-    organizational_units_dict = {unit.id: unit.name for unit in organizational_units}
-    employee_dict = {employee.id: employee.full_name for employee in employees}
-    functions_dict = {function.id: function.name for function in functions}
     
     responsable = get_object_or_404(ResponsableOrganisationUnite, id=id)
     
@@ -43,13 +66,20 @@ def modifier_RespensableOrganisationUnitet(request, id):
     else:
         form = ResponsableOrganisationUniteForm(instance=responsable)
     
-    return render(request, 'respensableorganisationunite/modifier.html', {'form': form,
-        'organizational_units_dict': organizational_units_dict,
-        'employee_dict': employee_dict,
-        'functions_dict': functions_dict,})
+    return render(request, 'respensableorganisationunite/modifier.html', {
+        'organizational_units': organizational_units,
+        'employee': employees,
+        'functions': functions, 
+        'username':username , 
+        'form': form,})
 
 # Supprimer un Responsable
 def supprimer_RespensableOrganisationUnite(request, id):
+    username = get_username_from_session(request)
+
+    # Vérification de l'authentification de l'utilisateur
+    if not username:
+        return redirect('OrganizationalUnit:login')  #
     responsable = get_object_or_404(ResponsableOrganisationUnite, id=id)  # Récupérer le responsable existant par son ID
     
     if request.method == 'POST':
@@ -57,10 +87,15 @@ def supprimer_RespensableOrganisationUnite(request, id):
         messages.success(request, "Responsable supprimé avec succès.")  # Message de succès
         return redirect('RespensableOrganisationUnite:list')  # Rediriger vers la liste des responsables
 
-    return render(request, 'respensableorganisationunite/supprimer.html', {'responsable': responsable})
+    return render(request, 'respensableorganisationunite/supprimer.html', {'responsable': responsable, 'username':username })
 
 
 def search_responsable_unite(request):
+    username = get_username_from_session(request)
+
+    # Vérification de l'authentification de l'utilisateur
+    if not username:
+        return redirect('OrganizationalUnit:login')  #
     query = request.GET.get("query", "")
     filter_by = request.GET.get("filter", "")
 
@@ -78,4 +113,5 @@ def search_responsable_unite(request):
         elif filter_by == "date_fin":
             results = results.filter(date_fin__icontains=query)
 
-    return render(request, "RespensableOrganisationUnite/search.html", {"results": results, "query": query, "filter": filter_by})
+    return render(request, "RespensableOrganisationUnite/search.html", {"results": results, "query": query, "filter": filter_by, 
+                                                                        'username':username  })

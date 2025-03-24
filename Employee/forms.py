@@ -42,28 +42,13 @@ class EmployeeForm(forms.ModelForm):
         cleaned_data = super().clean()
         dob = cleaned_data.get('date_of_birth')
         start_date = cleaned_data.get('start_date')
-        retirement_date = cleaned_data.get('retirement_date')
-        matricule = cleaned_data.get('matricule')
-        email = cleaned_data.get('email')
-        num_tel = cleaned_data.get('num_tel')
+
 
         # Vérification de l'âge minimum pour la date de service
         if dob and start_date and start_date < (dob + relativedelta(years=18)):
             self.add_error('start_date', "La date de service doit être au moins 18 ans après la date de naissance.")
 
-        # Vérification de la cohérence entre date de service et date de retraite
-        if start_date and retirement_date and start_date >= retirement_date:
-            self.add_error('start_date', "La date de service doit être inférieure à la date de retraite.")
 
-        # Vérification des doublons
-        if Employee.objects.filter(matricule=matricule).exists():
-            self.add_error('matricule', "Ce matricule est déjà utilisé.")
-
-        if email and Employee.objects.filter(email=email).exists():
-            self.add_error('email', "Cet email est déjà utilisé.")
-
-        if num_tel and Employee.objects.filter(num_tel=num_tel).exists():
-            self.add_error('num_tel', "Ce numéro de téléphone est déjà utilisé.")
 
         return cleaned_data
 

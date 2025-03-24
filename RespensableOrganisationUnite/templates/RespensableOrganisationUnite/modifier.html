@@ -27,6 +27,7 @@
                     <form action="{% url 'RespensableOrganisationUnite:update' form.instance.pk %}" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
                         {% csrf_token %}
 
+                        <!-- Unité Organisationnelle -->
                         <div class="mb-3">
                             <label for="unite" class="form-label">Unité Organisationnelle</label>
                             <select class="form-select input-focus-blue" id="unite" name="unite" required>

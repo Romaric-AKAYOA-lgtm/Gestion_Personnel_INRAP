@@ -15495,3 +15495,502 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'modifier' not found. 'modifi
 2025-03-24 21:46:00,278 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
 2025-03-24 21:46:01,407 - WARNING - log - Not Found: /favicon.ico
 2025-03-24 21:46:01,409 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 3969
+2025-03-24 21:46:38,801 - INFO - basehttp - "POST / HTTP/1.1" 302 0
+2025-03-24 21:46:38,870 - INFO - basehttp - "GET /home HTTP/1.1" 200 13464
+2025-03-24 21:46:45,796 - INFO - basehttp - "GET /home HTTP/1.1" 200 13464
+2025-03-24 21:48:40,785 - INFO - basehttp - "GET /home HTTP/1.1" 200 13464
+2025-03-24 21:48:46,071 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 11016
+2025-03-24 21:48:47,872 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 12061
+2025-03-24 21:57:17,961 - ERROR - log - Internal Server Error: /RespensableOrganisationUnite/create/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py", line 24, in ajouter_RespensableOrganisationUnite
+    return render(request, 'respensableorganisationunite/create.html', {'form': form})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'modifier' not found. 'modifier' is not a valid view function or pattern name.
+2025-03-24 21:57:17,977 - ERROR - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 500 170363
+2025-03-24 21:58:23,713 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 12043
+2025-03-24 22:03:05,795 - ERROR - log - Internal Server Error: /RespensableOrganisationUnite/create/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py", line 24, in ajouter_RespensableOrganisationUnite
+    return render(request, 'respensableorganisationunite/create.html', {'form': form})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'modifier' not found. 'modifier' is not a valid view function or pattern name.
+2025-03-24 22:03:05,805 - ERROR - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 500 168838
+2025-03-24 22:03:31,823 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 11813
+2025-03-24 22:06:41,490 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 11811
+2025-03-24 22:08:48,265 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py changed, reloading.
+2025-03-24 22:08:51,887 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 22:09:17,387 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 11811
+2025-03-24 22:09:57,997 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py changed, reloading.
+2025-03-24 22:10:00,474 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 22:10:05,008 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 11811
+2025-03-24 22:10:15,246 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 11811
+2025-03-24 22:11:05,246 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py changed, reloading.
+2025-03-24 22:11:08,544 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 22:15:46,744 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py changed, reloading.
+2025-03-24 22:15:49,654 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 22:16:27,069 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 20371
+2025-03-24 22:17:34,463 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 20544
+2025-03-24 22:17:58,533 - INFO - basehttp - "POST /RespensableOrganisationUnite/create/ HTTP/1.1" 200 21407
+2025-03-24 22:19:43,867 - INFO - basehttp - "POST /RespensableOrganisationUnite/create/ HTTP/1.1" 200 21449
+2025-03-24 22:19:52,984 - INFO - basehttp - "POST /RespensableOrganisationUnite/create/ HTTP/1.1" 302 0
+2025-03-24 22:19:53,224 - ERROR - log - Internal Server Error: /RespensableOrganisationUnite/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py", line 12, in liste_RespensableOrganisationUnite
+    return render(request, 'respensableorganisationunite/list.html', {'responsables': responsables})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'detail' not found. 'detail' is not a valid view function or pattern name.
+2025-03-24 22:19:53,234 - ERROR - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 500 179034
+2025-03-24 22:20:51,753 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 11652
+2025-03-24 22:20:59,823 - ERROR - log - Internal Server Error: /RespensableOrganisationUnite/1/update/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py", line 53, in modifier_RespensableOrganisationUnitet
+    return render(request, 'respensableorganisationunite/modifier.html', {
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: respensableorganisationunite/modifier.html
+2025-03-24 22:20:59,829 - ERROR - basehttp - "GET /RespensableOrganisationUnite/1/update/ HTTP/1.1" 500 94091
+2025-03-24 22:25:01,582 - ERROR - log - Internal Server Error: /RespensableOrganisationUnite/1/update/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py", line 53, in modifier_RespensableOrganisationUnitet
+    return render(request, 'respensableorganisationunite/modifier.html', {
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: respensableorganisationunite/modifier.html
+2025-03-24 22:25:01,585 - ERROR - basehttp - "GET /RespensableOrganisationUnite/1/update/ HTTP/1.1" 500 94228
+2025-03-24 22:25:02,887 - ERROR - log - Internal Server Error: /RespensableOrganisationUnite/1/update/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py", line 53, in modifier_RespensableOrganisationUnitet
+    return render(request, 'respensableorganisationunite/modifier.html', {
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: respensableorganisationunite/modifier.html
+2025-03-24 22:25:02,890 - ERROR - basehttp - "GET /RespensableOrganisationUnite/1/update/ HTTP/1.1" 500 94228
+2025-03-24 22:26:15,464 - INFO - basehttp - "GET /RespensableOrganisationUnite/1/update/ HTTP/1.1" 200 12331
+2025-03-24 22:28:46,875 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py changed, reloading.
+2025-03-24 22:28:50,868 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 22:30:11,052 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py changed, reloading.
+2025-03-24 22:30:13,640 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 22:30:19,893 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 11652
+2025-03-24 22:30:28,906 - ERROR - log - Internal Server Error: /RespensableOrganisationUnite/create/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py", line 17, in ajouter_RespensableOrganisationUnite
+    employees = Employee.objects.filter(is_active=True)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_active' into field. Choices are: adresse, conge, date_of_birth, echelon, email, first_name, grade, id, image, last_name, matricule, num_tel, observation, password, place_of_birth, responsableorganisationunite, retirement_date, sexe, specialty, specialty_id, start_date, status, username
+2025-03-24 22:30:28,917 - ERROR - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 500 115042
+2025-03-24 22:31:16,804 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py changed, reloading.
+2025-03-24 22:31:19,761 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 22:31:24,428 - ERROR - log - Internal Server Error: /RespensableOrganisationUnite/create/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py", line 17, in ajouter_RespensableOrganisationUnite
+    employees = Employee.objects.filter(statut='Actif')
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'statut' into field. Choices are: adresse, conge, date_of_birth, echelon, email, first_name, grade, id, image, last_name, matricule, num_tel, observation, password, place_of_birth, responsableorganisationunite, retirement_date, sexe, specialty, specialty_id, start_date, status, username
+2025-03-24 22:31:24,440 - ERROR - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 500 115262
+2025-03-24 22:31:25,529 - ERROR - log - Internal Server Error: /RespensableOrganisationUnite/create/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py", line 17, in ajouter_RespensableOrganisationUnite
+    employees = Employee.objects.filter(statut='Actif')
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'statut' into field. Choices are: adresse, conge, date_of_birth, echelon, email, first_name, grade, id, image, last_name, matricule, num_tel, observation, password, place_of_birth, responsableorganisationunite, retirement_date, sexe, specialty, specialty_id, start_date, status, username
+2025-03-24 22:31:25,534 - ERROR - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 500 115262
+2025-03-24 22:31:26,667 - ERROR - log - Internal Server Error: /RespensableOrganisationUnite/create/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py", line 17, in ajouter_RespensableOrganisationUnite
+    employees = Employee.objects.filter(statut='Actif')
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'statut' into field. Choices are: adresse, conge, date_of_birth, echelon, email, first_name, grade, id, image, last_name, matricule, num_tel, observation, password, place_of_birth, responsableorganisationunite, retirement_date, sexe, specialty, specialty_id, start_date, status, username
+2025-03-24 22:31:26,674 - ERROR - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 500 115262
+2025-03-24 22:34:23,028 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py changed, reloading.
+2025-03-24 22:34:26,572 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 22:34:32,747 - ERROR - log - Internal Server Error: /RespensableOrganisationUnite/create/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py", line 17, in ajouter_RespensableOrganisationUnite
+    employees = Employee.objects.filter(statut='Actif')
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'statut' into field. Choices are: adresse, conge, date_of_birth, echelon, email, first_name, grade, id, image, last_name, matricule, num_tel, observation, password, place_of_birth, responsableorganisationunite, retirement_date, sexe, specialty, specialty_id, start_date, status, username
+2025-03-24 22:34:32,755 - ERROR - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 500 115262
+2025-03-24 22:39:07,032 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py changed, reloading.
+2025-03-24 22:39:09,818 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 22:39:19,400 - ERROR - log - Internal Server Error: /RespensableOrganisationUnite/create/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py", line 17, in ajouter_RespensableOrganisationUnite
+    employees = Employee.objects.filter(statut='Actif')
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'statut' into field. Choices are: adresse, conge, date_of_birth, echelon, email, first_name, grade, id, image, last_name, matricule, num_tel, observation, password, place_of_birth, responsableorganisationunite, retirement_date, sexe, specialty, specialty_id, start_date, status, username
+2025-03-24 22:39:19,747 - ERROR - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 500 115262
+2025-03-24 22:39:23,233 - ERROR - log - Internal Server Error: /RespensableOrganisationUnite/create/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py", line 17, in ajouter_RespensableOrganisationUnite
+    employees = Employee.objects.filter(statut='Actif')
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1546, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1577, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1427, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1237, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\query.py", line 1725, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'statut' into field. Choices are: adresse, conge, date_of_birth, echelon, email, first_name, grade, id, image, last_name, matricule, num_tel, observation, password, place_of_birth, responsableorganisationunite, retirement_date, sexe, specialty, specialty_id, start_date, status, username
+2025-03-24 22:39:23,308 - ERROR - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 500 115262
+2025-03-24 22:43:05,300 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py changed, reloading.
+2025-03-24 22:43:08,444 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 22:43:28,642 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 17836
+2025-03-24 22:44:17,713 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py changed, reloading.
+2025-03-24 22:44:20,270 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 22:44:29,859 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 11652
+2025-03-24 22:47:27,675 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py changed, reloading.
+2025-03-24 22:47:29,885 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 22:47:36,076 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 17841
+2025-03-24 22:47:47,627 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 11657
+2025-03-24 22:48:01,462 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 33593
+2025-03-24 22:48:07,968 - INFO - basehttp - "GET /Employee/1/update/ HTTP/1.1" 200 21813
+2025-03-24 22:48:11,456 - INFO - basehttp - "POST /Employee/1/update/ HTTP/1.1" 200 23159
+2025-03-24 22:50:30,420 - INFO - basehttp - "POST /Employee/1/update/ HTTP/1.1" 200 23390
+2025-03-24 22:50:35,890 - INFO - basehttp - "POST /Employee/1/update/ HTTP/1.1" 200 23390
+2025-03-24 22:50:41,554 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 33593
+2025-03-24 22:50:47,002 - INFO - basehttp - "GET /Employee/23/update/ HTTP/1.1" 200 21799
+2025-03-24 22:50:51,748 - INFO - basehttp - "POST /Employee/23/update/ HTTP/1.1" 200 23143
+2025-03-24 22:52:38,177 - INFO - basehttp - "POST /Employee/23/update/ HTTP/1.1" 200 23071
+2025-03-24 22:52:44,193 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 33593
+2025-03-24 22:52:50,633 - INFO - basehttp - "GET /Employee/23/update/ HTTP/1.1" 200 21727
+2025-03-24 22:52:54,212 - INFO - basehttp - "POST /Employee/23/update/ HTTP/1.1" 200 23071
+2025-03-24 22:53:06,927 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 33593
+2025-03-24 22:54:32,813 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 34377
+2025-03-24 22:55:48,637 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\forms.py changed, reloading.
+2025-03-24 22:55:50,965 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 22:56:22,012 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 22:58:21,574 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 23:03:28,265 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 23:03:31,218 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-24 23:03:47,811 - INFO - basehttp - "GET /Employee/18/update/ HTTP/1.1" 200 21716
+2025-03-24 23:03:56,496 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 34377
+2025-03-24 23:04:02,153 - INFO - basehttp - "GET /Employee/10/update/ HTTP/1.1" 200 21706
+2025-03-24 23:04:04,550 - INFO - basehttp - "POST /Employee/10/update/ HTTP/1.1" 200 23050
+2025-03-24 23:04:17,301 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 34377
+2025-03-24 23:05:05,888 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\forms.py changed, reloading.
+2025-03-24 23:05:07,996 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 23:05:26,660 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\forms.py changed, reloading.
+2025-03-24 23:05:29,027 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 23:05:44,784 - INFO - basehttp - "GET /Employee/7/update/ HTTP/1.1" 200 21702
+2025-03-24 23:05:47,991 - INFO - basehttp - "POST /Employee/7/update/ HTTP/1.1" 200 22907
+2025-03-24 23:06:26,238 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\forms.py changed, reloading.
+2025-03-24 23:06:29,044 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 23:06:38,810 - INFO - basehttp - "POST /Employee/7/update/ HTTP/1.1" 200 22907
+2025-03-24 23:06:41,247 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 34377
+2025-03-24 23:06:47,574 - INFO - basehttp - "GET /Employee/10/update/ HTTP/1.1" 200 21706
+2025-03-24 23:06:50,935 - INFO - basehttp - "POST /Employee/10/update/ HTTP/1.1" 200 22911
+2025-03-24 23:06:57,584 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 34377
+2025-03-24 23:08:02,216 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\models.py changed, reloading.
+2025-03-24 23:08:04,358 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 23:08:35,624 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 23:08:37,050 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-24 23:09:00,784 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 34377
+2025-03-24 23:16:24,709 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 34355
+2025-03-24 23:18:07,850 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 34465
+2025-03-24 23:18:34,262 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 11657
+2025-03-24 23:18:39,556 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 20591
+2025-03-24 23:18:49,207 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 11657
+2025-03-24 23:18:58,098 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 10288
+2025-03-24 23:18:59,637 - INFO - basehttp - "GET /conge/conges/ajouter/ HTTP/1.1" 200 14859
+2025-03-24 23:19:28,417 - INFO - basehttp - "POST /conge/conges/ajouter/ HTTP/1.1" 302 0
+2025-03-24 23:19:28,458 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 10590
+2025-03-24 23:19:30,935 - INFO - basehttp - "GET /home HTTP/1.1" 200 13588

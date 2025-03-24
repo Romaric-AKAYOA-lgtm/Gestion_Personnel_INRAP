@@ -21,7 +21,7 @@
                     {% endif %}
                     <form action="{% url 'Employee:create' %}" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
                         {% csrf_token %}
-                        <div class="row">
+                        <div class="row mb-4">
                             <div class="col-md-6">
                                 <div class="mb-3">
                                     <label for="last_name" class="form-label">Nom</label>
@@ -30,10 +30,14 @@
                                 <div class="mb-3">
                                     <label for="first_name" class="form-label">Prénom</label>
                                     <input type="text" class="form-control" id="first_name" name="first_name" required>
-                                </div>
+                                </div> 
                                 <div class="mb-3">
                                     <label for="date_of_birth" class="form-label">Date de Naissance</label>
                                     <input type="date" class="form-control" id="date_of_birth" name="date_of_birth" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="place_of_birth" class="form-label">Lieu de Naissance</label>
+                                    <input type="text" class="form-control" id="place_of_birth" name="place_of_birth" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="start_date" class="form-label">Date de Prise de Service</label>
@@ -80,10 +84,17 @@
                                     <label for="image" class="form-label">Photo</label>
                                     <input type="file" class="form-control" id="image" name="image">
                                 </div>
+                                <div class="mb-3">
+                                    <label for="observation" class="form-label">Observation</label>
+                                    <input type="text" class="form-control" id="observation" name="observation">
+                                </div>
                             </div>
-                            <div class="col-md-12 mb-2">
-                                <label for="observation" class="form-label">Observation</label>
-                                <input type="text" class="form-control" id="observation" name="observation">
+                            <div class="col-md-12">
+                                <label for="status" class="form-label">Statut</label>
+                                <select class="form-select" id="status" name="status" required>
+                                    <option value="Actif" {% if form.status.value == 'Actif' %}selected{% endif %}>Actif</option>
+                                    <option value="Non Actif" {% if form.status.value == 'Non Actif' %}selected{% endif %}>Non Actif</option>
+                                </select>
                             </div>
                         </div>
                         <div class="text-end">
@@ -98,11 +109,12 @@
 </div>
 
 <script>
-    window.onload = function() {
+    document.addEventListener("DOMContentLoaded", function() {
         var myModal = new bootstrap.Modal(document.getElementById("modalEmployee"), {
-            keyboard: false
+            backdrop: 'static', // Empêche la fermeture en cliquant en dehors du modal
+            keyboard: false     // Empêche la fermeture avec la touche "Échap"
         });
         myModal.show();
-    }
+    });
 </script>
 {% endblock %}

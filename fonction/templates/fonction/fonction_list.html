@@ -40,9 +40,6 @@
                     <td>{{ fonction.id }}</td>
                     <td>{{ fonction.designation }}</td>
                     <td class="">
-                        <a href="{% url 'fonction:information' fonction.id %}" class="btn btn-info btn-sm mb-1  ">
-                            <i class="bi bi-eye"></i> Détails
-                        </a>
                         <a href="{% url 'fonction:modifier' fonction.id %}" class="btn btn-warning btn-sm mb-1 ">
                             <i class="bi bi-pencil"></i> Modifier
                         </a>

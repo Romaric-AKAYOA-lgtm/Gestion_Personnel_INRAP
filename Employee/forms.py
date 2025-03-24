@@ -3,20 +3,23 @@ from datetime import date
 from dateutil.relativedelta import relativedelta
 from datetime import date, timedelta
 from .models import Employee
+from django import forms
+from datetime import date, timedelta
+from dateutil.relativedelta import relativedelta
+from .models import Employee
 
 class EmployeeForm(forms.ModelForm):
     class Meta:
         model = Employee
         fields = [
             'first_name', 'last_name', 'date_of_birth', 'start_date', 
-            'grade', 'echelon', 'matricule', 'specialty', 
-             'observation', 'status', 
-            'sexe', 'image', 'adresse', 'num_tel', 'email'
+            'grade', 'echelon', 'matricule', 'specialty', 'place_of_birth',
+            'observation', 'status', 'sexe', 'image', 'adresse', 
+            'num_tel', 'email'
         ]
         widgets = {
             'date_of_birth': forms.DateInput(attrs={'type': 'date'}),
             'start_date': forms.DateInput(attrs={'type': 'date'}),
-            'retirement_date': forms.DateInput(attrs={'type': 'date'}),
         }
 
     def clean_first_name(self):
@@ -40,21 +43,36 @@ class EmployeeForm(forms.ModelForm):
         dob = cleaned_data.get('date_of_birth')
         start_date = cleaned_data.get('start_date')
         retirement_date = cleaned_data.get('retirement_date')
+        matricule = cleaned_data.get('matricule')
+        email = cleaned_data.get('email')
+        num_tel = cleaned_data.get('num_tel')
 
-        # Vérifier que la date de service est au moins 18 ans après la date de naissance
+        # Vérification de l'âge minimum pour la date de service
         if dob and start_date and start_date < (dob + relativedelta(years=18)):
             self.add_error('start_date', "La date de service doit être au moins 18 ans après la date de naissance.")
 
-        # Vérifier que la date de service est inférieure à la date de retraite
+        # Vérification de la cohérence entre date de service et date de retraite
         if start_date and retirement_date and start_date >= retirement_date:
             self.add_error('start_date', "La date de service doit être inférieure à la date de retraite.")
 
+        # Vérification des doublons
+        if Employee.objects.filter(matricule=matricule).exists():
+            self.add_error('matricule', "Ce matricule est déjà utilisé.")
+
+        if email and Employee.objects.filter(email=email).exists():
+            self.add_error('email', "Cet email est déjà utilisé.")
+
+        if num_tel and Employee.objects.filter(num_tel=num_tel).exists():
+            self.add_error('num_tel', "Ce numéro de téléphone est déjà utilisé.")
+
         return cleaned_data
+
     def clean_retirement_date(self):
-        date_of_birth = self.cleaned_data['date_of_birth']
-        retirement_date = date_of_birth+ timedelta(days=60*365)  # Ajout de 60 ans à la date de naissance
-        
-        return retirement_date
+        date_of_birth = self.cleaned_data.get('date_of_birth')
+        if date_of_birth:
+            return date_of_birth + timedelta(days=60 * 365)  # Ajout de 60 ans à la date de naissance
+        return None
+
     def save(self, commit=True):
         instance = super().save(commit=False)
 
@@ -65,7 +83,6 @@ class EmployeeForm(forms.ModelForm):
         if commit:
             instance.save()
         return instance
-
 
 class LoginForm(forms.Form):  # Remplace AuthenticationForm par forms.Form
     username = forms.CharField(

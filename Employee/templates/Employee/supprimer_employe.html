@@ -11,7 +11,7 @@
                 </div>
                 <div class="modal-body">
                     <p>Êtes-vous sûr de vouloir supprimer cet employé ?</p>
-                    <form action="{% url 'employee:delete' employee.id %}" method="POST">
+                    <form action="{% url 'Employee:delete' employee.id %}" method="POST">
                         {% csrf_token %}
                         <div class="text-end">
                             <button type="submit" class="btn btn-danger px-4 py-2 btn-sm">Supprimer</button>

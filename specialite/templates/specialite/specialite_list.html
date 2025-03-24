@@ -12,14 +12,10 @@
         </a>  
     
         <!-- Formulaire de recherche -->
-        <form method="GET" action="{% url 'OrganizationalUnit:search_organizational_units' %}" class="d-flex">
+        <form method="GET" action="{% url 'specialite:recherche' %}" class="d-flex">
             <!-- Sélecteur de filtre -->
             <select name="filter" class="form-select me-2" aria-label="Filtrer par">
-                <option value="">Filtrer par...</option>
-                <option value="name" {% if filter == "name" %}selected{% endif %}>Nom</option>
                 <option value="designation" {% if filter == "designation" %}selected{% endif %}>Désignation</option>
-                <option value="unite" {% if filter == "unite" %}selected{% endif %}>Unité associée</option>
-                <option value="parent" {% if filter == "parent" %}selected{% endif %}>Unité parente</option>
             </select>
     
             <!-- Champ de recherche -->

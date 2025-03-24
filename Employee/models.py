@@ -8,11 +8,12 @@ class Employee(models.Model):
     password = models.CharField(max_length=128, null=True, blank=True)
 
     STATUS_CHOICES = [
-        ('active', 'Actif'),
-        ('retired', 'Retraité'),
+        ('Actif', 'Actif'),
+        ('Non Actif', 'Non Actif'),
     ]
     
     first_name = models.CharField(
+        blank=True, null=True,
         max_length=50,
         help_text="Prénom de l'agent"
     )
@@ -37,7 +38,7 @@ class Employee(models.Model):
         blank=True,
         null=True
     )
-    grade = models.CharField(max_length=50, help_text="Grade")
+    grade = models.CharField(max_length=50, help_text="Grade", blank=True, null=True)
     echelon = models.CharField(
         max_length=10,
         blank=True,
@@ -45,7 +46,7 @@ class Employee(models.Model):
         help_text="Échelon"
     )
     matricule = models.CharField(max_length=7, help_text="Matricule solde")
-    specialty = models.ForeignKey(Specialite, on_delete=models.CASCADE)
+    specialty = models.ForeignKey(Specialite, on_delete=models.CASCADE, blank=True, null=True)
     observation = models.TextField(
         blank=True,
         null=True,
@@ -71,11 +72,13 @@ class Employee(models.Model):
     )
     adresse = models.CharField(max_length=60, blank=True, null=True,)
     num_tel = models.CharField(
+        blank=True, null=True,
         max_length=15, 
         unique=True, 
         error_messages={"unique": "Ce numéro est déjà utilisé."}
     )
     email = models.EmailField(
+        blank=True, null=True,
         unique=True, 
         error_messages={"unique": "Cet email est déjà utilisé."}
     )

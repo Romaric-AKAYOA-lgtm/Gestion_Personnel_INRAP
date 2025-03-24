@@ -45,6 +45,12 @@ def liste_employes(request):
 
 # Vue pour ajouter un employé
 def ajouter_employe(request):
+    username = get_username_from_session(request)
+
+    # Assurez-vous que le nom d'utilisateur est disponible dans la session
+    if not username:
+        return redirect('login')  # Redirige vers la page de connexion si pas de nom d'utilisateur dans la session
+
     form = EmployeeForm()
     specialite= Specialite.objects.all().order_by('designation')
     fonction=Fonction.objects.all().order_by('designation')
@@ -52,10 +58,11 @@ def ajouter_employe(request):
         form = EmployeeForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return redirect('Employee:lists')
+            return redirect('Employee:list')
     else:
         form = EmployeeForm()
     return render(request, 'Employee/ajouter_employe.html', {
+        'username':username,
         'form': form,
         'specialite':specialite, 
         'fonction':fonction
@@ -63,6 +70,12 @@ def ajouter_employe(request):
 
 # Vue pour modifier un employé
 def modifier_employe(request, id):
+    username = get_username_from_session(request)
+
+    # Assurez-vous que le nom d'utilisateur est disponible dans la session
+    if not username:
+        return redirect('login')  # Redirige vers la page de connexion si pas de nom d'utilisateur dans la session
+
     employe = get_object_or_404(Employee, id=id)
     specialite= Specialite.objects.all().order_by('designation')
     fonction=Fonction.objects.all().order_by('designation')
@@ -74,6 +87,7 @@ def modifier_employe(request, id):
     else:
         form = EmployeeForm(instance=employe)
     return render(request, 'Employee/modifier_employe.html', {
+        'username':username,
         'form': form,
          'specialite':specialite, 
         'fonction':fonction
@@ -82,9 +96,7 @@ def modifier_employe(request, id):
 # Vue pour supprimer un employé
 def supprimer_employe(request, id):
     employe = get_object_or_404(Employee, id=id)
-    if request.method == 'POST':
-        employe.delete()
-        return redirect('Employee:list')
+    employe.delete()
     return render(request, 'Employee/supprimer_employe.html', {'employe': employe})
 
 

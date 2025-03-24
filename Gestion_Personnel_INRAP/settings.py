@@ -146,34 +146,3 @@ LOGGING = {
         },
     },
 }
-
-# Hidden Imports for PyInstaller
-hiddenimports = [
-    'Conge.context_processors', 
-    'fonction.templatetags', 
-    'Employee.templatetags', 
-    'django.contrib.staticfiles.context_processors',
-    'Activation.context_processors',
-    'fonction.context_processors',
-    'specialite.templatetags',
-    'django.contrib.admin.context_processors',
-    'django.contrib.messages.templatetags',
-    'specialite.context_processors',
-    'Stagiaire.templatetags',
-    'Activation.templatetags',
-    'django.contrib.sessions.templatetags',
-    'Employee.context_processors',
-    'django.contrib.sessions.context_processors',
-    'django.contrib.staticfiles.templatetags',
-    'unite.context_processors',
-    'Conge.templatetags',
-    'django.contrib.contenttypes.context_processors',
-    'unite.templatetags',
-    'django.contrib.auth.templatetags',
-    'OrganizationalUnit.context_processors',
-    'OrganizationalUnit.templatetags',
-    'Stagiaire.context_processors',
-    'RespensableOrganisationUnite.templatetags',
-    'django.contrib.contenttypes.templatetags',
-    'RespensableOrganisationUnite.context_processors'
-]

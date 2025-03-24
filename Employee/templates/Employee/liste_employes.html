@@ -69,7 +69,7 @@
                         <td>{{ employe.retirement_date|date:'Y-m-d'  }}</td>
                         <td>{{ employe.observation }}</td>
                         <td>
-                            <a href="{% url 'Employee:update' employe.id %}" class="btn btn-warning btn-sm mb-1">Modifier</a>
+                           <a href="{% url 'Employee:update' employe.id %}" class="btn btn-warning btn-sm mb-1">Modifier</a>
                             <a href="{% url 'Employee:delete' employe.id %}" class="btn btn-danger btn-sm  mb-1">Supprimer</a>
                         </td>
                     </tr>

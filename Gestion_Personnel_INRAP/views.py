@@ -142,21 +142,50 @@ def export_to_word(request):
     
     doc.add_heading('Rapport de Gestion du Personnel', level=1)
     
-    # Liste des employés
-    if 'employes' in selected_sections:
+
+
+    if 'employes' in selected_sections: 
         doc.add_heading(section_titles['employes'], level=2)
-        table = doc.add_table(rows=1, cols=3)
+
+        # Définition des colonnes du tableau
+        columns = [
+            "Nom Complet", "Matricule", "Sexe", "Date de naissance", "Lieu de naissance", 
+            "Prise de service", "Départ à la retraite", "Grade", "Échelon", "Spécialité", 
+            "Adresse", "Téléphone", "Email", "Statut"
+        ]
+
+        # Création de la table avec en-têtes
+        table = doc.add_table(rows=1, cols=len(columns))
         table.style = 'Table Grid'
+
+        # Remplir la première ligne avec les noms des colonnes
         hdr_cells = table.rows[0].cells
-        hdr_cells[0].text = 'Nom Complet'
-        hdr_cells[1].text = 'Spécialité'
-        hdr_cells[2].text = 'Date de début'
+        for i, col_name in enumerate(columns):
+            hdr_cells[i].text = col_name
+
+        # Ajouter les données des employés
         for emp in Employee.objects.all():
             row_cells = table.add_row().cells
             row_cells[0].text = f"{emp.first_name} {emp.last_name}"
-            row_cells[1].text = emp.specialty.designation
-            row_cells[2].text = str(emp.start_date)
-    
+            row_cells[1].text = emp.matricule if emp.matricule else "N/A"
+            row_cells[2].text = emp.sexe if emp.sexe else "N/A"
+            row_cells[3].text = emp.date_of_birth.strftime("%d/%m/%Y") if emp.date_of_birth else "N/A"
+            row_cells[4].text = emp.place_of_birth if emp.place_of_birth else "N/A"
+            row_cells[5].text = emp.start_date.strftime("%d/%m/%Y") if emp.start_date else "N/A"
+            row_cells[6].text = emp.retirement_date.strftime("%d/%m/%Y") if emp.retirement_date else "N/A"
+            row_cells[7].text = emp.grade if emp.grade else "N/A"
+            row_cells[8].text = emp.echelon if emp.echelon else "N/A"
+            row_cells[9].text = emp.specialty.designation if emp.specialty else "N/A"
+            row_cells[10].text = emp.adresse if emp.adresse else "N/A"
+            row_cells[11].text = emp.num_tel if emp.num_tel else "N/A"
+            row_cells[12].text = emp.email if emp.email else "N/A"
+            row_cells[13].text = emp.status if emp.status else "N/A"
+
+        # Ajuster la largeur des colonnes (optionnel)
+        for row in table.rows:
+            for cell in row.cells:
+                cell.width = 2000000  # Ajuste la largeur des cellules
+
     # Liste des employés récents (moins de 6 mois)
     if 'employes_recents' in selected_sections:
         doc.add_heading(section_titles['employes_recents'], level=2)
@@ -240,33 +269,57 @@ def export_to_word(request):
             row_cells[0].text = f"{emp.first_name} {emp.last_name}"
             row_cells[1].text = str(emp.date_of_birth)
             row_cells[2].text = str(emp.retirement_date)
-    
-    # Liste des stagiaires cette année et les années antérieures
+
     if 'stagiaires' in selected_sections:
         doc.add_heading(section_titles['stagiaires'], level=2)
-        table = doc.add_table(rows=1, cols=3)
+
+        # Définition des colonnes du tableau
+        columns = [
+            "Nom Complet", "Date de Naissance", "Email", "Téléphone", "Adresse",
+            "Université", "Formation", "Début Stage", "Fin Stage", 
+            "Tuteur Entreprise", "Statut", "Année"
+        ]
+
+        # Création du tableau avec en-têtes
+        table = doc.add_table(rows=1, cols=len(columns))
         table.style = 'Table Grid'
+
+        # Remplir la première ligne avec les noms des colonnes
         hdr_cells = table.rows[0].cells
-        hdr_cells[0].text = 'Nom Complet'
-        hdr_cells[1].text = 'Prénom'
-        hdr_cells[2].text = 'Année'
+        for i, col_name in enumerate(columns):
+            hdr_cells[i].text = col_name
+
+        # Récupération des stagiaires
         this_year = now().year
         stagiaires = Stagiaire.objects.filter(date_debut_stage__year__lte=this_year)
+
+        # Ajout des stagiaires dans le tableau
         for stagiaire in stagiaires:
             row_cells = table.add_row().cells
             row_cells[0].text = f"{stagiaire.nom} {stagiaire.prenom}"
-            row_cells[1].text = stagiaire.prenom
-            row_cells[2].text = str(stagiaire.date_debut_stage.year)
+            row_cells[1].text = stagiaire.date_naissance.strftime("%d/%m/%Y") if stagiaire.date_naissance else "N/A"
+            row_cells[2].text = stagiaire.email
+            row_cells[3].text = stagiaire.telephone
+            row_cells[4].text = stagiaire.adresse
+            row_cells[5].text = stagiaire.universite
+            row_cells[6].text = stagiaire.formation
+            row_cells[7].text = stagiaire.date_debut_stage.strftime("%d/%m/%Y") if stagiaire.date_debut_stage else "N/A"
+            row_cells[8].text = stagiaire.date_fin_stage.strftime("%d/%m/%Y") if stagiaire.date_fin_stage else "N/A"
+            row_cells[9].text = stagiaire.tuteur_entreprise.nom if stagiaire.tuteur_entreprise else "N/A"
+            row_cells[10].text = dict(Stagiaire.STATUT_CHOICES).get(stagiaire.statut, "N/A")
+            row_cells[11].text = str(stagiaire.date_debut_stage.year)
+
+
 
     # Ajout de "BRAZZAVILLE" + date système en bas à droite du document
     footer = doc.sections[-1].footer
     paragraph = footer.paragraphs[0]
     paragraph.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-    paragraph.add_run("BRAZZAVILLE - " + now().strftime("%Y-%m-%d")).font.size = Pt(8)
+    paragraph.add_run("BRAZZAVILLE  " + now().strftime("%Y-%m-%d")).font.size = Pt(8)
 
     # Ajouter le nom et prénom de l'employé connecté si il existe
     if employee:
-        paragraph.add_run(f"{employee.first_name} {employee.last_name}")  # Nom et prénom de l'employé connecté
+         paragraph.add_run("      " + f"{employee.first_name} {employee.last_name}")  # Ajout d'espaces avant le nom
     else:
         paragraph.add_run("Nom et prénom de l'employé connecté")  # Au cas où l'employé n'est pas trouvé
  

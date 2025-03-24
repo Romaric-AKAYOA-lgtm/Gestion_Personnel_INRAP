@@ -26,6 +26,12 @@ def fonction_list(request):
        'username':username,  'fonction': fonction})
 
 def fonction_create(request):
+    username = get_username_from_session(request)
+
+    # Assurez-vous que le nom d'utilisateur est disponible dans la session
+    if not username:
+        return redirect('login')  # Redirige vers la page de connexion si pas de nom d'utilisateur dans la session
+
     if request.method == "POST":
         form = FonctionForm(request.POST)
         if form.is_valid():
@@ -33,13 +39,25 @@ def fonction_create(request):
             return redirect('fonction:fonction')
     else:
         form = FonctionForm()
-    return render(request, 'fonction/fonction_form.html', {'form': form})
+    return render(request, 'fonction/fonction_form.html', {'form': form , 'username':username})
 
 def fonction_detail(request, id):
+    username = get_username_from_session(request)
+
+    # Assurez-vous que le nom d'utilisateur est disponible dans la session
+    if not username:
+        return redirect('login')  # Redirige vers la page de connexion si pas de nom d'utilisateur dans la session
+
     fonction= get_object_or_404(Fonction, id=id)
-    return render(request, 'fonction/fonction_detail.html', {'directeur': fonction})
+    return render(request, 'fonction/fonction_detail.html', {'directeur': fonction, 'username':username})
 
 def modifier_fonction(request, id):
+    username = get_username_from_session(request)
+
+    # Assurez-vous que le nom d'utilisateur est disponible dans la session
+    if not username:
+        return redirect('login')  # Redirige vers la page de connexion si pas de nom d'utilisateur dans la session
+
     fonction = get_object_or_404(Fonction, id=id)
 
     if request.method == "POST":

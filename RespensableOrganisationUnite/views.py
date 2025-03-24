@@ -1,5 +1,9 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
+
+from Employee.models import Employee
+from OrganizationalUnit.models import OrganizationalUnit
+from fonction.models import Fonction
 from .models import ResponsableOrganisationUnite
 from .forms import ResponsableOrganisationUniteForm
 # Liste des Responsables
@@ -21,6 +25,13 @@ def ajouter_RespensableOrganisationUnite(request):
 
 # Modifier un Responsable
 def modifier_RespensableOrganisationUnitet(request, id):
+    organizational_units = OrganizationalUnit.objects.all()
+    employees = Employee.objects.all()
+    functions = Fonction.objects.all()
+    organizational_units_dict = {unit.id: unit.name for unit in organizational_units}
+    employee_dict = {employee.id: employee.full_name for employee in employees}
+    functions_dict = {function.id: function.name for function in functions}
+    
     responsable = get_object_or_404(ResponsableOrganisationUnite, id=id)
     
     if request.method == 'POST':
@@ -32,7 +43,10 @@ def modifier_RespensableOrganisationUnitet(request, id):
     else:
         form = ResponsableOrganisationUniteForm(instance=responsable)
     
-    return render(request, 'respensableorganisationunite/modifier.html', {'form': form})
+    return render(request, 'respensableorganisationunite/modifier.html', {'form': form,
+        'organizational_units_dict': organizational_units_dict,
+        'employee_dict': employee_dict,
+        'functions_dict': functions_dict,})
 
 # Supprimer un Responsable
 def supprimer_RespensableOrganisationUnite(request, id):

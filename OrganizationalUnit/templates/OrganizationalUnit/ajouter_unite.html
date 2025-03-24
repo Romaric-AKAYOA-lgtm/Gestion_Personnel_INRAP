@@ -10,7 +10,7 @@
                 <h5 class="modal-title text-white" id="uniteModalLabel">
                     {{ form.instance.pk|yesno:"Modifier une unité organisationnelle,Créer une unité organisationnelle" }}
                 </h5>
-             </div>
+            </div>
             <div class="modal-body">
                 {% if form.errors %}
                 <div class="alert alert-danger">
@@ -27,7 +27,7 @@
                     <!-- Nom de l'unité -->
                     <div class="mb-3">
                         <label for="name" class="form-label">Nom de l'unité</label>
-                        <input type="text" class="form-control {% if form.name.errors %}is-invalid{% endif %}" id="name" name="name" required>
+                        <input type="text" class="form-control {% if form.name.errors %}is-invalid{% endif %}" id="name" name="name" value="{{ form.name.value|default:'' }}" required>
                         {% if form.name.errors %}
                             <div class="invalid-feedback">{{ form.name.errors }}</div>
                         {% endif %}
@@ -36,7 +36,7 @@
                     <!-- Désignation -->
                     <div class="mb-3">
                         <label for="designation" class="form-label">Désignation</label>
-                        <textarea class="form-control {% if form.designation.errors %}is-invalid{% endif %}" id="designation" name="designation" rows="4"></textarea>
+                        <textarea class="form-control {% if form.designation.errors %}is-invalid{% endif %}" id="designation" name="designation" rows="4">{{ form.designation.value|default:'' }}</textarea>
                         {% if form.designation.errors %}
                             <div class="invalid-feedback">{{ form.designation.errors }}</div>
                         {% endif %}
@@ -46,7 +46,7 @@
                     <div class="mb-3">
                         <label for="unite" class="form-label">Unité</label>
                         <select class="form-select {% if form.unite.errors %}is-invalid{% endif %}" id="unite" name="unite" required>
-                            {% for unite in form.unite.field.queryset %}
+                            {% for unite in form.organisation_unite.field.queryset %}
                                 <option value="{{ unite.id }}" {% if unite.id == form.unite.value %}selected{% endif %}>{{ unite.designation }}</option>
                             {% endfor %}
                         </select>

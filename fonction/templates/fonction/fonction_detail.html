@@ -10,13 +10,11 @@
             <div class="modal-content">
                 <div class="modal-header bg-primary">
                     <h5 class="modal-title text-white" id="modifierModalLabel">Détails de la fonction</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
+              </div>
                 <div class="modal-body">
                     <p><strong>Designation:</strong> {{ fonction.designation }}</p>
                 </div>
                 <div class="modal-footer">
-                    <a href="{% url 'fonction:modifier' fonction.id %}" class="btn btn-warning">Modifier</a>
                     <a href="{% url 'fonction:fonction' %}" class="btn btn-secondary">Retour à la liste</a>
                 </div>
             </div>
@@ -35,8 +33,7 @@
                     <p>Êtes-vous sûr de vouloir supprimer {{ fonction.designation }}  ? Cette action est irréversible.</p>
                 </div>
                 <div class="modal-footer">
-                    <a href="{% url 'fonction:supprimer' fonction.id %}" class="btn btn-danger">Supprimer</a>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
                 </div>
             </div>
         </div>

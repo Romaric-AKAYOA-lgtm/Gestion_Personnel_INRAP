@@ -82,6 +82,7 @@ def supprimer_OrganizationalUnit(request, id):
     return redirect('OrganizationalUnit:list')
 
 from django.db.models import Q
+
 def search_organizational_units(request):
     username = get_username_from_session(request)
 
@@ -91,36 +92,36 @@ def search_organizational_units(request):
 
     """
     Vue permettant de rechercher des unités organisationnelles
-    en fonction de plusieurs critères : nom, désignation, unité associée et unité parente.
+    en fonction du critère sélectionné dans le formulaire.
     """
-    query_name = request.GET.get('name', '').strip()
-    query_designation = request.GET.get('designation', '').strip()
-    query_unite = request.GET.get('unite', '').strip()
-    query_parent = request.GET.get('parent', '').strip()
+    query_value = request.GET.get('query', '').strip()
+    filter_criteria = request.GET.get('filter', '')  # Récupérer le critère sélectionné
 
-    # Construction dynamique de la requête avec Q()
-    filters = Q()
-    if query_name:
-        filters &= Q(name__icontains=query_name)
-    if query_designation:
-        filters &= Q(designation__icontains=query_designation)
-    if query_unite:
-        filters &= Q(unite__name__icontains=query_unite)  # Recherche par nom d'unité associée
-    if query_parent:
-        filters &= Q(parent__name__icontains=query_parent)  # Recherche par unité parente
+    # Vérifier si une valeur de recherche est fournie
+    if not query_value or not filter_criteria:
+        results = []  # Aucun résultat si pas de valeur entrée
+    else:
+        # Création dynamique du filtre en fonction du critère sélectionné
+        filters = Q()
+        if filter_criteria == "name":
+            filters = Q(name__icontains=query_value)
+        elif filter_criteria == "designation":
+            filters = Q(designation__icontains=query_value)
+        elif filter_criteria == "unite":
+            filters = Q(unite__name__icontains=query_value)  # Recherche par unité associée
+        elif filter_criteria == "parent":
+            filters = Q(parent__name__icontains=query_value)  # Recherche par unité parente
 
-    try:
-        # Application des filtres uniquement si des critères existent
-        results = OrganizationalUnit.objects.filter(filters).order_by('name')
-    except Exception as e:
-        results = []
-        print(f"Erreur lors de la récupération des résultats : {e}")  # Ajout d'un log d'erreur
+        try:
+            # Application des filtres et tri par nom
+            results = OrganizationalUnit.objects.filter(filters).order_by('name')
+        except Exception as e:
+            results = []
+            print(f"Erreur lors de la récupération des résultats : {e}")  # Log d'erreur
 
     return render(request, 'OrganizationalUnit/search.html', {
         'username': username,
         'results': results,
-        'query_name': query_name,
-        'query_designation': query_designation,
-        'query_unite': query_unite,
-        'query_parent': query_parent,
+        'query_value': query_value,  # Valeur saisie par l'utilisateur
+        'filter_criteria': filter_criteria,  # Critère de filtrage sélectionné
     })

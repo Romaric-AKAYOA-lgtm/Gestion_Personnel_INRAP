@@ -3,7 +3,7 @@
 {% block contenue %}
 
 <!-- Modal structure for Editing -->
-<div class="modal fade show" id="modalUnite" tabindex="-1" aria-labelledby="modalUniteLabel" aria-hidden="true" style="display: block;">
+<div class="modal fade show" id="modalUnite" tabindex="-1" aria-labelledby="modalUniteLabel" aria-hidden="true" style="display: block;" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header bg-warning text-white">
@@ -32,18 +32,26 @@
                         {% if form.name.errors %}
                             <div class="invalid-feedback">{{ form.name.errors }}</div>
                         {% endif %}
+                  </div>
+                
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description</label>
+                        <textarea class="form-control input-focus-blue {% if form.description.errors %}is-invalid{% endif %}" id="description" name="description" rows="4">{{ form.description.value }}</textarea>
+                        {% if form.description.errors %}
+                            <div class="invalid-feedback">{{ form.description.errors }}</div>
+                        {% endif %}
                     </div>
 
+                    <!-- Unité -->
                     <div class="mb-3">
-                        <label for="unit_type" class="form-label">Type d'Unité</label>
-                        <select class="form-select input-focus-blue {% if form.unit_type.errors %}is-invalid{% endif %}" id="unit_type" name="unit_type" required>
-                            <option value="" selected>-- Sélectionnez un type d'unité --</option>
-                            {% for type_key, type_value in unite_dict.items %}
-                                <option value="{{ type_key }}" {% if type_key == form.unit_type.value %}selected{% endif %}>{{ type_value }}</option>
+                        <label for="unite" class="form-label">Unité</label>
+                        <select class="form-select {% if form.unite.errors %}is-invalid{% endif %}" id="unite" name="unite" required>
+                            {% for unite in form.unite.field.queryset %}
+                                <option value="{{ unite.id }}" {% if unite.id == form.unite.value %}selected{% endif %}>{{ unite.designation }}</option>
                             {% endfor %}
                         </select>
-                        {% if form.unit_type.errors %}
-                            <div class="invalid-feedback">{{ form.unit_type.errors }}</div>
+                        {% if form.unite.errors %}
+                            <div class="invalid-feedback">{{ form.unite.errors }}</div>
                         {% endif %}
                     </div>
 
@@ -59,14 +67,6 @@
                         </select>
                         {% if form.parent.errors %}
                             <div class="invalid-feedback">{{ form.parent.errors }}</div>
-                        {% endif %}
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="description" class="form-label">Description</label>
-                        <textarea class="form-control input-focus-blue {% if form.description.errors %}is-invalid{% endif %}" id="description" name="description" rows="4" required>{{ form.description.value }}</textarea>
-                        {% if form.description.errors %}
-                            <div class="invalid-feedback">{{ form.description.errors }}</div>
                         {% endif %}
                     </div>
 

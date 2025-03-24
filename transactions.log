@@ -14033,3 +14033,1465 @@ django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Cho
 2025-03-21 12:42:19,622 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 10942
 2025-03-21 12:42:20,823 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 11570
 2025-03-21 12:42:21,743 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 11016
+2025-03-22 16:19:20,649 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-22 16:19:56,406 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-03-22 16:19:56,614 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 10425
+2025-03-22 16:20:05,154 - INFO - basehttp - "GET /admin/secretaire/secretaire/ HTTP/1.1" 302 0
+2025-03-22 16:20:05,479 - INFO - basehttp - "GET /admin/login/?next=/admin/secretaire/secretaire/ HTTP/1.1" 200 4225
+2025-03-22 16:20:18,930 - INFO - basehttp - "POST /admin/login/?next=/admin/secretaire/secretaire/ HTTP/1.1" 302 0
+2025-03-22 16:20:19,087 - WARNING - log - Not Found: /admin/secretaire/secretaire/
+2025-03-22 16:20:19,090 - WARNING - basehttp - "GET /admin/secretaire/secretaire/ HTTP/1.1" 404 6085
+2025-03-22 16:20:47,900 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-03-22 16:20:47,970 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 10425
+2025-03-22 16:20:51,169 - INFO - basehttp - "GET /admin/ HTTP/1.1" 200 11962
+2025-03-22 16:20:58,703 - INFO - basehttp - "GET /admin/Activation/activation/add/ HTTP/1.1" 200 13681
+2025-03-22 16:20:59,189 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-22 16:21:14,612 - INFO - basehttp - "POST /admin/Activation/activation/add/ HTTP/1.1" 302 0
+2025-03-22 16:21:15,312 - INFO - basehttp - "GET /admin/Activation/activation/ HTTP/1.1" 200 14048
+2025-03-22 16:21:15,591 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-22 16:21:27,564 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 10425
+2025-03-22 16:21:36,089 - INFO - basehttp - "POST /Activation/page/ HTTP/1.1" 302 0
+2025-03-22 16:21:36,134 - INFO - basehttp - "GET /home HTTP/1.1" 302 0
+2025-03-22 16:21:36,230 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-22 16:21:44,032 - INFO - basehttp - "GET /admin/ HTTP/1.1" 200 12377
+2025-03-22 16:21:56,940 - INFO - basehttp - "GET /admin/Employee/employee/add/ HTTP/1.1" 200 27570
+2025-03-22 16:21:57,273 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-22 16:22:04,778 - INFO - basehttp - "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+2025-03-22 16:23:11,595 - INFO - basehttp - "GET /admin/specialite/specialite/add/?_to_field=id&_popup=1 HTTP/1.1" 200 4456
+2025-03-22 16:23:11,768 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-22 16:23:20,017 - INFO - basehttp - "POST /admin/specialite/specialite/add/?_to_field=id&_popup=1 HTTP/1.1" 200 331
+2025-03-22 16:23:20,161 - INFO - basehttp - "GET /static/admin/js/popup_response.js HTTP/1.1" 200 551
+2025-03-22 16:24:37,953 - INFO - basehttp - "POST /admin/Employee/employee/add/ HTTP/1.1" 302 0
+2025-03-22 16:24:38,541 - INFO - basehttp - "GET /admin/Employee/employee/ HTTP/1.1" 200 13485
+2025-03-22 16:24:39,206 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-22 16:24:53,341 - INFO - basehttp - "POST / HTTP/1.1" 302 0
+2025-03-22 16:24:53,467 - INFO - basehttp - "GET /home HTTP/1.1" 200 13463
+2025-03-22 16:24:54,185 - INFO - basehttp - "GET /media/employe/Capture_d%C3%A9cran_2025-03-08_160658.png HTTP/1.1" 200 83657
+2025-03-22 16:25:08,598 - INFO - basehttp - "GET /home HTTP/1.1" 200 13463
+2025-03-22 16:25:09,904 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 10235
+2025-03-22 16:25:11,977 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 10366
+2025-03-22 16:25:14,036 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 10942
+2025-03-22 16:25:16,872 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 10707
+2025-03-22 16:25:22,619 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 11016
+2025-03-22 16:25:24,874 - INFO - basehttp - "GET /stagiairelist/ HTTP/1.1" 200 10535
+2025-03-22 16:25:26,878 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 10288
+2025-03-22 16:25:30,175 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 10288
+2025-03-22 16:25:31,657 - INFO - basehttp - "GET /export HTTP/1.1" 200 12625
+2025-03-22 16:25:52,218 - INFO - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 200 37991
+2025-03-22 16:25:55,827 - INFO - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 200 37991
+2025-03-22 16:26:23,726 - INFO - basehttp - "GET /home HTTP/1.1" 200 13463
+2025-03-22 16:26:54,682 - INFO - basehttp - "GET /home HTTP/1.1" 200 13463
+2025-03-22 16:26:57,684 - INFO - basehttp - "GET /Employee/ HTTP/1.1" 200 10617
+2025-03-23 14:45:47,273 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 14:46:02,489 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-23 14:46:10,911 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-03-23 14:46:10,948 - INFO - basehttp - "GET /static/image/congo-2697382_1920.jpg HTTP/1.1" 200 566668
+2025-03-23 14:46:10,951 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-03-23 14:46:10,970 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-03-23 14:46:11,198 - INFO - basehttp - "GET /static/image/buildings-6956678_1920.jpg HTTP/1.1" 200 617712
+2025-03-23 14:46:12,260 - WARNING - log - Not Found: /favicon.ico
+2025-03-23 14:46:12,264 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 3969
+2025-03-23 14:46:16,656 - INFO - basehttp - "POST / HTTP/1.1" 302 0
+2025-03-23 14:46:16,951 - INFO - basehttp - "GET /home HTTP/1.1" 200 13463
+2025-03-23 14:46:17,260 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-03-23 14:46:17,283 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-03-23 14:46:17,437 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-03-23 14:46:17,501 - INFO - basehttp - "GET /media/employe/Capture_d%C3%A9cran_2025-03-08_160658.png HTTP/1.1" 200 83657
+2025-03-23 14:46:30,259 - INFO - basehttp - "GET /home HTTP/1.1" 200 13463
+2025-03-23 14:46:48,424 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-23 14:46:51,341 - WARNING - log - Not Found: /admin
+2025-03-23 14:46:51,351 - WARNING - basehttp - "GET /admin HTTP/1.1" 404 3945
+2025-03-23 14:46:56,307 - WARNING - log - Not Found: /admi
+2025-03-23 14:46:56,312 - WARNING - basehttp - "GET /admi HTTP/1.1" 404 3941
+2025-03-23 14:47:05,813 - WARNING - log - Not Found: /admin
+2025-03-23 14:47:05,818 - WARNING - basehttp - "GET /admin HTTP/1.1" 404 3945
+2025-03-23 14:47:07,178 - WARNING - log - Not Found: /admin
+2025-03-23 14:47:07,192 - WARNING - basehttp - "GET /admin HTTP/1.1" 404 3945
+2025-03-23 14:47:17,488 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-23 14:47:24,782 - WARNING - log - Not Found: /admin
+2025-03-23 14:47:24,786 - WARNING - basehttp - "GET /admin HTTP/1.1" 404 3945
+2025-03-23 14:49:34,265 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-23 14:49:50,384 - WARNING - log - Not Found: /admin
+2025-03-23 14:49:50,387 - WARNING - basehttp - "GET /admin HTTP/1.1" 404 3945
+2025-03-23 14:54:43,415 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\settings.py changed, reloading.
+2025-03-23 14:54:52,791 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 14:55:23,003 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\urls.py changed, reloading.
+2025-03-23 14:55:28,020 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 14:55:50,031 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\urls.py changed, reloading.
+2025-03-23 14:55:54,708 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 14:56:48,809 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 14:57:48,921 - WARNING - log - Not Found: /admin
+2025-03-23 14:57:48,926 - WARNING - basehttp - "GET /admin HTTP/1.1" 404 3945
+2025-03-23 14:57:51,150 - WARNING - log - Not Found: /admin
+2025-03-23 14:57:51,154 - WARNING - basehttp - "GET /admin HTTP/1.1" 404 3945
+2025-03-23 15:06:01,878 - WARNING - log - Not Found: /admin
+2025-03-23 15:06:01,894 - WARNING - basehttp - "GET /admin HTTP/1.1" 404 3945
+2025-03-23 15:20:05,646 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 15:20:24,730 - WARNING - log - Not Found: /admin
+2025-03-23 15:20:24,736 - WARNING - basehttp - "GET /admin HTTP/1.1" 404 3945
+2025-03-23 15:20:27,979 - WARNING - log - Not Found: /admin
+2025-03-23 15:20:27,982 - WARNING - basehttp - "GET /admin HTTP/1.1" 404 3945
+2025-03-23 15:20:29,476 - WARNING - log - Not Found: /admin
+2025-03-23 15:20:29,478 - WARNING - basehttp - "GET /admin HTTP/1.1" 404 3945
+2025-03-23 15:20:31,142 - WARNING - log - Not Found: /admin
+2025-03-23 15:20:31,146 - WARNING - basehttp - "GET /admin HTTP/1.1" 404 3945
+2025-03-23 15:20:32,696 - WARNING - log - Not Found: /admin
+2025-03-23 15:20:32,700 - WARNING - basehttp - "GET /admin HTTP/1.1" 404 3945
+2025-03-23 15:22:06,337 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\settings.py changed, reloading.
+2025-03-23 15:22:35,862 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 15:22:42,632 - WARNING - log - Not Found: /admin
+2025-03-23 15:22:42,638 - WARNING - basehttp - "GET /admin HTTP/1.1" 404 3945
+2025-03-23 15:28:38,637 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 15:28:43,590 - WARNING - log - Not Found: /admin
+2025-03-23 15:28:43,593 - WARNING - basehttp - "GET /admin HTTP/1.1" 404 3945
+2025-03-23 15:29:08,995 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-23 15:29:12,068 - ERROR - log - Internal Server Error: /adminhttp://127.0.0.1:8000/admin
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\views\static.py", line 35, in serve
+    if fullpath.is_dir():
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\pathlib.py", line 1422, in is_dir
+    return S_ISDIR(self.stat().st_mode)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\pathlib.py", line 1221, in stat
+    return self._accessor.stat(self)
+OSError: [WinError 123] La syntaxe du nom de fichier, de répertoire ou de volume est incorrecte: 'C:\\Users\\DAII IATITUDE\\Desktop\\Projet\\Gestion_Personnel_INRAP\\adminhttp:\\127.0.0.1:8000\\admin'
+2025-03-23 15:29:12,255 - ERROR - basehttp - "GET /adminhttp://127.0.0.1:8000/admin HTTP/1.1" 500 72792
+2025-03-23 15:29:19,260 - WARNING - log - Not Found: /favicon.ico
+2025-03-23 15:29:19,265 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 3969
+2025-03-23 15:29:33,715 - WARNING - log - Not Found: /admin
+2025-03-23 15:29:33,718 - WARNING - basehttp - "GET /admin HTTP/1.1" 404 3945
+2025-03-23 15:29:34,695 - WARNING - log - Not Found: /admin
+2025-03-23 15:29:34,698 - WARNING - basehttp - "GET /admin HTTP/1.1" 404 3945
+2025-03-23 15:29:50,403 - INFO - basehttp - "GET /Employee/ HTTP/1.1" 200 10617
+2025-03-23 15:30:09,655 - INFO - basehttp - "POST /Employee/ HTTP/1.1" 302 0
+2025-03-23 15:30:09,712 - INFO - basehttp - "GET /admin/ HTTP/1.1" 302 0
+2025-03-23 15:30:09,885 - INFO - basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+2025-03-23 15:30:18,800 - INFO - basehttp - "GET /static/admin/css/base.css HTTP/1.1" 200 21310
+2025-03-23 15:30:18,803 - INFO - basehttp - "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+2025-03-23 15:30:18,806 - INFO - basehttp - "GET /static/admin/css/responsive.css HTTP/1.1" 200 18559
+2025-03-23 15:30:18,811 - INFO - basehttp - "GET /static/admin/css/login.css HTTP/1.1" 200 958
+2025-03-23 15:30:18,815 - INFO - basehttp - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+2025-03-23 15:30:18,877 - INFO - basehttp - "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+2025-03-23 15:30:19,025 - INFO - basehttp - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2025-03-23 15:30:42,981 - WARNING - log - Not Found: /admin
+2025-03-23 15:30:42,985 - WARNING - basehttp - "GET /admin HTTP/1.1" 404 3945
+2025-03-23 15:31:06,331 - INFO - basehttp - "GET /admin/ HTTP/1.1" 302 0
+2025-03-23 15:31:06,429 - INFO - basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+2025-03-23 15:32:47,762 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 15:32:57,372 - WARNING - log - Not Found: //admin/
+2025-03-23 15:32:57,380 - WARNING - basehttp - "GET //admin/ HTTP/1.1" 404 3951
+2025-03-23 15:32:58,721 - WARNING - log - Not Found: /favicon.ico
+2025-03-23 15:32:58,727 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 3969
+2025-03-23 15:33:08,144 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-23 15:33:11,108 - INFO - basehttp - "GET /admin/ HTTP/1.1" 302 0
+2025-03-23 15:33:11,452 - INFO - basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+2025-03-23 15:33:15,240 - INFO - basehttp - "GET /admin/ HTTP/1.1" 302 0
+2025-03-23 15:33:15,305 - INFO - basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+2025-03-23 15:33:29,047 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-23 15:33:38,356 - INFO - basehttp - "POST / HTTP/1.1" 302 0
+2025-03-23 15:33:38,454 - INFO - basehttp - "GET /home HTTP/1.1" 200 13463
+2025-03-23 15:33:46,097 - INFO - basehttp - "GET /media/employe/Capture_d%C3%A9cran_2025-03-08_160658.png HTTP/1.1" 200 83657
+2025-03-23 15:33:46,101 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-03-23 15:33:46,157 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-03-23 15:33:46,266 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-03-23 15:34:09,100 - INFO - basehttp - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2025-03-23 15:34:09,290 - INFO - basehttp - "GET /admin/ HTTP/1.1" 200 12986
+2025-03-23 15:34:09,474 - INFO - basehttp - "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+2025-03-23 15:34:09,597 - INFO - basehttp - "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2025-03-23 15:34:09,599 - INFO - basehttp - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2025-03-23 15:34:20,319 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 12913
+2025-03-23 15:34:20,636 - INFO - basehttp - "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+2025-03-23 15:34:20,653 - INFO - basehttp - "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2025-03-23 15:34:20,728 - INFO - basehttp - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+2025-03-23 15:34:20,747 - INFO - basehttp - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+2025-03-23 15:34:20,796 - INFO - basehttp - "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+2025-03-23 15:34:20,853 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:34:20,876 - INFO - basehttp - "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+2025-03-23 15:34:20,893 - INFO - basehttp - "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+2025-03-23 15:34:20,904 - INFO - basehttp - "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2025-03-23 15:34:20,935 - INFO - basehttp - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2025-03-23 15:34:20,992 - INFO - basehttp - "GET /static/admin/css/widgets.css HTTP/1.1" 200 11921
+2025-03-23 15:34:21,026 - INFO - basehttp - "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+2025-03-23 15:34:21,040 - INFO - basehttp - "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+2025-03-23 15:35:35,744 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:35:35,962 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13167
+2025-03-23 15:35:36,443 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:35:36,973 - INFO - basehttp - "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2025-03-23 15:35:56,041 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:35:56,141 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13166
+2025-03-23 15:35:56,565 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:36:09,893 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:36:10,229 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13164
+2025-03-23 15:36:10,489 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:36:23,282 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:36:23,468 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13164
+2025-03-23 15:36:23,701 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:36:58,296 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:36:58,834 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13162
+2025-03-23 15:37:01,338 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:37:09,610 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:37:09,943 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13158
+2025-03-23 15:37:10,773 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:37:26,846 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:37:27,010 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13166
+2025-03-23 15:37:27,265 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:37:46,530 - INFO - basehttp - "GET /admin/specialite/ HTTP/1.1" 200 5124
+2025-03-23 15:37:54,123 - INFO - basehttp - "GET /admin/specialite/specialite/ HTTP/1.1" 200 14799
+2025-03-23 15:37:54,357 - INFO - basehttp - "GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+2025-03-23 15:37:54,387 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:37:54,432 - INFO - basehttp - "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+2025-03-23 15:37:54,550 - INFO - basehttp - "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2025-03-23 15:41:30,884 - INFO - basehttp - "POST /admin/specialite/specialite/ HTTP/1.1" 200 12179
+2025-03-23 15:41:31,424 - INFO - basehttp - "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+2025-03-23 15:41:34,284 - INFO - basehttp - "POST /admin/specialite/specialite/ HTTP/1.1" 302 0
+2025-03-23 15:41:34,778 - INFO - basehttp - "GET /admin/specialite/specialite/ HTTP/1.1" 200 14720
+2025-03-23 15:41:35,067 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:43:59,240 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\specialite\models.py changed, reloading.
+2025-03-23 15:44:13,461 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 15:44:43,630 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\fonction\models.py changed, reloading.
+2025-03-23 15:44:54,617 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 15:46:32,840 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 15:47:02,717 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 12913
+2025-03-23 15:47:03,160 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:47:09,197 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:47:09,306 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13175
+2025-03-23 15:47:09,544 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:47:32,051 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 200 13101
+2025-03-23 15:47:32,290 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:47:59,441 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:47:59,644 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13165
+2025-03-23 15:47:59,915 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:48:17,258 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 200 13097
+2025-03-23 15:48:17,473 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:48:20,854 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 200 13097
+2025-03-23 15:48:21,126 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:48:43,660 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:48:43,804 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13164
+2025-03-23 15:48:44,069 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:49:02,501 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:49:03,009 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13167
+2025-03-23 15:49:09,276 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:49:31,250 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:49:31,388 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13167
+2025-03-23 15:49:31,636 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:49:50,358 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:49:50,573 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13160
+2025-03-23 15:49:51,463 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:50:04,070 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:50:04,273 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13159
+2025-03-23 15:50:04,646 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:50:23,952 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:50:24,071 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13170
+2025-03-23 15:50:24,418 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:50:38,253 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:50:38,364 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13174
+2025-03-23 15:50:38,724 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:50:56,164 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:50:56,265 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13161
+2025-03-23 15:50:56,451 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:51:17,029 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:51:17,139 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13174
+2025-03-23 15:51:17,615 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:51:30,617 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:51:30,715 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13159
+2025-03-23 15:51:31,024 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:51:51,402 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:51:51,504 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13164
+2025-03-23 15:51:51,686 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:52:16,337 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:52:16,452 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13168
+2025-03-23 15:52:16,927 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:53:08,980 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:53:09,171 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13171
+2025-03-23 15:53:09,605 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:53:41,385 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:53:41,591 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13159
+2025-03-23 15:53:42,393 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:54:00,876 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:54:01,133 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13166
+2025-03-23 15:54:01,458 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:54:20,680 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:54:20,793 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13168
+2025-03-23 15:54:20,974 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:54:46,307 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:54:46,410 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13164
+2025-03-23 15:54:46,582 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:55:03,547 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:55:03,643 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13158
+2025-03-23 15:55:03,856 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:55:32,836 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:55:33,081 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13169
+2025-03-23 15:55:33,423 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:55:45,447 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:55:45,661 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13169
+2025-03-23 15:55:45,929 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:56:01,537 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:56:01,636 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13166
+2025-03-23 15:56:01,831 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:56:17,053 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:56:17,311 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13165
+2025-03-23 15:56:17,634 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:56:30,015 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:56:30,243 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13168
+2025-03-23 15:56:30,799 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:57:22,714 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:57:22,880 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13178
+2025-03-23 15:57:23,235 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:57:53,994 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:57:54,092 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13177
+2025-03-23 15:57:54,457 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:58:16,239 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:58:16,455 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13176
+2025-03-23 15:58:16,698 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:58:34,933 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:58:35,175 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13163
+2025-03-23 15:58:35,479 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:58:48,487 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:58:48,621 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13166
+2025-03-23 15:58:48,924 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:59:08,964 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:59:09,183 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13166
+2025-03-23 15:59:09,446 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 15:59:32,951 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 15:59:33,085 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13174
+2025-03-23 15:59:33,354 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:00:15,051 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 16:00:15,310 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13163
+2025-03-23 16:00:16,101 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:00:34,579 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 16:00:34,714 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13180
+2025-03-23 16:00:35,269 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:01:08,639 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 16:01:08,825 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13185
+2025-03-23 16:01:09,349 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:01:21,226 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 16:01:21,344 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13167
+2025-03-23 16:01:21,591 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:01:39,981 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 16:01:40,190 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13182
+2025-03-23 16:01:40,436 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:02:41,321 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 16:02:41,493 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13169
+2025-03-23 16:02:41,859 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:04:41,040 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\unite\models.py changed, reloading.
+2025-03-23 16:04:50,589 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 16:05:11,192 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\fonction\models.py changed, reloading.
+2025-03-23 16:05:18,578 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 16:06:00,682 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\specialite\models.py changed, reloading.
+2025-03-23 16:06:48,064 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 16:06:53,672 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-23 16:06:58,899 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 12913
+2025-03-23 16:06:59,255 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:07:05,011 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 16:07:05,141 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13193
+2025-03-23 16:07:05,388 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:07:26,508 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 16:07:26,660 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13199
+2025-03-23 16:07:26,849 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:08:11,276 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 16:08:11,442 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13179
+2025-03-23 16:08:11,876 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:08:27,295 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 16:08:27,402 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13167
+2025-03-23 16:08:27,828 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:08:56,695 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 16:08:56,797 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13167
+2025-03-23 16:08:56,980 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:09:24,788 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 16:09:24,958 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13177
+2025-03-23 16:09:25,322 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:09:51,627 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 16:09:52,026 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13180
+2025-03-23 16:09:52,342 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:10:09,474 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 16:10:09,801 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13164
+2025-03-23 16:10:10,038 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:10:26,947 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 200 13094
+2025-03-23 16:10:27,198 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:10:53,454 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 16:10:53,576 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13177
+2025-03-23 16:10:53,831 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:11:12,957 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 16:11:13,074 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13159
+2025-03-23 16:11:13,331 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:11:44,645 - INFO - basehttp - "GET /home HTTP/1.1" 200 13463
+2025-03-23 16:12:03,210 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 11596
+2025-03-23 16:12:07,092 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 51812
+2025-03-23 16:12:40,596 - INFO - basehttp - "GET /OrganizationalUnit/search/?filter=designation&query=Comptable HTTP/1.1" 200 9315
+2025-03-23 16:12:44,672 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 10707
+2025-03-23 16:12:55,647 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 51812
+2025-03-23 16:13:07,044 - INFO - basehttp - "GET /OrganizationalUnit/search/?filter=&query=Comptabilit%C3%A9 HTTP/1.1" 200 9315
+2025-03-23 16:17:24,825 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 10707
+2025-03-23 16:17:29,616 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 51570
+2025-03-23 16:17:41,754 - INFO - basehttp - "GET /specialite/recherche/?filter=designation&query=Comptable HTTP/1.1" 200 9314
+2025-03-23 16:17:45,865 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 51570
+2025-03-23 16:18:01,630 - INFO - basehttp - "GET /specialite/recherche/?filter=designation&query=Communication HTTP/1.1" 200 9751
+2025-03-23 16:18:35,916 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 200 13103
+2025-03-23 16:18:36,619 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:19:02,090 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 16:19:02,272 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13180
+2025-03-23 16:19:02,685 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:19:26,293 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 16:19:26,564 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13170
+2025-03-23 16:19:27,099 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:19:47,904 - INFO - basehttp - "POST /admin/specialite/specialite/add/ HTTP/1.1" 302 0
+2025-03-23 16:19:48,167 - INFO - basehttp - "GET /admin/specialite/specialite/add/ HTTP/1.1" 200 13164
+2025-03-23 16:19:48,505 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:20:32,719 - INFO - basehttp - "GET /admin/specialite/ HTTP/1.1" 200 5124
+2025-03-23 16:20:36,307 - INFO - basehttp - "GET /admin/ HTTP/1.1" 200 15050
+2025-03-23 16:20:42,369 - INFO - basehttp - "GET /admin/fonction/fonction/add/ HTTP/1.1" 200 12889
+2025-03-23 16:20:42,843 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:20:56,725 - INFO - basehttp - "POST /admin/fonction/fonction/add/ HTTP/1.1" 302 0
+2025-03-23 16:20:56,999 - INFO - basehttp - "GET /admin/fonction/fonction/add/ HTTP/1.1" 200 13134
+2025-03-23 16:20:57,315 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:21:25,028 - INFO - basehttp - "POST /admin/fonction/fonction/add/ HTTP/1.1" 302 0
+2025-03-23 16:21:25,166 - INFO - basehttp - "GET /admin/fonction/fonction/add/ HTTP/1.1" 200 13160
+2025-03-23 16:21:25,351 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:21:35,242 - INFO - basehttp - "POST /admin/fonction/fonction/add/ HTTP/1.1" 302 0
+2025-03-23 16:21:35,532 - INFO - basehttp - "GET /admin/fonction/fonction/add/ HTTP/1.1" 200 13143
+2025-03-23 16:21:35,929 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:21:45,063 - INFO - basehttp - "POST /admin/fonction/fonction/add/ HTTP/1.1" 200 13075
+2025-03-23 16:21:45,557 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:21:59,995 - INFO - basehttp - "POST /admin/fonction/fonction/add/ HTTP/1.1" 200 13084
+2025-03-23 16:22:00,347 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:22:09,889 - INFO - basehttp - "POST /admin/fonction/fonction/add/ HTTP/1.1" 302 0
+2025-03-23 16:22:10,056 - INFO - basehttp - "GET /admin/fonction/fonction/add/ HTTP/1.1" 200 13132
+2025-03-23 16:22:10,262 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:22:23,765 - INFO - basehttp - "POST /admin/fonction/fonction/add/ HTTP/1.1" 302 0
+2025-03-23 16:22:24,049 - INFO - basehttp - "GET /admin/fonction/fonction/add/ HTTP/1.1" 200 13140
+2025-03-23 16:22:24,313 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:22:41,460 - INFO - basehttp - "POST /admin/fonction/fonction/add/ HTTP/1.1" 302 0
+2025-03-23 16:22:41,697 - INFO - basehttp - "GET /admin/fonction/fonction/add/ HTTP/1.1" 200 13137
+2025-03-23 16:22:42,264 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:23:07,847 - INFO - basehttp - "POST /admin/fonction/fonction/add/ HTTP/1.1" 302 0
+2025-03-23 16:23:07,955 - INFO - basehttp - "GET /admin/fonction/fonction/add/ HTTP/1.1" 200 13136
+2025-03-23 16:23:08,154 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:23:20,992 - INFO - basehttp - "POST /admin/fonction/fonction/add/ HTTP/1.1" 302 0
+2025-03-23 16:23:21,348 - INFO - basehttp - "GET /admin/fonction/fonction/add/ HTTP/1.1" 200 13139
+2025-03-23 16:23:21,827 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:23:35,228 - INFO - basehttp - "POST /admin/fonction/fonction/add/ HTTP/1.1" 302 0
+2025-03-23 16:23:35,448 - INFO - basehttp - "GET /admin/fonction/fonction/add/ HTTP/1.1" 200 13138
+2025-03-23 16:23:35,900 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:23:54,055 - INFO - basehttp - "POST /admin/fonction/fonction/add/ HTTP/1.1" 200 13079
+2025-03-23 16:23:54,443 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:24:14,747 - INFO - basehttp - "POST /admin/fonction/fonction/add/ HTTP/1.1" 302 0
+2025-03-23 16:24:15,012 - INFO - basehttp - "GET /admin/fonction/fonction/add/ HTTP/1.1" 200 13145
+2025-03-23 16:24:15,388 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:26:06,572 - INFO - basehttp - "GET /admin/ HTTP/1.1" 200 15009
+2025-03-23 16:26:10,667 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 53848
+2025-03-23 16:26:24,212 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 10235
+2025-03-23 16:26:26,693 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 17693
+2025-03-23 16:26:37,652 - ERROR - log - Internal Server Error: /fonction/3/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\fonction\views.py", line 40, in fonction_detail
+    return render(request, 'fonction/fonction_detail.html', {'directeur': fonction})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'modifier' with arguments '('',)' not found. 1 pattern(s) tried: ['fonction/(?P<id>[0-9]+)/modifier/\\Z']
+2025-03-23 16:26:37,683 - ERROR - basehttp - "GET /fonction/3/ HTTP/1.1" 500 167048
+2025-03-23 16:28:24,195 - ERROR - log - Internal Server Error: /fonction/3/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\fonction\views.py", line 40, in fonction_detail
+    return render(request, 'fonction/fonction_detail.html', {'directeur': fonction})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'modifier' with arguments '('',)' not found. 1 pattern(s) tried: ['fonction/(?P<id>[0-9]+)/modifier/\\Z']
+2025-03-23 16:28:24,460 - ERROR - basehttp - "GET /fonction/3/ HTTP/1.1" 500 167158
+2025-03-23 16:28:43,939 - INFO - basehttp - "GET /fonction/3/modifier/ HTTP/1.1" 200 10164
+2025-03-23 16:28:48,215 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 17693
+2025-03-23 16:29:28,172 - ERROR - log - Internal Server Error: /fonction/3/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\fonction\views.py", line 40, in fonction_detail
+    return render(request, 'fonction/fonction_detail.html', {'directeur': fonction})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'modifier' with arguments '('',)' not found. 1 pattern(s) tried: ['fonction/(?P<id>[0-9]+)/modifier/\\Z']
+2025-03-23 16:29:28,215 - ERROR - basehttp - "GET /fonction/3/ HTTP/1.1" 500 167021
+2025-03-23 16:30:25,949 - ERROR - log - Internal Server Error: /fonction/3/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\fonction\views.py", line 40, in fonction_detail
+    return render(request, 'fonction/fonction_detail.html', {'directeur': fonction})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'modifier' with arguments '('',)' not found. 1 pattern(s) tried: ['fonction/(?P<id>[0-9]+)/modifier/\\Z']
+2025-03-23 16:30:26,117 - ERROR - basehttp - "GET /fonction/3/ HTTP/1.1" 500 167149
+2025-03-23 16:30:56,949 - INFO - basehttp - "GET /fonction/3/ HTTP/1.1" 200 10591
+2025-03-23 16:31:24,540 - INFO - basehttp - "GET /fonction/3/ HTTP/1.1" 200 10476
+2025-03-23 16:32:24,196 - INFO - basehttp - "GET /fonction/3/ HTTP/1.1" 200 10476
+2025-03-23 16:32:26,238 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 15942
+2025-03-23 16:32:55,195 - INFO - basehttp - "GET /admin/unite/unite/add/ HTTP/1.1" 200 12853
+2025-03-23 16:32:55,580 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:33:42,070 - INFO - basehttp - "POST /admin/unite/unite/add/ HTTP/1.1" 302 0
+2025-03-23 16:33:42,204 - INFO - basehttp - "GET /admin/unite/unite/add/ HTTP/1.1" 200 13095
+2025-03-23 16:33:42,437 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:34:17,922 - INFO - basehttp - "POST /admin/unite/unite/add/ HTTP/1.1" 302 0
+2025-03-23 16:34:18,038 - INFO - basehttp - "GET /admin/unite/unite/add/ HTTP/1.1" 200 13097
+2025-03-23 16:34:18,373 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:34:25,351 - INFO - basehttp - "POST /admin/unite/unite/add/ HTTP/1.1" 302 0
+2025-03-23 16:34:25,461 - INFO - basehttp - "GET /admin/unite/unite/add/ HTTP/1.1" 200 13082
+2025-03-23 16:34:25,630 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:34:32,509 - INFO - basehttp - "POST /admin/unite/unite/add/ HTTP/1.1" 302 0
+2025-03-23 16:34:32,610 - INFO - basehttp - "GET /admin/unite/unite/add/ HTTP/1.1" 200 13083
+2025-03-23 16:34:32,780 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:34:40,273 - INFO - basehttp - "POST /admin/unite/unite/add/ HTTP/1.1" 302 0
+2025-03-23 16:34:40,375 - INFO - basehttp - "GET /admin/unite/unite/add/ HTTP/1.1" 200 13082
+2025-03-23 16:34:40,617 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:34:59,134 - INFO - basehttp - "POST /admin/unite/unite/add/ HTTP/1.1" 302 0
+2025-03-23 16:34:59,243 - INFO - basehttp - "GET /admin/unite/unite/add/ HTTP/1.1" 200 13088
+2025-03-23 16:34:59,415 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 16:35:10,751 - INFO - basehttp - "GET /admin/ HTTP/1.1" 200 14924
+2025-03-23 16:35:36,406 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 11596
+2025-03-23 16:35:41,759 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 21526
+2025-03-23 16:44:52,721 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\fonction\views.py changed, reloading.
+2025-03-23 16:45:10,101 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 16:46:59,674 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py changed, reloading.
+2025-03-23 16:47:21,357 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 16:47:54,958 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py changed, reloading.
+2025-03-23 16:48:01,943 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 16:52:07,513 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\models.py changed, reloading.
+2025-03-23 16:53:07,511 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 16:53:38,535 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-23 17:03:17,923 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 21868
+2025-03-23 17:04:04,434 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 21868
+2025-03-23 17:09:46,537 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 200 22984
+2025-03-23 17:12:24,775 - ERROR - log - Internal Server Error: /Employee/create/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py", line 61, in ajouter_employe
+    return redirect('Employee:lists')
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 48, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 145, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'lists' not found. 'lists' is not a valid view function or pattern name.
+2025-03-23 17:12:24,830 - ERROR - basehttp - "POST /Employee/create/ HTTP/1.1" 500 87914
+2025-03-23 17:14:46,112 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py changed, reloading.
+2025-03-23 17:14:51,021 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 17:15:07,165 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 302 0
+2025-03-23 17:15:07,770 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 13704
+2025-03-23 17:15:43,842 - ERROR - log - Internal Server Error: /Employee/3/delete/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'employee'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py", line 102, in supprimer_employe
+    return render(request, 'Employee/supprimer_employe.html', {'employe': employe})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'employee' is not a registered namespace
+2025-03-23 17:15:43,882 - ERROR - basehttp - "GET /Employee/3/delete/ HTTP/1.1" 500 164809
+2025-03-23 17:18:27,798 - ERROR - log - Internal Server Error: /Employee/3/delete/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py", line 102, in supprimer_employe
+    return render(request, 'Employee/supprimer_employe.html', {'employe': employe})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'delete' with arguments '('',)' not found. 1 pattern(s) tried: ['Employee/(?P<id>[0-9]+)/delete/\\Z']
+2025-03-23 17:18:27,822 - ERROR - basehttp - "GET /Employee/3/delete/ HTTP/1.1" 500 166664
+2025-03-23 17:19:56,095 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py changed, reloading.
+2025-03-23 17:20:06,364 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 17:20:16,049 - ERROR - log - Internal Server Error: /Employee/3/delete/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py", line 100, in supprimer_employe
+    return render(request, 'Employee/supprimer_employe.html', {'employe': employe})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'delete' with arguments '('',)' not found. 1 pattern(s) tried: ['Employee/(?P<id>[0-9]+)/delete/\\Z']
+2025-03-23 17:20:16,083 - ERROR - basehttp - "GET /Employee/3/delete/ HTTP/1.1" 500 166478
+2025-03-23 17:20:34,206 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 12650
+2025-03-23 17:20:54,171 - INFO - basehttp - "GET /export HTTP/1.1" 200 12625
+2025-03-23 17:21:05,112 - INFO - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 200 38043
+2025-03-23 17:21:08,188 - INFO - basehttp - "GET /home HTTP/1.1" 200 13463
+2025-03-23 17:23:09,769 - INFO - basehttp - "GET /home HTTP/1.1" 200 13463
+2025-03-23 22:33:20,727 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-23 22:33:49,034 - INFO - basehttp - "GET /admin/ HTTP/1.1" 302 0
+2025-03-23 22:33:49,940 - INFO - basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+2025-03-23 22:33:52,709 - WARNING - log - Not Found: /favicon.ico
+2025-03-23 22:33:52,716 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 3969
+2025-03-23 22:34:13,622 - INFO - basehttp - "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4343
+2025-03-23 22:34:14,734 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-23 22:34:20,273 - INFO - basehttp - "POST / HTTP/1.1" 302 0
+2025-03-23 22:34:20,615 - INFO - basehttp - "GET /home HTTP/1.1" 200 13463
+2025-03-23 22:34:50,106 - INFO - basehttp - "GET /home HTTP/1.1" 200 13463
+2025-03-23 22:35:16,823 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 12650
+2025-03-23 22:35:26,558 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 21868
+2025-03-23 22:39:44,644 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 302 0
+2025-03-23 22:39:44,892 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 13716
+2025-03-23 22:41:08,770 - INFO - basehttp - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2025-03-23 22:41:09,173 - INFO - basehttp - "GET /admin/ HTTP/1.1" 200 14924
+2025-03-23 22:41:13,646 - INFO - basehttp - "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+2025-03-23 22:41:13,730 - INFO - basehttp - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2025-03-23 22:41:13,741 - INFO - basehttp - "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2025-03-23 22:41:20,294 - INFO - basehttp - "GET /admin/Employee/employee/add/ HTTP/1.1" 200 30067
+2025-03-23 22:41:21,060 - INFO - basehttp - "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+2025-03-23 22:41:21,070 - INFO - basehttp - "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+2025-03-23 22:41:21,117 - INFO - basehttp - "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2025-03-23 22:41:21,153 - INFO - basehttp - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+2025-03-23 22:41:21,213 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 22:41:21,233 - INFO - basehttp - "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+2025-03-23 22:41:21,315 - INFO - basehttp - "GET /static/admin/js/core.js HTTP/1.1" 200 5682
+2025-03-23 22:41:21,323 - INFO - basehttp - "GET /static/admin/css/widgets.css HTTP/1.1" 200 11921
+2025-03-23 22:41:21,330 - INFO - basehttp - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+2025-03-23 22:41:21,335 - INFO - basehttp - "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+2025-03-23 22:41:21,349 - INFO - basehttp - "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+2025-03-23 22:41:21,352 - INFO - basehttp - "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2025-03-23 22:41:21,644 - INFO - basehttp - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2025-03-23 22:41:21,690 - INFO - basehttp - "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+2025-03-23 22:41:21,711 - INFO - basehttp - "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+2025-03-23 22:41:21,786 - INFO - basehttp - "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+2025-03-23 22:41:22,746 - INFO - basehttp - "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+2025-03-23 22:43:12,231 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 21868
+2025-03-23 22:47:30,052 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 302 0
+2025-03-23 22:47:30,413 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 14748
+2025-03-23 22:47:33,489 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 21868
+2025-03-23 22:50:50,867 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 302 0
+2025-03-23 22:50:51,107 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 15774
+2025-03-23 22:50:59,975 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 21868
+2025-03-23 22:55:09,937 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 302 0
+2025-03-23 22:55:15,975 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 16807
+2025-03-23 22:55:53,812 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 21868
+2025-03-23 22:59:37,225 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 302 0
+2025-03-23 22:59:37,518 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 17841
+2025-03-23 23:00:05,428 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 21868
+2025-03-23 23:02:29,750 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 21868
+2025-03-23 23:06:10,805 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 302 0
+2025-03-23 23:06:11,060 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 18882
+2025-03-23 23:06:14,647 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 21868
+2025-03-23 23:09:21,088 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 302 0
+2025-03-23 23:09:21,446 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 19924
+2025-03-23 23:09:26,013 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 21868
+2025-03-23 23:13:16,332 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-23 23:13:18,683 - WARNING - log - Not Found: /admin
+2025-03-23 23:13:18,688 - WARNING - basehttp - "GET /admin HTTP/1.1" 404 3945
+2025-03-23 23:13:25,903 - INFO - basehttp - "GET /admin/ HTTP/1.1" 200 14924
+2025-03-23 23:13:39,853 - INFO - basehttp - "GET /admin/Employee/employee/ HTTP/1.1" 200 15113
+2025-03-23 23:13:40,939 - INFO - basehttp - "GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+2025-03-23 23:13:40,943 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 23:13:41,211 - INFO - basehttp - "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+2025-03-23 23:13:41,396 - INFO - basehttp - "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2025-03-23 23:13:49,337 - INFO - basehttp - "GET /admin/Employee/employee/add/ HTTP/1.1" 200 30067
+2025-03-23 23:13:49,787 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 23:14:49,592 - INFO - basehttp - "GET /static/admin/img/calendar-icons.svg HTTP/1.1" 200 1094
+2025-03-23 23:18:39,924 - INFO - basehttp - "POST /admin/Employee/employee/add/ HTTP/1.1" 302 0
+2025-03-23 23:18:40,614 - INFO - basehttp - "GET /admin/Employee/employee/add/ HTTP/1.1" 200 30328
+2025-03-23 23:18:41,447 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-03-23 23:18:41,769 - INFO - basehttp - "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2025-03-23 23:20:40,780 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 21868
+2025-03-23 23:50:26,396 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 20973
+2025-03-23 23:51:01,508 - INFO - basehttp - "GET /Employee/recherche/?criteres=last_name&query=ZIDI HTTP/1.1" 200 9936
+2025-03-23 23:51:13,056 - INFO - basehttp - "GET /Employee/7/update/ HTTP/1.1" 200 21897
+2025-03-23 23:51:28,085 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 20973
+2025-03-23 23:51:38,691 - INFO - basehttp - "GET /home HTTP/1.1" 200 14086
+2025-03-23 23:51:41,906 - WARNING - log - Not Found: /media/1.png
+2025-03-23 23:51:41,920 - WARNING - basehttp - "GET /media/1.png HTTP/1.1" 404 3969
+2025-03-23 23:52:24,889 - INFO - basehttp - "GET /export HTTP/1.1" 200 12625
+2025-03-23 23:52:42,163 - INFO - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 200 38336
+2025-03-23 23:54:41,007 - INFO - basehttp - "GET /home HTTP/1.1" 200 14086
+2025-03-23 23:54:44,328 - WARNING - log - Not Found: /media/1.png
+2025-03-23 23:54:44,334 - WARNING - basehttp - "GET /media/1.png HTTP/1.1" 404 3969
+2025-03-23 23:54:51,165 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 20973
+2025-03-23 23:54:59,352 - INFO - basehttp - "GET /Employee/recherche/?criteres=last_name&query=MOKONDZI+NGAKEGNI HTTP/1.1" 200 9938
+2025-03-23 23:55:03,633 - INFO - basehttp - "GET /Employee/11/update/ HTTP/1.1" 200 21908
+2025-03-23 23:57:24,331 - INFO - basehttp - "POST /Employee/11/update/ HTTP/1.1" 200 22931
+2025-03-23 23:57:50,388 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 20973
+2025-03-23 23:57:58,262 - INFO - basehttp - "GET /Employee/recherche/?criteres=last_name&query=MOKONDZI+NGAKEGNI HTTP/1.1" 200 9938
+2025-03-23 23:58:01,875 - INFO - basehttp - "GET /Employee/11/update/ HTTP/1.1" 200 21908
+2025-03-23 23:59:09,829 - INFO - basehttp - "POST /Employee/11/update/ HTTP/1.1" 302 0
+2025-03-23 23:59:10,215 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 20999
+2025-03-24 00:00:14,247 - INFO - basehttp - "GET /export HTTP/1.1" 200 12625
+2025-03-24 00:00:31,190 - INFO - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 200 38324
+2025-03-24 10:53:42,823 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 10:58:03,450 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 10:58:07,178 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-24 10:58:08,154 - WARNING - log - Not Found: /favicon.ico
+2025-03-24 10:58:08,156 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 3969
+2025-03-24 10:58:33,054 - INFO - basehttp - "POST / HTTP/1.1" 302 0
+2025-03-24 10:58:33,118 - INFO - basehttp - "GET /home HTTP/1.1" 200 13463
+2025-03-24 10:58:41,339 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 20999
+2025-03-24 10:58:44,188 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 22038
+2025-03-24 11:04:46,711 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 302 0
+2025-03-24 11:04:46,854 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 22048
+2025-03-24 11:04:56,191 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 22038
+2025-03-24 11:07:23,984 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 302 0
+2025-03-24 11:07:24,094 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 23096
+2025-03-24 11:07:39,284 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 22038
+2025-03-24 11:10:59,763 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 302 0
+2025-03-24 11:10:59,839 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 24162
+2025-03-24 11:11:01,784 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 22038
+2025-03-24 11:15:01,837 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 302 0
+2025-03-24 11:15:01,908 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 25214
+2025-03-24 11:15:03,755 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 22038
+2025-03-24 11:17:14,951 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 302 0
+2025-03-24 11:17:15,416 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 26252
+2025-03-24 11:17:37,240 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 22038
+2025-03-24 11:20:20,845 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 200 23211
+2025-03-24 11:23:16,859 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 302 0
+2025-03-24 11:23:16,941 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 27295
+2025-03-24 11:23:18,813 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 22038
+2025-03-24 11:25:27,601 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 302 0
+2025-03-24 11:25:27,713 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 28347
+2025-03-24 11:25:30,027 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 22038
+2025-03-24 11:27:53,178 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 302 0
+2025-03-24 11:27:53,264 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 29398
+2025-03-24 11:27:55,082 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 22038
+2025-03-24 11:30:13,814 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 302 0
+2025-03-24 11:30:13,934 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 30451
+2025-03-24 11:31:01,384 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 22038
+2025-03-24 11:33:27,871 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 302 0
+2025-03-24 11:33:27,997 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 31497
+2025-03-24 11:34:20,522 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 22038
+2025-03-24 11:36:31,804 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 302 0
+2025-03-24 11:36:31,911 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 32530
+2025-03-24 11:36:53,953 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 22038
+2025-03-24 11:39:19,375 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 302 0
+2025-03-24 11:39:19,526 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 33593
+2025-03-24 11:39:56,300 - INFO - basehttp - "GET /Employee/recherche/?criteres=last_name&query=AKAYOA HTTP/1.1" 200 9954
+2025-03-24 11:40:00,420 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 33593
+2025-03-24 11:40:26,792 - INFO - basehttp - "GET /Employee/2/update/ HTTP/1.1" 200 21927
+2025-03-24 11:40:54,330 - INFO - basehttp - "GET /Employee/2/update/ HTTP/1.1" 200 21927
+2025-03-24 11:44:48,038 - INFO - basehttp - "GET /Employee/2/update/ HTTP/1.1" 200 21280
+2025-03-24 11:50:03,976 - INFO - basehttp - "GET /Employee/2/update/ HTTP/1.1" 200 11874
+2025-03-24 11:55:43,478 - INFO - basehttp - "GET /Employee/2/update/ HTTP/1.1" 200 21746
+2025-03-24 11:59:24,325 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-24 16:09:24,599 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 16:10:47,252 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 16:10:49,952 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-24 16:10:52,319 - INFO - basehttp - "GET /Employee/2/update/ HTTP/1.1" 200 21746
+2025-03-24 16:10:52,887 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-03-24 16:10:52,923 - INFO - basehttp - "GET /static/image/congo-2697382_1920.jpg HTTP/1.1" 200 566668
+2025-03-24 16:10:52,943 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-03-24 16:10:52,952 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-03-24 16:10:53,039 - INFO - basehttp - "GET /static/image/buildings-6956678_1920.jpg HTTP/1.1" 200 617712
+2025-03-24 16:10:53,581 - WARNING - log - Not Found: /favicon.ico
+2025-03-24 16:10:53,583 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 3969
+2025-03-24 16:11:09,028 - INFO - basehttp - "GET /Employee/2/update/ HTTP/1.1" 200 21746
+2025-03-24 16:11:24,687 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 33593
+2025-03-24 16:13:00,833 - INFO - basehttp - "GET /Employee/7/update/ HTTP/1.1" 200 21731
+2025-03-24 16:13:04,404 - INFO - basehttp - "GET /Employee/7/update/ HTTP/1.1" 200 21731
+2025-03-24 16:13:07,010 - INFO - basehttp - "GET /Employee/7/update/ HTTP/1.1" 200 21731
+2025-03-24 16:20:05,275 - INFO - basehttp - "GET /Employee/7/update/ HTTP/1.1" 200 21777
+2025-03-24 16:25:39,610 - INFO - basehttp - "GET /Employee/7/update/ HTTP/1.1" 200 21778
+2025-03-24 16:26:39,533 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 33593
+2025-03-24 16:26:40,976 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 22533
+2025-03-24 16:27:22,094 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 22505
+2025-03-24 16:27:43,614 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 22510
+2025-03-24 16:28:22,529 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 22510
+2025-03-24 16:28:42,453 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 22510
+2025-03-24 16:29:16,618 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 33593
+2025-03-24 16:36:17,847 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\models.py changed, reloading.
+2025-03-24 16:36:20,616 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 16:37:02,899 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 16:37:04,509 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-24 16:40:48,514 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 22510
+2025-03-24 16:40:55,915 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 35983
+2025-03-24 16:41:27,175 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 33593
+2025-03-24 16:41:41,175 - INFO - basehttp - "GET /Employee/1/update/ HTTP/1.1" 200 21802
+2025-03-24 16:42:00,708 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 33593
+2025-03-24 16:42:12,885 - INFO - basehttp - "GET /Employee/1/update/ HTTP/1.1" 200 21802
+2025-03-24 16:42:24,521 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 33593
+2025-03-24 16:42:34,650 - INFO - basehttp - "GET /Employee/18/update/ HTTP/1.1" 200 21792
+2025-03-24 16:43:41,792 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 33593
+2025-03-24 16:45:26,897 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\forms.py changed, reloading.
+2025-03-24 16:45:29,358 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 16:52:31,199 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 16:52:32,824 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-24 16:54:41,425 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-24 16:54:43,870 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 16:57:21,121 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-24 16:57:23,218 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 17:10:10,567 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 33593
+2025-03-24 17:10:15,538 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 10707
+2025-03-24 17:10:17,256 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 11949
+2025-03-24 17:12:12,721 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-24 17:12:15,219 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 17:20:08,723 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-24 17:20:11,345 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 17:20:49,279 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 10707
+2025-03-24 17:20:56,740 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 13442
+2025-03-24 17:21:21,794 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 10707
+2025-03-24 17:21:24,500 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 11949
+2025-03-24 17:21:57,093 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 17:21:57,309 - ERROR - log - Internal Server Error: /OrganizationalUnit/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\OrganizationalUnit\views.py", line 21, in liste_OrganizationalUnit
+    return render(request, 'OrganizationalUnit/liste_unites.html', {
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'modifier' not found. 'modifier' is not a valid view function or pattern name.
+2025-03-24 17:21:57,320 - ERROR - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 500 177561
+2025-03-24 17:23:41,099 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11271
+2025-03-24 17:23:59,007 - INFO - basehttp - "GET /OrganizationalUnit/1/update/ HTTP/1.1" 200 12023
+2025-03-24 17:24:12,270 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 11271
+2025-03-24 17:24:13,626 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 12048
+2025-03-24 17:25:19,154 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 17:25:19,205 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 12015
+2025-03-24 17:25:21,926 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 12177
+2025-03-24 17:26:09,870 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 17:26:09,908 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 12762
+2025-03-24 17:26:20,805 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 12309
+2025-03-24 17:27:07,670 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 17:27:07,703 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 13533
+2025-03-24 17:27:09,826 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 12465
+2025-03-24 17:27:49,198 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 17:27:49,250 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 14280
+2025-03-24 17:27:55,380 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 12597
+2025-03-24 17:28:30,761 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 17:28:30,811 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 15038
+2025-03-24 17:28:33,203 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 12740
+2025-03-24 17:29:15,546 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 17:29:15,607 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 15793
+2025-03-24 17:29:17,468 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 12880
+2025-03-24 17:30:29,754 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 17:30:29,815 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 16559
+2025-03-24 17:30:31,542 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 13031
+2025-03-24 17:31:18,393 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 17:31:18,465 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 17316
+2025-03-24 17:31:20,621 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 13173
+2025-03-24 17:31:59,778 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 17:31:59,844 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 18074
+2025-03-24 17:32:02,190 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 13314
+2025-03-24 17:32:36,608 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 17:32:36,687 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 18822
+2025-03-24 17:33:03,701 - INFO - basehttp - "GET /OrganizationalUnit/search/?filter=designation&query=BOR HTTP/1.1" 200 19086
+2025-03-24 17:33:18,492 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 18822
+2025-03-24 17:33:49,845 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 13445
+2025-03-24 17:34:34,061 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 17:34:34,142 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 19593
+2025-03-24 17:34:35,804 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 13613
+2025-03-24 17:35:50,029 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 17:35:50,119 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 20369
+2025-03-24 17:35:52,003 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 13819
+2025-03-24 17:35:57,360 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 20369
+2025-03-24 17:36:18,501 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 13819
+2025-03-24 17:37:26,813 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 17:37:26,903 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 21137
+2025-03-24 17:37:43,159 - INFO - basehttp - "GET /OrganizationalUnit/13/update/ HTTP/1.1" 200 14572
+2025-03-24 17:39:20,330 - INFO - basehttp - "GET /OrganizationalUnit/13/update/ HTTP/1.1" 200 14564
+2025-03-24 17:39:36,234 - INFO - basehttp - "POST /OrganizationalUnit/13/update/ HTTP/1.1" 200 15259
+2025-03-24 17:39:53,031 - INFO - basehttp - "POST /OrganizationalUnit/13/update/ HTTP/1.1" 200 15259
+2025-03-24 17:40:43,520 - INFO - basehttp - "POST /OrganizationalUnit/13/update/ HTTP/1.1" 200 15247
+2025-03-24 17:40:54,384 - INFO - basehttp - "POST /OrganizationalUnit/13/update/ HTTP/1.1" 302 0
+2025-03-24 17:40:54,472 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 21135
+2025-03-24 17:41:11,624 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 13949
+2025-03-24 17:42:12,344 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 17:42:12,477 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 21921
+2025-03-24 17:42:14,662 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 14132
+2025-03-24 17:43:00,312 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 17:43:00,407 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 22696
+2025-03-24 17:43:02,681 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 14304
+2025-03-24 19:02:47,572 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 19:02:49,633 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-24 19:02:51,493 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-03-24 19:02:51,521 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-03-24 19:02:51,579 - INFO - basehttp - "GET /static/image/congo-2697382_1920.jpg HTTP/1.1" 200 566668
+2025-03-24 19:02:51,660 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-03-24 19:02:51,821 - INFO - basehttp - "GET /static/image/buildings-6956678_1920.jpg HTTP/1.1" 200 617712
+2025-03-24 19:02:52,028 - WARNING - log - Not Found: /favicon.ico
+2025-03-24 19:02:52,030 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 3969
+2025-03-24 19:02:56,705 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 14304
+2025-03-24 19:02:57,536 - WARNING - log - Not Found: /favicon.ico
+2025-03-24 19:02:57,538 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 3969
+2025-03-24 19:04:24,477 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:04:24,583 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 23484
+2025-03-24 19:04:26,782 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 14489
+2025-03-24 19:05:15,506 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:05:15,641 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 24289
+2025-03-24 19:05:18,021 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 14691
+2025-03-24 19:06:10,459 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:06:10,606 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 25051
+2025-03-24 19:06:12,259 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 14850
+2025-03-24 19:06:45,124 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:06:45,248 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 25813
+2025-03-24 19:06:47,313 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 15009
+2025-03-24 19:07:26,183 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:07:26,321 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 26584
+2025-03-24 19:07:27,944 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 15177
+2025-03-24 19:08:15,586 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:08:15,711 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 27356
+2025-03-24 19:08:17,599 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 15346
+2025-03-24 19:08:53,867 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:08:54,074 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 28121
+2025-03-24 19:08:57,861 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 15508
+2025-03-24 19:10:32,966 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:10:33,123 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 28910
+2025-03-24 19:10:42,115 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 15694
+2025-03-24 19:11:58,382 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:11:58,548 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 29680
+2025-03-24 19:12:00,675 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 15861
+2025-03-24 19:12:48,776 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:12:48,900 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 30451
+2025-03-24 19:12:50,874 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 16029
+2025-03-24 19:13:33,656 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:13:33,826 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 31215
+2025-03-24 19:13:35,840 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 16190
+2025-03-24 19:14:56,455 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:14:56,659 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 31990
+2025-03-24 19:14:58,535 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 16362
+2025-03-24 19:16:06,086 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:16:06,267 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 32779
+2025-03-24 19:16:08,902 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 16548
+2025-03-24 19:16:53,235 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:16:53,385 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 33561
+2025-03-24 19:17:01,633 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 16727
+2025-03-24 19:17:51,696 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 33561
+2025-03-24 19:18:07,060 - INFO - basehttp - "GET /OrganizationalUnit/28/update/ HTTP/1.1" 200 17560
+2025-03-24 19:18:27,664 - INFO - basehttp - "POST /OrganizationalUnit/28/update/ HTTP/1.1" 302 0
+2025-03-24 19:18:27,824 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 33570
+2025-03-24 19:18:39,016 - INFO - basehttp - "GET /OrganizationalUnit/29/update/ HTTP/1.1" 200 17574
+2025-03-24 19:18:48,154 - INFO - basehttp - "POST /OrganizationalUnit/29/update/ HTTP/1.1" 302 0
+2025-03-24 19:18:48,316 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 33579
+2025-03-24 19:19:03,783 - INFO - basehttp - "GET /OrganizationalUnit/30/update/ HTTP/1.1" 200 17567
+2025-03-24 19:19:18,624 - INFO - basehttp - "POST /OrganizationalUnit/30/update/ HTTP/1.1" 302 0
+2025-03-24 19:19:18,772 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 33588
+2025-03-24 19:19:28,699 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 16754
+2025-03-24 19:20:09,579 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 200 17364
+2025-03-24 19:21:36,749 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:21:36,952 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 34371
+2025-03-24 19:21:39,102 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 16934
+2025-03-24 19:22:37,595 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:22:37,798 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 35154
+2025-03-24 19:22:42,853 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 17114
+2025-03-24 19:23:58,160 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:23:58,396 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 35931
+2025-03-24 19:24:01,791 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 17288
+2025-03-24 19:24:31,876 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 200 17898
+2025-03-24 19:25:19,036 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:25:19,254 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 36696
+2025-03-24 19:25:24,370 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 17450
+2025-03-24 19:25:49,211 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:25:49,394 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 37462
+2025-03-24 19:26:00,823 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 17613
+2025-03-24 19:27:18,666 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:27:18,868 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 38224
+2025-03-24 19:27:21,015 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 17772
+2025-03-24 19:27:52,872 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:27:53,040 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 38995
+2025-03-24 19:27:55,224 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 17940
+2025-03-24 19:28:20,943 - INFO - basehttp - "POST /OrganizationalUnit/create/ HTTP/1.1" 302 0
+2025-03-24 19:28:21,155 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 39753
+2025-03-24 19:30:40,380 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 39753
+2025-03-24 19:30:41,541 - ERROR - log - Internal Server Error: /OrganizationalUnit/6/update/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\OrganizationalUnit\views.py", line 70, in modifier_OrganizationalUnit
+    return render(request, 'OrganizationalUnit/modifier_unite.html', {
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ':id' from 'unite:id'
+2025-03-24 19:30:41,551 - ERROR - basehttp - "GET /OrganizationalUnit/6/update/ HTTP/1.1" 500 249590
+2025-03-24 19:32:02,315 - INFO - basehttp - "GET /OrganizationalUnit/6/update/ HTTP/1.1" 200 18989
+2025-03-24 19:33:35,217 - INFO - basehttp - "GET /OrganizationalUnit/6/update/ HTTP/1.1" 200 19002
+2025-03-24 19:42:06,522 - INFO - basehttp - "GET /OrganizationalUnit/6/update/ HTTP/1.1" 200 19037
+2025-03-24 19:42:20,035 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 39753
+2025-03-24 19:42:27,963 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 11016
+2025-03-24 19:42:30,707 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 12248
+2025-03-24 19:43:39,016 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 11016
+2025-03-24 19:43:41,874 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 39692
+2025-03-24 19:43:52,621 - INFO - basehttp - "GET /OrganizationalUnit/search/?filter=name&query=BOR HTTP/1.1" 200 42269
+2025-03-24 19:44:33,360 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\OrganizationalUnit\views.py changed, reloading.
+2025-03-24 19:44:36,619 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 19:51:47,390 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\OrganizationalUnit\views.py changed, reloading.
+2025-03-24 19:51:50,470 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 19:52:01,870 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 39692
+2025-03-24 19:52:11,027 - INFO - basehttp - "GET /OrganizationalUnit/search/?filter=name&query=BOR HTTP/1.1" 200 10464
+2025-03-24 19:52:29,853 - INFO - basehttp - "GET /OrganizationalUnit/11/update/ HTTP/1.1" 200 19025
+2025-03-24 19:52:32,666 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 39692
+2025-03-24 19:52:38,842 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 11016
+2025-03-24 19:52:40,691 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 12248
+2025-03-24 20:01:39,361 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 12038
+2025-03-24 20:10:02,605 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 12038
+2025-03-24 20:16:20,012 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 12038
+2025-03-24 20:19:33,261 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 11016
+2025-03-24 20:19:35,828 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 39692
+2025-03-24 20:19:37,768 - INFO - basehttp - "GET /OrganizationalUnit/create/ HTTP/1.1" 200 17486
+2025-03-24 20:19:44,750 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 39692
+2025-03-24 20:19:47,800 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 11016
+2025-03-24 20:19:49,327 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 12038
+2025-03-24 20:24:55,968 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 12039
+2025-03-24 20:30:10,155 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py changed, reloading.
+2025-03-24 20:30:13,549 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 20:31:14,959 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py changed, reloading.
+2025-03-24 20:31:19,428 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 20:32:42,980 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py changed, reloading.
+2025-03-24 20:32:46,251 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 20:32:47,534 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 12039
+2025-03-24 20:33:22,566 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 12039
+2025-03-24 20:36:18,358 - ERROR - log - Internal Server Error: /RespensableOrganisationUnite/create/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py", line 24, in ajouter_RespensableOrganisationUnite
+    return render(request, 'respensableorganisationunite/create.html', {'form': form})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\urls\resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'modifier' not found. 'modifier' is not a valid view function or pattern name.
+2025-03-24 20:36:18,369 - ERROR - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 500 170355
+2025-03-24 20:37:00,730 - INFO - basehttp - "GET /RespensableOrganisationUnite/create/ HTTP/1.1" 200 12061
+2025-03-24 20:38:28,266 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 11016
+2025-03-24 20:38:30,215 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 15942
+2025-03-24 20:38:31,101 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 53848
+2025-03-24 20:38:32,140 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 39692
+2025-03-24 20:38:33,164 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 33593
+2025-03-24 20:38:36,845 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 22510
+2025-03-24 21:00:54,163 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 200 23637
+2025-03-24 21:08:14,534 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 200 23637
+2025-03-24 21:16:23,362 - INFO - basehttp - "POST /Employee/create/ HTTP/1.1" 200 23637
+2025-03-24 21:27:05,384 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 21:27:10,962 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-24 21:27:11,688 - WARNING - log - Not Found: /favicon.ico
+2025-03-24 21:27:11,689 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 3969
+2025-03-24 21:27:34,659 - INFO - basehttp - "POST / HTTP/1.1" 302 0
+2025-03-24 21:27:34,718 - INFO - basehttp - "GET /home HTTP/1.1" 200 13464
+2025-03-24 21:27:36,774 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-03-24 21:27:36,807 - INFO - basehttp - "GET /media/employe/Capture_d%C3%A9cran_2025-03-08_160658.png HTTP/1.1" 200 83657
+2025-03-24 21:27:36,824 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-03-24 21:27:36,833 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-03-24 21:27:40,357 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 33593
+2025-03-24 21:27:52,211 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 22510
+2025-03-24 21:28:43,606 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 33593
+2025-03-24 21:28:47,089 - INFO - basehttp - "GET /export HTTP/1.1" 200 12625
+2025-03-24 21:28:55,803 - INFO - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 200 39947
+2025-03-24 21:30:35,561 - INFO - basehttp - "GET /home HTTP/1.1" 200 13464
+2025-03-24 21:45:57,371 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-24 21:46:00,278 - INFO - basehttp - "GET / HTTP/1.1" 200 10617
+2025-03-24 21:46:01,407 - WARNING - log - Not Found: /favicon.ico
+2025-03-24 21:46:01,409 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 3969

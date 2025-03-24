@@ -8,7 +8,7 @@ from . import views
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),  # Vérifiez cette ligne
      path('', login_view, name='login'),
     path('home', views.home_view, name='home'),  
      path('export', views.export_word_view, name='export'),  

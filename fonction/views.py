@@ -91,7 +91,7 @@ def fonction_search(request):
     if query:
         fonction = fonction.filter(designation__icontains=query)
 
-    return render(request, 'specialite/search.html', {
+    return render(request, 'fonction/search.html', {
         'username':username, 
         'fonction': fonction,
         'query': query,

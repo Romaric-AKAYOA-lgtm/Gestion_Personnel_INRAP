@@ -1,95 +1,189 @@
-from datetime import date, datetime, timedelta
-from itertools import count
+import matplotlib.pyplot as plt
+import base64
+from django.db.models.functions import Lower
+from io import BytesIO
 from django.shortcuts import render, redirect
-from django.db.models import Q
+from django.db.models import Q, Count, F
 from django.utils.timezone import now
-from django.http import HttpResponse
-from django.template.loader import render_to_string
+from datetime import timedelta, timezone
+from django.utils import timezone
+from datetime import timedelta
 from Activation.models import Activation
 from Conge.models import Conge
 from Employee.models import Employee
 from Employee.views import get_username_from_session
-from OrganizationalUnit.models import OrganizationalUnit  # Si le modèle est dans le même fichier
-# OU
-from Activation.views import activation_view
+from OrganizationalUnit.models import OrganizationalUnit
 from RespensableOrganisationUnite.models import ResponsableOrganisationUnite
 from Stagiaire.models import Stagiaire
-from datetime import date, timedelta
-from django.shortcuts import render, redirect
-from django.db.models import Q
-from django.utils.timezone import now
-from Activation.models import Activation
-from Conge.models import Conge
-from Employee.models import Employee
-from Employee.views import get_username_from_session
-
 def home_view(request):
-    """Affiche la page d'accueil avec gestion du personnel et vérification d'activation."""
-
-    # Vérifier l'activation
+    # Vérification de l'activation
     activation = Activation.objects.first()
     if not activation or not activation.is_valid():
         return redirect("Activation:activation_page")
 
+    # Récupération du nom d'utilisateur depuis la session
     username = get_username_from_session(request)
     if not username:
         return redirect('login')
 
-    today = now().date()
-    six_mois_avant = today - timedelta(days=180)
+    # Obtenir la date d'aujourd'hui
+    today = timezone.now().date()
 
-    search_query = request.GET.get("search", "")
+    # Récupérer l'année actuelle
+    current_year = today.year
+
+    # Calculer la date six mois en arrière
+    six_months_ago = today - timedelta(days=180)
+    # Recherche d'employés par nom ou fonction
+    recherche = request.GET.get("search", "")
     employes = Employee.objects.all()
+    if recherche:
+        employes = employes.filter(Q(last_name__icontains=recherche) | Q(function__icontains=recherche))
+
+    # Filtrer les employés récents (moins de 6 mois)
+    employes_recents = employes.filter(start_date__gte=six_months_ago)
+
+    # Employés en congé
     
-    if search_query:
-        employes = employes.filter(Q(last_name__icontains=search_query) | Q(function__icontains=search_query))
-    
-    # Employés récents (moins de 6 mois)
-    employes_recents = employes.filter(start_date__gte=six_mois_avant)
+    # **Employés en congé**
+    # Employés de retour de congé (date_fin < aujourd'hui)
+    employes_retour_conge = Conge.objects.filter(
+        date_fin__lt=today  # Le congé s'est terminé avant aujourd'hui
+    ).exclude(date_debut__isnull=True).exclude(date_fin__isnull=True).distinct()
 
-    # Employés de retour de congé
-    employes_retour_conge = Employee.objects.filter(conge__date_fin__lte=today).distinct()
+    # Employés actuellement en congé (date_fin >= aujourd'hui)
+    employes_en_conge = Conge.objects.filter(
+        date_fin__gte=today  # Le congé continue ou termine après ou aujourd'hui
+    ).exclude(date_debut__isnull=True).exclude(date_fin__isnull=True).distinct()
 
-    # Employés en congé actuellement
-    employe_en_conge = Conge.objects.filter(date_debut__lte=today, date_fin__gte=today)
-
-    # Calcul des âges pour identifier les employés en retraite
-    employes_ages = [
+    # Calcul de l'âge des employés
+    ages_employes = [
         {
-            "employe": emp,
-            "age": today.year - emp.date_of_birth.year - ((today.month, today.day) < (emp.date_of_birth.month, emp.date_of_birth.day)),
+            "employee": emp,
+            "age": (current_year - emp.date_of_birth.year) - ((today.month, today.day) < (emp.date_of_birth.month, emp.date_of_birth.day)) if emp.date_of_birth else None
         }
         for emp in employes
     ]
-    tranche_30 = sum(1 for item in employes_ages if item["age"] < 30)
-    tranche_50 = sum(1 for item in employes_ages if 30 <= item["age"] < 50)
-    tranche_50_plus = sum(1 for item in employes_ages if 50 <= item["age"] < 60)
 
-    # Employés partant à la retraite cette année
-    employes_retraite_annee = [emp["employe"] for emp in employes_ages if emp["age"] == 60]
+    moins_de_30_ans = sum(1 for item in ages_employes if item["age"] is not None and item["age"] < 30)
+    de_30_a_50_ans = sum(1 for item in ages_employes if item["age"] is not None and 30 <= item["age"] < 50)
+    de_50_a_60_ans = sum(1 for item in ages_employes if item["age"] is not None and 50 <= item["age"] < 60)
 
-    # Employés déjà retraités
-    employes_retraites = [emp["employe"] for emp in employes_ages if emp["age"] > 60]
+    employes_partant_en_retraite = [emp["employee"] for emp in ages_employes if emp["age"] == 60]
+    employes_retraites = [emp["employee"] for emp in ages_employes if emp["age"] is not None and emp["age"] > 60]
 
-    # Liste des responsables des unités
-    responsables_unites = ResponsableOrganisationUnite.objects.all()
+    # Récupération des responsables d'unités organisationnelles et comptage des employés par unité
+    responsables_unites = ResponsableOrganisationUnite.objects.annotate(
+        nombre_employes=Count('responsable')  # Comptage des employés (responsables) associés à chaque unité
+    )
+
+    # Requête pour filtrer les responsables avec une fonction contenant "chef" insensible à la casse
+    responsables_Organisation_unites = ResponsableOrganisationUnite.objects.filter(
+        Q(function__designation__icontains='chef')
+    )
+
+    # Filtrer les responsables dont la désignation contient "chef", sans tenir compte de la casse
+    responsables_Organisation_unites = responsables_Organisation_unites.annotate(
+        lower_designation=Lower('function__designation')  # Transformer la désignation en minuscules
+    ).filter(
+        lower_designation__icontains='chef'  # Vérifier si la désignation contient "chef" (insensible à la casse)
+    )
+
+    # Utilisation de la jointure pour compter les hommes et les femmes
+    employes_par_responsable = ResponsableOrganisationUnite.objects.annotate(
+        male_count=Count('responsable', filter=Q(responsable__sexe="Masculin")),
+        female_count=Count('responsable', filter=Q(responsable__sexe="Féminin"))
+    )
+
+    # Calcul du total des hommes et femmes dans tous les responsables
+    employes_hommes = employes_par_responsable.aggregate(total_males=Count('responsable', filter=Q(responsable__sexe="Masculin")))["total_males"]
+    employes_femmes = employes_par_responsable.aggregate(total_females=Count('responsable', filter=Q(responsable__sexe="Féminin")))["total_females"]
+
+    # Récupération des données sur le sexe des responsables
+    donnees_sexe_responsable = get_responsible_gender_data(employes_par_responsable)
+    graphique_sexe = create_chart_base64(donnees_sexe_responsable, "Progression des hommes et femmes", "Sexe", "Nombre")
+
+    # Progression des employés
+    progression_employes = ResponsableOrganisationUnite.objects.annotate(
+        employee_count=Count('responsable')  # Nombre d'employés dans chaque unité organisationnelle
+    )
+
+    # Progression de la retraite
+    progression_retraite = get_retirement_progression(ages_employes)
+    graphique_retraite = create_chart_base64(progression_retraite, "Progression des employés partant à la retraite", "Catégorie", "Nombre")
+
+    # Répartition des hommes et des femmes par unité organisationnelle
+    repartition_sexe_par_unite = get_gender_distribution_per_unit()
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
 
     return render(request, "home.html", {
         "username": username,
         "employes": employes,
-        "hommes": employes.filter(sexe="Homme").count(),
-        "femmes": employes.filter(sexe="Femme").count(),
-        "tranche_30": tranche_30,
-        "tranche_50": tranche_50,
-        "tranche_50_plus": tranche_50_plus,
-        "employes_ages": employes_ages,
+        "moins_de_30_ans": moins_de_30_ans,
+        "de_30_a_50_ans": de_30_a_50_ans,
+        "de_50_a_60_ans": de_50_a_60_ans,
         "employes_recents": employes_recents,
         "employes_retour_conge": employes_retour_conge,
-        "employes_en_conge": employe_en_conge,
-        "employes_retraite_annee": employes_retraite_annee,
+        "employes_en_conge": employes_en_conge,
+        "employes_partant_en_retraite": employes_partant_en_retraite,
         "employes_retraites": employes_retraites,
         "responsables_unites": responsables_unites,
+        "organisation_unite": OrganizationalUnit.objects.all().order_by('parent'),
+        "employes_par_responsable": employes_par_responsable,
+        "progression_employes": progression_employes,
+        "employes_hommes": employes_hommes,
+        "employes_femmes": employes_femmes,
+        "graphique_sexe": graphique_sexe,
+        "graphique_retraite": graphique_retraite,
+        "graphique_repartition": graphique_repartition,
+        'responsables_Organisation_unites':responsables_Organisation_unites,
     })
+
+def create_chart_base64(data, title, xlabel, ylabel, is_bar=True):
+    fig, ax = plt.subplots()
+
+    # Conversion des données en listes
+    keys = list(data.keys())  # Assurez-vous que 'keys' est une liste de chaînes
+    values = list(data.values())  # Assurez-vous que 'values' est une liste
+
+    # Vérification si les valeurs sont des dictionnaires et les convertir
+    if isinstance(values[0], dict):
+        # Si les valeurs sont des dictionnaires, transformez-les en listes de valeurs
+        values = [sum(val.values()) for val in values]
+    # Assurez-vous que les clés et les valeurs sont sous forme de types hachables
+    if is_bar:
+        ax.bar(keys, values)
+    else:
+        ax.pie(values, labels=keys, autopct="%1.1f%%")
+    
+    ax.set_title(title)
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel(ylabel)
+
+    buf = BytesIO()
+    fig.savefig(buf, format="png")
+    buf.seek(0)
+    image_base64 = base64.b64encode(buf.getvalue()).decode("utf-8")
+    return f"data:image/png;base64,{image_base64}"
+
+def get_responsible_gender_data(responsibles):
+    return {
+        "Hommes": sum(r.male_count for r in responsibles),
+        "Femmes": sum(r.female_count for r in responsibles)
+    }
+
+def get_retirement_progression(employee_ages):
+    close_to_retirement = sum(1 for emp in employee_ages if emp["age"] is not None and 55 <= emp["age"] < 60)
+    return {"Retraite proche": close_to_retirement}
+
+def get_gender_distribution_per_unit():
+    results = ResponsableOrganisationUnite.objects.annotate(
+        male_count=Count('responsable', filter=Q(responsable__sexe="Masculin")),
+        female_count=Count('responsable', filter=Q(responsable__sexe="Féminin"))
+    )
+    
+    # Assurez-vous que les clés sont des chaînes et non des dictionnaires
+    return {str(unit.organizational_unit.name): {"Hommes": unit.male_count, "Femmes": unit.female_count} for unit in results}
 
 from django.http import HttpResponse
 from docx import Document

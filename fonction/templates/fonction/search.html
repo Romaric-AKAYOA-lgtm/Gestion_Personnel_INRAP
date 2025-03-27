@@ -4,6 +4,9 @@
 
 <div class="container mt-4">
 
+    <!-- Overlay pour griser l'arrière-plan -->
+    <div class="modal-backdrop fade show"></div>
+
     <!-- Modal pour afficher les résultats de la recherche -->
     <div class="modal fade show" id="modalSearchResults" tabindex="-1" aria-labelledby="modalSearchResultsLabel" aria-hidden="true" style="display: block;">
         <div class="modal-dialog modal-lg"> <!-- Largeur augmentée -->
@@ -14,17 +17,16 @@
                 <div class="modal-body">
                     {% if fonction %}
                     <ul class="list-group">
-                        {% for fonction in fonction %}
+                        {% for f in fonction %}
                             <li class="list-group-item">
-                                {{ fonction.id }} - {{ fonction.designation }}
-                                <a href="{% url 'fonction:modifier' fonction.id %}" class="btn btn-warning btn-sm float-end ms-2">Modifier</a>
-                                <a href="{% url 'fonction:supprimer' fonction.id %}" class="btn btn-danger btn-sm float-end">Supprimer</a>
+                                {{ f.id }} - {{ f.designation }}
+                                <a href="{% url 'fonction:modifier' f.id %}" class="btn btn-warning btn-sm float-end ms-2">Modifier</a>
                             </li>
                         {% endfor %}
                     </ul>
-                {% else %}
+                    {% else %}
                     <p>Aucune fonction trouvée pour "{{ query }}"</p>
-                {% endif %}
+                    {% endif %}
                 </div>
                 <div class="modal-footer">
                     <a href="{% url 'fonction:fonction' %}" class="btn btn-secondary px-4 py-2 btn-sm">Annuler</a>
@@ -35,16 +37,29 @@
 
 </div>
 
-<!-- Script pour afficher le modal de façon automatique à la fin de la page -->
-{% if unites %}
-    <script>
-        window.onload = function() {
-            var myModal = new bootstrap.Modal(document.getElementById("modalSearchResults"), {
-                keyboard: false
-            });
-            myModal.show();
-        };
-    </script>
-{% endif %}
+<!-- CSS pour griser l'arrière-plan -->
+<style>
+    .modal-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+        backdrop-filter: blur(5px); /* Effet de flou */
+        z-index: 1040; /* Assure que l'overlay est bien au-dessus du reste */
+    }
+</style>
+
+<!-- Script pour afficher le modal de façon automatique -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var myModal = new bootstrap.Modal(document.getElementById("modalSearchResults"), {
+            backdrop: 'static',  // Empêche la fermeture en cliquant en dehors
+            keyboard: false      // Désactive la fermeture avec la touche Échap
+        });
+        myModal.show();
+    });
+</script>
 
 {% endblock %}

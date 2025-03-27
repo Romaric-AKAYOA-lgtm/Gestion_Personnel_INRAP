@@ -39,7 +39,7 @@ def liste_employes(request):
         return redirect('login')  # Redirige vers la page de connexion si pas de nom d'utilisateur dans la session
 
     # Vérifier l'activation en appelant la fonction
-    employes = Employee.objects.all()
+    employes = Employee.objects.all().order_by('id')
     return render(request, 'Employee/liste_employes.html', {
        'username':username,  'employes': employes})
 

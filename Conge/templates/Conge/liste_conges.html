@@ -44,8 +44,8 @@
                     <td>{{ conge.id }}</td>
                     <td>{{ conge.employe.last_name }}</td>
                     <td>{{ conge.employe.first_name }}</td>
-                    <td>{{ conge.date_debut }}</td>
-                    <td>{{ conge.date_fin }}</td>
+                    <td>{{ conge.date_debut|date:"F d, Y" }}</td>
+                    <td>{{ conge.date_fin|date:"F d, Y" }}</td>
                     <td>{{ conge.statut }}</td>
                     <td class="">
                         <a href="{% url 'conge:modifier_conge' conge.id %}" class="btn btn-warning btn-sm mb-1">Modifier</a>

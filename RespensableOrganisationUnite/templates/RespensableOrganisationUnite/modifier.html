@@ -24,9 +24,9 @@
                     </div>
                     {% endif %}
 
-                    <form action="{% url 'RespensableOrganisationUnite:update' form.instance.pk %}" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
+                    <form action="{% url 'RespensableOrganisationUnite:update' form.instance.id %}" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
                         {% csrf_token %}
-
+                        
                         <!-- Unité Organisationnelle -->
                         <div class="mb-3">
                             <label for="unite" class="form-label">Unité Organisationnelle</label>
@@ -58,15 +58,12 @@
                         <!-- Fonction -->
                         <div class="mb-3">
                             <label for="function" class="form-label">Fonction</label>
-                            <select class="form-select input-focus-blue" id="function" name="function" required>
+                            <select class="form-select" id="function" name="function" required>
                                 <option value="" selected>-- Sélectionnez une fonction --</option>
-                                {% for function_id, function_name in functions_dict.items %}
-                                    <option value="{{ function_id }}" {% if function_id == form.function.value %}selected{% endif %}>{{ function_name }}</option>
+                                {% for function in functions %}
+                                    <option value="{{ function.id }}" {% if form.function.value == function.id %}selected{% endif %}>{{ function.designation }}</option>
                                 {% endfor %}
                             </select>
-                            {% if form.function.errors %}
-                                <div class="invalid-feedback">{{ form.function.errors }}</div>
-                            {% endif %}
                         </div>
 
                         <!-- Dates de Début et Fin -->

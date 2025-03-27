@@ -7,7 +7,7 @@
 
     <div class="d-flex justify-content-between align-items-center mb-3">
         <!-- Bouton pour ajouter une unité organisationnelle -->
-        <a href="{% url 'OrganizationalUnit:create' %}" class="btn btn-primary">
+        <a href="{% url 'specialite:creer' %}" class="btn btn-primary">
             <i class="bi bi-plus-circle"></i> Ajouter une unité
         </a>  
     
@@ -48,9 +48,6 @@
                         </a>
                         <a href="{% url 'specialite:modifier' specialite.id %}" class="btn btn-warning btn-sm mb-1 ">
                             <i class="bi bi-pencil"></i> Modifier
-                        </a>
-                        <a href="{% url 'specialite:supprimer' specialite.id %}" class="btn btn-danger btn-sm mb-1 ">
-                            <i class="bi bi-trash"></i> Supprimer
                         </a>
                     </td>
                 </tr>

@@ -1,8 +1,7 @@
 from django.db import models
 from django.core.exceptions import ValidationError
-
 from Employee.models import Employee
-# Create your models here.
+
 class Conge(models.Model):
     TYPE_CONGE = [
         ('annuel', 'Annuel'),
@@ -19,12 +18,16 @@ class Conge(models.Model):
     def clean(self):
         # Récupération des dates de début de service, fin de service et retraite de l'employé
         date_debut_service = self.employe.start_date
-        date_fin_service = self.employe. retirement_date
-        date_retraite = self.employe. retirement_date
+        date_fin_service = self.employe.retirement_date
+        date_retraite = self.employe.retirement_date
         
-        # Si la date de fin de service n'est pas définie, utiliser la date de retraite
-        if not date_fin_service:
+        # Vérifier si la date de fin de service est définie, sinon utiliser la date de retraite
+        if date_fin_service is None:
             date_fin_service = date_retraite
+        
+        # Vérifier que les dates sont valides
+        if date_debut_service is None or date_fin_service is None:
+            raise ValidationError("Les dates de service et de retraite de l'employé doivent être définies.")
         
         # Vérifier que les dates de congé sont comprises entre la date de début et la date de fin de service
         if not (date_debut_service <= self.date_debut <= date_fin_service):
@@ -35,4 +38,3 @@ class Conge(models.Model):
         
         if self.date_debut > self.date_fin:
             raise ValidationError("La date de début du congé ne peut pas être après la date de fin.")
-    

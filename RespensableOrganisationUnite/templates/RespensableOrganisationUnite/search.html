@@ -36,8 +36,8 @@
                                         <em>Fonction inconnue</em>
                                     {% endif %}
 
-                                    <a href="{% url 'responsable_unite:update' responsable.id %}" class="btn btn-warning btn-sm float-end ms-2">Modifier</a>
-                                    <a href="{% url 'responsable_unite:delete' responsable.id %}" class="btn btn-danger btn-sm float-end">Supprimer</a>
+                                    <a href="{% url 'RespensableOrganisationUnite:update' responsable.id %}" class="btn btn-warning btn-sm float-end ms-2">Modifier</a>
+                                    <a href="{% url 'RespensableOrganisationUnite:delete' responsable.id %}" class="btn btn-danger btn-sm float-end">Supprimer</a>
                                 </li>
                             {% endfor %}
                         </ul>
@@ -54,14 +54,23 @@
 
 </div>
 
-<!-- Script pour afficher le modal de façon automatique à la fin de la page -->
+<!-- CSS pour flouter l'arrière-plan -->
+<style>
+    .modal-backdrop {
+        backdrop-filter: blur(10px); /* Applique un flou sur l'arrière-plan */
+        background-color: rgba(0, 0, 0, 0.2) !important; /* Assombrit légèrement */
+    }
+</style>
+
+<!-- Script pour verrouiller le modal et afficher automatiquement -->
 {% if results %}
     <script>
         window.onload = function() {
             var modalElement = document.getElementById("modalSearchResults");
             if (modalElement) {
                 var myModal = new bootstrap.Modal(modalElement, {
-                    keyboard: false
+                    backdrop: 'static',  // Empêche la fermeture en cliquant en dehors
+                    keyboard: false      // Désactive la fermeture avec la touche Échap
                 });
                 myModal.show();
             }

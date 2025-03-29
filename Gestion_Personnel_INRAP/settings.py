@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'Stagiaire',
     'Conge',
     'Activation',
+    'administration',
 ]
 
 MIDDLEWARE = [

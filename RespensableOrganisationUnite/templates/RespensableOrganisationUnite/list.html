@@ -60,8 +60,9 @@
                     <td>{{ responsable.organizational_unit.name }}</td>
                     <td>{{ responsable.responsable.first_name }} {{ responsable.responsable.last_name }}</td>
                     <td>{{ responsable.function.designation }}</td>
-                    <td>{{ responsable.date_debut }}</td>
-                    <td>{{ responsable.date_fin }}</td>
+                    <td>{% if responsable.date_debut %}{{ responsable.date_debut|date:"Y-m-d" }}{% else %}Non défini{% endif %}</td>
+                    <td>{% if responsable.date_fin %}{{ responsable.date_fin|date:"Y-m-d" }}{% else %}Non défini{% endif %}</td>
+                     
                     <td class="">
                         <a href="{% url 'RespensableOrganisationUnite:update' responsable.id %}" class="btn btn-warning btn-sm mb-1">
                             <i class="bi bi-pencil"></i> Modifier

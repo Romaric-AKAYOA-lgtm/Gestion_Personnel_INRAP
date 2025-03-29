@@ -2,6 +2,9 @@
 
 {% block contenue %}
 <div class="container mt-4">   
+    <!-- Overlay pour flouter et obscurcir l'arrière-plan -->
+    <div id="customBackdrop" class="modal-backdrop fade show"></div>
+
     <div class="modal fade show" id="modalResponsable" tabindex="-1" aria-labelledby="modalResponsableLabel" aria-hidden="true" style="display: block;">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -77,17 +80,38 @@
     </div>
 </div>
 
+<!-- CSS pour flouter et obscurcir l'arrière-plan -->
+<style>
+    #customBackdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+        backdrop-filter: blur(5px); /* Effet de flou */
+        z-index: 1040; /* Assure que l'overlay est bien au-dessus du reste */
+    }
+</style>
+
+<!-- Script pour afficher le modal de façon automatique et gérer l'overlay -->
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        var myModal = new bootstrap.Modal(document.getElementById("modalResponsable"));
-        myModal.show();
-    });
+        var myModal = new bootstrap.Modal(document.getElementById("modalResponsable"), {
+            backdrop: 'static',  // Empêche la fermeture en cliquant en dehors
+            keyboard: false      // Désactive la fermeture avec la touche Échap
+        });
 
-    function fermerModal() {
-        var modalEl = document.getElementById("modalResponsable");
-        var modal = bootstrap.Modal.getInstance(modalEl);
-        modal.hide();
-    }
+        var customBackdrop = document.getElementById("customBackdrop");
+
+        // Afficher le modal automatiquement
+        myModal.show();
+
+        // Quand le modal se ferme, enlever l'overlay
+        document.getElementById("modalResponsable").addEventListener("hidden.bs.modal", function () {
+            customBackdrop.remove();
+        });
+    });
 </script>
 
 {% endblock %}

@@ -1,8 +1,13 @@
 from django.shortcuts import get_object_or_404, redirect, render
+from django import forms
+from django.utils.timezone import now
 from Activation.models import Activation
 from Employee.views import get_username_from_session
+from RespensableOrganisationUnite.models import ResponsableOrganisationUnite
 from .models import Stagiaire
 from .forms import StagiaireForm
+from django.db.models import Q
+
 
 def stagiaire_list(request):
     """Affiche la page d'accueil avec la gestion du personnel et la vérification d'activation."""
@@ -21,47 +26,72 @@ def stagiaire_list(request):
     return render(request, 'stagiaire/stagiaire_list.html', {
        'username': username, 'stagiaires': stagiaires})
 
-
 def create_stagiaire(request):
+    username = get_username_from_session(request)
+
+    if not username:
+        return redirect('login')  # Redirige vers la page de connexion si pas de nom d'utilisateur dans la session
+
+    """Permet de créer un nouveau stagiaire."""
     if request.method == 'POST':
         form = StagiaireForm(request.POST)
         if form.is_valid():
             form.save()  # Sauvegarder le stagiaire dans la base de données
             return redirect('stagiaire:stagiaire_list')  # Rediriger vers la liste des stagiaires après la création
+        else:
+            # Passer les erreurs au template si le formulaire est invalide
+            return render(request, 'stagiaire/create_stagiaire.html', {
+                'username': username,
+                'form': form,
+                'errors': form.errors  # Passer les erreurs de formulaire
+            })
     else:
-        form = StagiaireForm()  # Afficher un formulaire vide pour un nouveau stagiaire
+        form = StagiaireForm()
 
-    return render(request, 'stagiaire/create_stagiaire.html', {'form': form})
-
+    return render(request, 'stagiaire/create_stagiaire.html', {
+        'username': username,
+        'form': form,
+    })
 
 def modify_stagiaire(request, id):
-    """Permet de modifier un stagiaire et de récupérer son tuteur."""
-    stagiaire = get_object_or_404(Stagiaire, id=id)  # Récupérer le stagiaire avec l'ID donné
+    stagiaire = get_object_or_404(Stagiaire, id=id)
 
-    # 🔹 Vérifier l'activation
     activation = Activation.objects.first()
     if not activation or not activation.is_valid():
-        return redirect("Activation:activation_page")  # Redirige vers une page d'activation si expiré
+        return redirect("Activation:activation_page")
 
     username = get_username_from_session(request)
 
-    # Assurez-vous que le nom d'utilisateur est disponible dans la session
     if not username:
-        return redirect('login')  # Redirige vers la page de connexion si pas de nom d'utilisateur dans la session
+        return redirect('login')
 
     if request.method == 'POST':
-        form = StagiaireForm(request.POST, instance=stagiaire)  # Pré-remplir le formulaire avec les données existantes
+        form = StagiaireForm(request.POST, instance=stagiaire)
         if form.is_valid():
             form.save()  # Sauvegarder les modifications
-            return redirect('stagiaire:stagiaire_list')  # Rediriger vers la liste des stagiaires après modification
+            return redirect('stagiaire:stagiaire_list')
+        else:
+            # Passer les erreurs au template si le formulaire est invalide
+            return render(request, 'stagiaire/modify_stagiaire.html', {
+                'form': form,
+                'stagiaire': stagiaire,
+                'username': username,
+                'errors': form.errors  # Passer les erreurs de formulaire
+            })
     else:
-        form = StagiaireForm(instance=stagiaire)  # Afficher le formulaire avec les données existantes
+        form = StagiaireForm(instance=stagiaire)
 
     return render(request, 'stagiaire/modify_stagiaire.html', {
         'form': form,
-        'stagiaire': stagiaire,  # Passer les données du stagiaire
-        'username': username
+        'stagiaire': stagiaire,
+        'username': username,
     })
+
+def delete_stagiaire(request, pk):
+    stagiaire = get_object_or_404(Stagiaire, pk=pk)  # Récupérer le stagiaire par son ID (pk)
+    
+    stagiaire.delete()  # Supprimer le stagiaire
+    return redirect('stagiaire:stagiaire_list')  # Rediriger vers la liste des stagiaires
 
 def stagiaire_search(request):
     username = get_username_from_session(request)

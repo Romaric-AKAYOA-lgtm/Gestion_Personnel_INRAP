@@ -16,7 +16,8 @@
                         <ul class="list-group">
                             {% for employee in employees %}
                                 <li class="list-group-item">
-                                    {{ employee.last_name }} {{ employee.first_name }} - {{ employee.email }} - {{ employee.num_tel }}
+                                    {{ employee.last_name }} {{ employee.first_name }} - {{ employee.email }} - 
+                                    <a href="https://web.whatsapp.com/send?phone={{ employee.num_tel }}" target="_blank">{{ employee.num_tel }}</a> <!-- Lien vers WhatsApp -->
                                     <a href="{% url 'Employee:update' employee.id %}" class="btn btn-warning btn-sm float-end ms-2">Modifier</a>
                                   </li>
                             {% endfor %}
@@ -34,14 +35,23 @@
 
 </div>
 
+<!-- CSS pour flouter l'arrière-plan -->
+<style>
+    .modal-backdrop {
+        backdrop-filter: blur(10px); /* Applique un flou sur l'arrière-plan */
+        background-color: rgba(0, 0, 0, 0.2) !important; /* Assombrit légèrement */
+    }
+</style>
+
 <!-- Script pour afficher le modal de façon automatique à la fin de la page -->
 {% if employees %}
     <script>
         window.onload = function() {
             var myModal = new bootstrap.Modal(document.getElementById("modalSearchResults"), {
-                keyboard: false
+                keyboard: false,   // Désactive la fermeture avec la touche 'Esc'
+                backdrop: 'static' // Empêche la fermeture en cliquant à l'extérieur
             });
-            myModal.show();
+            myModal.show(); // Affiche le modal et le garde ouvert
         };
     </script>
 {% endif %}

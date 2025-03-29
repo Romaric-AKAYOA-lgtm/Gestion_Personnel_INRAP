@@ -16,7 +16,8 @@
                         <ul class="list-group">
                             {% for stagiaire in stagiaires %}
                                 <li class="list-group-item">
-                                    {{ stagiaire.nom }} {{ stagiaire.prenom }} - {{ stagiaire.email }} - {{ stagiaire.telephone }}
+                                    {{ stagiaire.nom }} {{ stagiaire.prenom }} - {{ stagiaire.email }} - 
+                                    <a href="https://web.whatsapp.com/send?phone={{ stagiaire.telephone }}" target="_blank">{{ stagiaire.telephone }}</a> <!-- Lien vers WhatsApp -->
                                     <a href="{% url 'stagiaire:modify_stagiaire' stagiaire.id %}" class="btn btn-warning btn-sm float-end ms-2">Modifier</a>
                                 </li>
                             {% endfor %}

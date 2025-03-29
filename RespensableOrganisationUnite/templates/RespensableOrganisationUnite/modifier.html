@@ -2,7 +2,6 @@
 
 {% block contenue %}
 <div class="container mt-4">
-    <!-- Modal Modifier Responsable d'Unité Organisationnelle -->
     <div class="modal fade show" id="modalResponsable" tabindex="-1" aria-labelledby="modalResponsableLabel" aria-hidden="true" style="display: block;">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -16,7 +15,11 @@
                         <ul>
                             {% for field in form %}
                                 {% if field.errors %}
-                                    <li><strong>{{ field.label }}</strong> : {{ field.errors|striptags }}</li>
+                                    <li><strong>{{ field.label }}</strong> : 
+                                        {% for error in field.errors %}
+                                            {{ error }}<br>
+                                        {% endfor %}
+                                    </li>
                                 {% endif %}
                             {% endfor %}
                         </ul>
@@ -26,60 +29,73 @@
 
                     <form action="{% url 'RespensableOrganisationUnite:update' form.instance.id %}" method="POST" enctype="multipart/form-data" class="needs-validation" novalidate>
                         {% csrf_token %}
-                        
+
                         <!-- Unité Organisationnelle -->
                         <div class="mb-3">
-                            <label for="unite" class="form-label">Unité Organisationnelle</label>
-                            <select class="form-select input-focus-blue" id="unite" name="unite" required>
+                            <label for="organisation_unit" class="form-label">Unité Organisationnelle</label>
+                            <select class="form-select {% if form.organizational_unit.errors %}is-invalid{% endif %}" id="organisation_unit" name="organisation_unit" required>
                                 <option value="" selected>-- Sélectionnez une unité organisationnelle --</option>
-                                {% for organizational_unit_id, organizational_unit_name in organizational_units_dict.items %}
-                                    <option value="{{ organizational_unit_id }}" {% if organizational_unit_id == form.unite.value %}selected{% endif %}>{{ organizational_unit_name }}</option>
+                                {% for organizational_unit in organizational_units %}
+                                    <option value="{{ organizational_unit.id }}" 
+                                        {% if organizational_unit.id == form.organizational_unit.value or organizational_unit.id == responsable.organizational_unit.id %}
+                                            selected
+                                        {% endif %}
+                                    >
+                                        {{ organizational_unit.name }}
+                                    </option>
                                 {% endfor %}
                             </select>
-                            {% if form.unite.errors %}
-                                <div class="invalid-feedback">{{ form.unite.errors }}</div>
+                            {% if form.organizational_unit.errors %}
+                                <div class="invalid-feedback" id="organisation_unit-error">{{ form.organizational_unit.errors }}</div>
                             {% endif %}
                         </div>
 
                         <!-- Responsable -->
                         <div class="mb-3">
                             <label for="responsable" class="form-label">Responsable</label>
-                            <select class="form-select input-focus-blue" id="responsable" name="responsable" required>
+                            <select class="form-select input-focus-blue {% if form.responsable.errors %}is-invalid{% endif %}" id="responsable" name="responsable" required>
                                 <option value="" selected>-- Sélectionnez un responsable --</option>
-                                {% for employee_id, employee_name in employee_dict.items %}
-                                    <option value="{{ employee_id }}" {% if employee_id == form.responsable.value %}selected{% endif %}>{{ employee_name }}</option>
+                                {% for employee in employees %}
+                                    <option value="{{ employee.id }}" 
+                                            data-organizational-unit="{{ employee.responsableorganisationunite_set.first.organizational_unit.id }}"
+                                            {% if employee.id == form.responsable.value %}selected{% endif %}>
+                                        {{ employee.last_name }} > {{ employee.first_name }}
+                                    </option>
                                 {% endfor %}
                             </select>
                             {% if form.responsable.errors %}
-                                <div class="invalid-feedback">{{ form.responsable.errors }}</div>
+                                <div class="invalid-feedback" id="responsable-error">{{ form.responsable.errors }}</div>
                             {% endif %}
                         </div>
 
                         <!-- Fonction -->
                         <div class="mb-3">
                             <label for="function" class="form-label">Fonction</label>
-                            <select class="form-select" id="function" name="function" required>
+                            <select class="form-select {% if form.function.errors %}is-invalid{% endif %}" id="function" name="function" required>
                                 <option value="" selected>-- Sélectionnez une fonction --</option>
                                 {% for function in functions %}
                                     <option value="{{ function.id }}" {% if form.function.value == function.id %}selected{% endif %}>{{ function.designation }}</option>
                                 {% endfor %}
                             </select>
+                            {% if form.function.errors %}
+                                <div class="invalid-feedback" id="function-error">{{ form.function.errors }}</div>
+                            {% endif %}
                         </div>
 
                         <!-- Dates de Début et Fin -->
                         <div class="mb-3">
                             <label for="date_debut" class="form-label">Date de Début</label>
-                            <input type="date" class="form-control input-focus-blue" id="date_debut" name="date_debut" value="{{ form.date_debut.value }}" required>
+                            <input type="date" class="form-control input-focus-blue {% if form.date_debut.errors %}is-invalid{% endif %}" id="date_debut" name="date_debut" value="{{ form.date_debut.value|date:'Y-m-d' }}" required>
                             {% if form.date_debut.errors %}
-                                <div class="invalid-feedback">{{ form.date_debut.errors }}</div>
+                                <div class="invalid-feedback" id="date_debut-error">{{ form.date_debut.errors }}</div>
                             {% endif %}
                         </div>
 
                         <div class="mb-3">
                             <label for="date_fin" class="form-label">Date de Fin</label>
-                            <input type="date" class="form-control input-focus-blue" id="date_fin" name="date_fin" value="{{ form.date_fin.value }}">
+                            <input type="date" class="form-control input-focus-blue {% if form.date_fin.errors %}is-invalid{% endif %}" id="date_fin" name="date_fin" value="{{ form.date_fin.value|date:'Y-m-d' }}"/>
                             {% if form.date_fin.errors %}
-                                <div class="invalid-feedback">{{ form.date_fin.errors }}</div>
+                                <div class="invalid-feedback" id="date_fin-error">{{ form.date_fin.errors }}</div>
                             {% endif %}
                         </div>
 
@@ -96,14 +112,29 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        var myModal = new bootstrap.Modal(document.getElementById("modalResponsable"));
+        // Initialiser la modale
+        var myModal = new bootstrap.Modal(document.getElementById("modalResponsable"), {
+            backdrop: 'static', // Empêche la fermeture en cliquant à l'extérieur
+            keyboard: false // Empêche la fermeture via le clavier (Esc)
+        });
         myModal.show();
     });
 
+    // Fonction pour fermer la modale manuellement (au clic sur un bouton)
     function fermerModal() {
         var modalEl = document.getElementById("modalResponsable");
         var modal = bootstrap.Modal.getInstance(modalEl);
         modal.hide();
     }
+
+    // Mettre à jour le champ "Unité Organisationnelle" en fonction du Responsable sélectionné
+    document.getElementById('responsable').addEventListener('change', function() {
+        var responsableSelect = document.getElementById('responsable');
+        var selectedOption = responsableSelect.options[responsableSelect.selectedIndex];
+        var orgUnitId = selectedOption.getAttribute('data-organizational-unit');
+        if (orgUnitId) {
+            document.getElementById('organisation_unit').value = orgUnitId;
+        }
+    });
 </script>
 {% endblock %}

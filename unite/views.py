@@ -26,6 +26,12 @@ def unite_list(request):
        'username':username, 'unite': unite})
 
 def unite_create(request):
+    username = get_username_from_session(request)
+
+    # Assurez-vous que le nom d'utilisateur est disponible dans la session
+    if not username:
+        return redirect('login')  # Redirige vers la page de connexion si pas de nom d'utilisateur dans la session
+
     if request.method == "POST":
         form = UniteForm(request.POST)
         if form.is_valid():
@@ -33,10 +39,16 @@ def unite_create(request):
             return redirect('unite:unite')
     else:
         form = UniteForm()
-    return render(request, 'unite/unite_form.html', {'form': form})
+    return render(request, 'unite/unite_form.html', {'form': form, 'username':username})
 
 
 def modifier_unite(request, id):
+    username = get_username_from_session(request)
+
+    # Assurez-vous que le nom d'utilisateur est disponible dans la session
+    if not username:
+        return redirect('login')  # Redirige vers la page de connexion si pas de nom d'utilisateur dans la session
+
     unite = get_object_or_404(Unite, id=id)
 
     if request.method == "POST":
@@ -47,7 +59,7 @@ def modifier_unite(request, id):
     else:
         form = UniteForm (instance=unite)  # Remplir le formulaire avec les données existantes
 
-    return render(request, 'unite/unite_form_edit.html', {'form': form, 'unite': unite})
+    return render(request, 'unite/unite_form_edit.html', {'form': form, 'unite': unite, 'username':username})
 
 def supprimer_unite(request, id):
     unite = get_object_or_404(Unite , id=id)

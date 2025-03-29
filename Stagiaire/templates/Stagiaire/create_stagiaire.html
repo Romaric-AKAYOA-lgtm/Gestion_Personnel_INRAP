@@ -78,21 +78,30 @@
 
                             <div class="mb-3">
                                 <label for="date_fin_stage" class="form-label">Date de Fin du Stage</label>
-                                <input type="date" class="form-control" id="date_fin_stage" name="date_fin_stage" value="{{ form.date_fin_stage.value|default_if_none:'' }}" required>
+                                <input type="date" class="form-control" id="date_fin_stage" name="date_fin_stage" 
+                                       value="{{ form.date_fin_stage.value|default_if_none:'' }}" required>
                             </div>
-
+                            
                             <div class="mb-3">
                                 <label for="tuteur_entreprise" class="form-label">Tuteur en Entreprise</label>
-                                <input type="text" class="form-control" id="tuteur_entreprise" name="tuteur_entreprise" value="{{ form.tuteur_entreprise.value|default_if_none:'' }}">
+                                <select class="form-control" id="tuteur_entreprise" name="tuteur_entreprise">
+                                    <option value="">Sélectionnez un tuteur</option>
+                                    {% for tuteur in form.tuteur_entreprise.field.queryset %}
+                                        <option value="{{ tuteur.id }}" {% if form.tuteur_entreprise.value == tuteur.id %}selected{% endif %}>
+                                            {{ tuteur }}
+                                        </option>
+                                    {% endfor %}
+                                </select>
                             </div>
-
+                            
                             <div class="mb-3">
                                 <label for="statut" class="form-label">Statut</label>
                                 <select class="form-control" id="statut" name="statut">
-                                    <option value="En cours" {% if form.statut.value == "En cours" %}selected{% endif %}>En cours</option>
-                                    <option value="Terminé" {% if form.statut.value == "Terminé" %}selected{% endif %}>Terminé</option>
+                                    <option value="EN_COURS" {% if form.statut.value == "EN_COURS" %}selected{% endif %}>En cours</option>
+                                    <option value="TERMINE" {% if form.statut.value == "TERMINE" %}selected{% endif %}>Terminé</option>
+                                    <option value="SUSPENDU" {% if form.statut.value == "SUSPENDU" %}selected{% endif %}>Suspendu</option>
                                 </select>
-                            </div>
+                            </div>                            
                         </div>
                     </div>
 

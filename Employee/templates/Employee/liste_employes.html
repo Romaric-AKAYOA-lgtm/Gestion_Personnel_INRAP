@@ -61,8 +61,8 @@
                         <td>{{ employe.matricule }}</td>
                         <td>{{ employe.sexe }}</td>
                         <td>
-                            <a href="tel:{{ employe.num_tel }}">{{ employe.num_tel }}</a>
-                        </td>
+                            <a href="https://web.whatsapp.com/send?phone={{ employe.num_tel }}" target="_blank">{{ employe.num_tel }}</a>
+                        </td>                        
                         <td>
                             <a href="mailto:{{ employe.email }}">{{ employe.email }}</a>
                         </td>

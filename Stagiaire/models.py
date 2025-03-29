@@ -54,16 +54,6 @@ class Stagiaire(models.Model):
     # Commentaires
     commentaires = models.TextField(blank=True, null=True)
 
-    def clean(self):
-        # Vérifier si le tuteur sélectionné a une date de fin <= à la date actuelle
-        if self.tuteur_entreprise:
-            responsable = self.tuteur_entreprise.responsable  # Récupérer l'employé responsable
-            date_fin_responsable = self.tuteur_entreprise.date_fin  # Récupérer la date de fin de responsabilité
-            if date_fin_responsable and date_fin_responsable > date.today():
-                raise ValidationError(f"Le tuteur sélectionné a une date de fin après aujourd'hui.")
-        
-        super().clean()
-
     def __str__(self):
         return f"{self.prenom} {self.nom}"
 

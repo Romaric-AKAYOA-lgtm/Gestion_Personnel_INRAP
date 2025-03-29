@@ -68,7 +68,7 @@ def modifier_RespensableOrganisationUnitet(request, id):
     
     return render(request, 'respensableorganisationunite/modifier.html', {
         'organizational_units': organizational_units,
-        'employee': employees,
+        'employees': employees,
         'functions': functions, 
         'username':username , 
         'form': form,})

@@ -5,7 +5,7 @@ from io import BytesIO
 from django.shortcuts import render, redirect
 from django.db.models import Q, Count, F
 from django.utils.timezone import now
-from datetime import timedelta, timezone
+from datetime import datetime, timedelta, timezone
 from django.utils import timezone
 from datetime import timedelta
 from Activation.models import Activation
@@ -172,6 +172,8 @@ def get_responsible_gender_data(responsibles):
         "Femmes": sum(r.female_count for r in responsibles)
     }
 
+
+
 def get_retirement_progression(employee_ages):
     close_to_retirement = sum(1 for emp in employee_ages if emp["age"] is not None and 55 <= emp["age"] < 60)
     return {"Retraite proche": close_to_retirement}
@@ -184,15 +186,12 @@ def get_gender_distribution_per_unit():
     
     # Assurez-vous que les clés sont des chaînes et non des dictionnaires
     return {str(unit.organizational_unit.name): {"Hommes": unit.male_count, "Femmes": unit.female_count} for unit in results}
-
 from django.http import HttpResponse
 from docx import Document
 from docx.shared import Pt
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from datetime import timedelta
 from django.utils.timezone import now
-from docx.oxml.ns import qn
-from docx.oxml import OxmlElement
 from django.shortcuts import redirect
 
 def export_to_word(request):
@@ -235,8 +234,6 @@ def export_to_word(request):
     section.page_height = new_width
     
     doc.add_heading('Rapport de Gestion du Personnel', level=1)
-    
-
 
     if 'employes' in selected_sections: 
         doc.add_heading(section_titles['employes'], level=2)
@@ -260,7 +257,7 @@ def export_to_word(request):
         # Ajouter les données des employés
         for emp in Employee.objects.all():
             row_cells = table.add_row().cells
-            row_cells[0].text = f"{emp.first_name} {emp.last_name}"
+            row_cells[0].text = f"{emp.last_name} {emp.first_name}"
             row_cells[1].text = emp.matricule if emp.matricule else "N/A"
             row_cells[2].text = emp.sexe if emp.sexe else "N/A"
             row_cells[3].text = emp.date_of_birth.strftime("%d/%m/%Y") if emp.date_of_birth else "N/A"
@@ -275,11 +272,6 @@ def export_to_word(request):
             row_cells[12].text = emp.email if emp.email else "N/A"
             row_cells[13].text = emp.status if emp.status else "N/A"
 
-        # Ajuster la largeur des colonnes (optionnel)
-        for row in table.rows:
-            for cell in row.cells:
-                cell.width = 2000000  # Ajuste la largeur des cellules
-
     # Liste des employés récents (moins de 6 mois)
     if 'employes_recents' in selected_sections:
         doc.add_heading(section_titles['employes_recents'], level=2)
@@ -292,7 +284,7 @@ def export_to_word(request):
         employes_recents = Employee.objects.filter(start_date__gte=six_mois_avant)
         for emp in employes_recents:
             row_cells = table.add_row().cells
-            row_cells[0].text = f"{emp.first_name} {emp.last_name}"
+            row_cells[0].text = f"{emp.last_name} {emp.first_name}"
             row_cells[1].text = str(emp.start_date)
     
     # Liste des employés en congé
@@ -363,47 +355,41 @@ def export_to_word(request):
             row_cells[0].text = f"{emp.first_name} {emp.last_name}"
             row_cells[1].text = str(emp.date_of_birth)
             row_cells[2].text = str(emp.retirement_date)
-
+    
+    # Liste des stagiaires
     if 'stagiaires' in selected_sections:
         doc.add_heading(section_titles['stagiaires'], level=2)
-
-        # Définition des colonnes du tableau
-        columns = [
-            "Nom Complet", "Date de Naissance", "Email", "Téléphone", "Adresse",
-            "Université", "Formation", "Début Stage", "Fin Stage", 
-            "Tuteur Entreprise", "Statut", "Année"
-        ]
-
-        # Création du tableau avec en-têtes
-        table = doc.add_table(rows=1, cols=len(columns))
+        table = doc.add_table(rows=1, cols=2)
         table.style = 'Table Grid'
-
-        # Remplir la première ligne avec les noms des colonnes
         hdr_cells = table.rows[0].cells
-        for i, col_name in enumerate(columns):
-            hdr_cells[i].text = col_name
-
-        # Récupération des stagiaires
-        this_year = now().year
-        stagiaires = Stagiaire.objects.filter(date_debut_stage__year__lte=this_year)
-
-        # Ajout des stagiaires dans le tableau
+        hdr_cells[0].text = 'Nom Complet'
+        hdr_cells[1].text = 'Date de début'
+        stagiaires = Stagiaire.objects.all()
         for stagiaire in stagiaires:
             row_cells = table.add_row().cells
             row_cells[0].text = f"{stagiaire.nom} {stagiaire.prenom}"
-            row_cells[1].text = stagiaire.date_naissance.strftime("%d/%m/%Y") if stagiaire.date_naissance else "N/A"
-            row_cells[2].text = stagiaire.email
-            row_cells[3].text = stagiaire.telephone
-            row_cells[4].text = stagiaire.adresse
-            row_cells[5].text = stagiaire.universite
-            row_cells[6].text = stagiaire.formation
-            row_cells[7].text = stagiaire.date_debut_stage.strftime("%d/%m/%Y") if stagiaire.date_debut_stage else "N/A"
-            row_cells[8].text = stagiaire.date_fin_stage.strftime("%d/%m/%Y") if stagiaire.date_fin_stage else "N/A"
-            row_cells[9].text = stagiaire.tuteur_entreprise.nom if stagiaire.tuteur_entreprise else "N/A"
-            row_cells[10].text = dict(Stagiaire.STATUT_CHOICES).get(stagiaire.statut, "N/A")
-            row_cells[11].text = str(stagiaire.date_debut_stage.year)
+            row_cells[1].text = str(stagiaire.date_debut_stage)
+    # Ajout de "BRAZZAVILLE" + date système en bas à droite du document
+    # Créer une nouvelle section de texte après les tableaux
+    doc.add_paragraph("\n\n")  # Ajouter un espacement avant l'ajout du texte en bas à droite
 
+    # Ajouter le texte avec "BRAZZAVILLE" et la date dans le premier paragraphe
+    footer_paragraph = doc.add_paragraph()
+    footer_paragraph.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+    footer_paragraph.add_run("BRAZZAVILLE  " + datetime.now().strftime("%Y-%m-%d")).font.size = Pt(8)
 
+    # Ajouter un espacement avant d'ajouter le nom et prénom de l'employé
+    doc.add_paragraph("\n")  # Paragraphe vide pour ajouter un espacement
+    doc.add_paragraph("\n")  # Paragraphe vide pour ajouter un espacement
+
+    # Ajouter un nouveau paragraphe pour le nom et prénom de l'employé sous la date
+    second_footer_paragraph = doc.add_paragraph()
+    second_footer_paragraph.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+
+    if employee:
+        second_footer_paragraph.add_run(f"{employee.first_name} {employee.last_name}")
+    else:
+        second_footer_paragraph.add_run("Nom et prénom de l'employé connecté")  # Au cas où l'employé n'est pas trouvé
 
     # Ajout de "BRAZZAVILLE" + date système en bas à droite du document
     footer = doc.sections[-1].footer
@@ -417,9 +403,9 @@ def export_to_word(request):
     else:
         paragraph.add_run("Nom et prénom de l'employé connecté")  # Au cas où l'employé n'est pas trouvé
  
-    # Enregistrement du document
+    # Retourner la réponse avec le fichier Word
     response = HttpResponse(content_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document')
-    response['Content-Disposition'] = 'attachment; filename="rapport_personnel.docx"'
+    response['Content-Disposition'] = 'attachment; filename=rapport_personnel.docx'
     doc.save(response)
     return response
 

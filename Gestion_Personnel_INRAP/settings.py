@@ -21,8 +21,6 @@ SECRET_KEY = 'django-insecure-cg8x7jn$#c+k5^9#xw1g4#xrc+!41a%p83=+*78dw0w6fn-=i=
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
-# Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -30,6 +28,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Applications de l'entreprise
     'OrganizationalUnit',
     'fonction', 
     'specialite',
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'Activation',
     'administration',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -66,6 +67,9 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                 # Ajouter le context processor de votre application 'administration'
+                'administration.context_processors.administration',  # Ajouter cette ligne
+       
             ],
         },
     },

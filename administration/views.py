@@ -6,6 +6,7 @@ from django.shortcuts import render, redirect
 from Activation.models import Activation
 from Activation.views import activation_view
 from Employee.views import get_username_from_session
+
 from .models import Administration
 from .forms import AdministrationForm
 from django.shortcuts import render, get_object_or_404, redirect
@@ -53,7 +54,7 @@ def administration_create(request):
         form = AdministrationForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return redirect('administration:detail')  # Rediriger vers la page de détail après sauvegarde
+            return redirect('administration:list')  # Rediriger vers la page de détail après sauvegarde
     else:
         form = AdministrationForm()
     return render(request, 'administration/create.html', {'form': form, 'username':username})
@@ -77,3 +78,4 @@ def administration_modify(request, id):
         form = AdministrationForm(instance=administration)
 
     return render(request, 'administration/administration_form.html', {'form': form, 'administration': administration, 'username':username})
+

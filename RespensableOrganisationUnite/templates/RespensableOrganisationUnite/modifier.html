@@ -31,13 +31,16 @@
                         {% csrf_token %}
 
                         <!-- Unité Organisationnelle -->
-                        <div class="mb-3">
-                            <label for="organisation_unit" class="form-label">Unité Organisationnelle</label>
-                            <select class="form-select {% if form.organizational_unit.errors %}is-invalid{% endif %}" id="organisation_unit" name="organisation_unit" required>
+                        <div class="mb-3"> 
+                            <label for="organizational_unit" class="form-label">Unité Organisationnelle</label>
+                            <select class="form-select {% if form.organizational_unit.errors %}is-invalid{% endif %}" 
+                                    id="organizational_unit" 
+                                    name="organizational_unit" 
+                                    required>
                                 <option value="" selected>-- Sélectionnez une unité organisationnelle --</option>
-                                {% for organizational_unit in organizational_units %}
+                                {% for organizational_unit in form.fields.organizational_unit.queryset %}
                                     <option value="{{ organizational_unit.id }}" 
-                                        {% if organizational_unit.id == form.organizational_unit.value or organizational_unit.id == responsable.organizational_unit.id %}
+                                        {% if organizational_unit.id|stringformat:"s" == form.organizational_unit.value|stringformat:"s" %}
                                             selected
                                         {% endif %}
                                     >
@@ -46,12 +49,13 @@
                                 {% endfor %}
                             </select>
                             {% if form.organizational_unit.errors %}
-                                <div class="invalid-feedback" id="organisation_unit-error">{{ form.organizational_unit.errors }}</div>
+                                <div class="invalid-feedback" id="organizational_unit-error">{{ form.organizational_unit.errors }}</div>
                             {% endif %}
                         </div>
 
+
                         <!-- Responsable -->
-                        <div class="mb-3">
+                        <div class="mb-3">  
                             <label for="responsable" class="form-label">Responsable</label>
                             <select class="form-select input-focus-blue {% if form.responsable.errors %}is-invalid{% endif %}" id="responsable" name="responsable" required>
                                 <option value="" selected>-- Sélectionnez un responsable --</option>

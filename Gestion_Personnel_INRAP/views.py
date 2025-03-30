@@ -15,6 +15,7 @@ from Employee.views import get_username_from_session
 from OrganizationalUnit.models import OrganizationalUnit
 from RespensableOrganisationUnite.models import ResponsableOrganisationUnite
 from Stagiaire.models import Stagiaire
+
 def home_view(request):
     # Vérification de l'activation
     activation = Activation.objects.first()
@@ -77,16 +78,12 @@ def home_view(request):
         nombre_employes=Count('responsable')  # Comptage des employés (responsables) associés à chaque unité
     )
 
-    # Requête pour filtrer les responsables avec une fonction contenant "chef" insensible à la casse
-    responsables_Organisation_unites = ResponsableOrganisationUnite.objects.filter(
-        Q(function__designation__icontains='chef')
-    )
+    # Récupérer la date actuelle du système
+    current_date = timezone.now().date()
 
-    # Filtrer les responsables dont la désignation contient "chef", sans tenir compte de la casse
-    responsables_Organisation_unites = responsables_Organisation_unites.annotate(
-        lower_designation=Lower('function__designation')  # Transformer la désignation en minuscules
-    ).filter(
-        lower_designation__icontains='chef'  # Vérifier si la désignation contient "chef" (insensible à la casse)
+    # Filtrer les responsables dont la date de fin est None ou supérieure à la date système
+    responsables_Organisation_unites = ResponsableOrganisationUnite.objects.filter(
+        Q(date_fin__isnull=True) | Q(date_fin__gte=current_date)  # Date de fin = None ou supérieure à la date actuelle
     )
 
     # Utilisation de la jointure pour compter les hommes et les femmes
@@ -186,6 +183,8 @@ def get_gender_distribution_per_unit():
     
     # Assurez-vous que les clés sont des chaînes et non des dictionnaires
     return {str(unit.organizational_unit.name): {"Hommes": unit.male_count, "Femmes": unit.female_count} for unit in results}
+
+
 from django.http import HttpResponse
 from docx import Document
 from docx.shared import Pt
@@ -193,6 +192,12 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 from datetime import timedelta
 from django.utils.timezone import now
 from django.shortcuts import redirect
+from datetime import datetime
+
+# Fonction pour obtenir le nom d'utilisateur de la session
+def get_username_from_session(request):
+    # Implémentation de la récupération du nom d'utilisateur depuis la session
+    return request.session.get('username')
 
 def export_to_word(request):
     # Vérifier l'activation
@@ -206,7 +211,7 @@ def export_to_word(request):
 
     # Récupérer l'employé correspondant au username de l'utilisateur connecté
     try:
-         employee = Employee.objects.get(username=username)
+        employee = Employee.objects.get(username=username)
     except Employee.DoesNotExist:
         employee = None  # Si l'employé n'existe pas pour cet utilisateur, gérer le cas ici
 
@@ -348,7 +353,7 @@ def export_to_word(request):
         hdr_cells = table.rows[0].cells
         hdr_cells[0].text = 'Nom Complet'
         hdr_cells[1].text = 'Date de naissance'
-        hdr_cells[2].text = 'Date de retraité'
+        hdr_cells[2].text = 'Dabte de retraité'
         employes_retraites = Employee.objects.filter(retirement_date__lt=now().date())
         for emp in employes_retraites:
             row_cells = table.add_row().cells
@@ -369,55 +374,37 @@ def export_to_word(request):
             row_cells = table.add_row().cells
             row_cells[0].text = f"{stagiaire.nom} {stagiaire.prenom}"
             row_cells[1].text = str(stagiaire.date_debut_stage)
+    
     # Ajout de "BRAZZAVILLE" + date système en bas à droite du document
-    # Créer une nouvelle section de texte après les tableaux
-    doc.add_paragraph("\n\n")  # Ajouter un espacement avant l'ajout du texte en bas à droite
-
-    # Ajouter le texte avec "BRAZZAVILLE" et la date dans le premier paragraphe
     footer_paragraph = doc.add_paragraph()
     footer_paragraph.alignment = WD_ALIGN_PARAGRAPH.RIGHT
     footer_paragraph.add_run("BRAZZAVILLE  " + datetime.now().strftime("%Y-%m-%d")).font.size = Pt(8)
 
-    # Ajouter un espacement avant d'ajouter le nom et prénom de l'employé
-    doc.add_paragraph("\n")  # Paragraphe vide pour ajouter un espacement
-    doc.add_paragraph("\n")  # Paragraphe vide pour ajouter un espacement
-
-    # Ajouter un nouveau paragraphe pour le nom et prénom de l'employé sous la date
+    # Ajouter le nom et prénom de l'employé connecté
     second_footer_paragraph = doc.add_paragraph()
     second_footer_paragraph.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-
     if employee:
         second_footer_paragraph.add_run(f"{employee.first_name} {employee.last_name}")
     else:
-        second_footer_paragraph.add_run("Nom et prénom de l'employé connecté")  # Au cas où l'employé n'est pas trouvé
+        second_footer_paragraph.add_run("Nom et prénom de l'employé connecté")
 
-    # Ajout de "BRAZZAVILLE" + date système en bas à droite du document
-    footer = doc.sections[-1].footer
-    paragraph = footer.paragraphs[0]
-    paragraph.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-    paragraph.add_run("BRAZZAVILLE  " + now().strftime("%Y-%m-%d")).font.size = Pt(8)
-
-    # Ajouter le nom et prénom de l'employé connecté si il existe
-    if employee:
-         paragraph.add_run("      " + f"{employee.first_name} {employee.last_name}")  # Ajout d'espaces avant le nom
-    else:
-        paragraph.add_run("Nom et prénom de l'employé connecté")  # Au cas où l'employé n'est pas trouvé
- 
     # Retourner la réponse avec le fichier Word
     response = HttpResponse(content_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document')
     response['Content-Disposition'] = 'attachment; filename=rapport_personnel.docx'
     doc.save(response)
     return response
 
-
 def export_word_view(request):
     # Vérifier l'activation
     activation = Activation.objects.first()
     if not activation or not activation.is_valid():
         return redirect("Activation:activation_page")
-
+   
     username = get_username_from_session(request)
     if not username:
         return redirect('login')
     """Page d'exportation"""
-    return render(request, "export_to_word.html", {'username':username})
+    return render(request, "export_to_word.html", {'username':username })
+
+
+

@@ -21101,3 +21101,834 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'detail' with no arguments no
 2025-03-29 22:58:34,550 - INFO - basehttp - "GET /administrationlist/ HTTP/1.1" 200 10236
 2025-03-29 22:59:40,376 - INFO - basehttp - "GET /export/ HTTP/1.1" 200 12736
 2025-03-29 22:59:52,256 - INFO - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 200 48917
+2025-03-30 12:41:47,657 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 12:41:57,392 - WARNING - log - Not Found: /stagiairecreate/
+2025-03-30 12:41:57,395 - WARNING - basehttp - "GET /stagiairecreate/ HTTP/1.1" 404 4104
+2025-03-30 12:41:57,846 - WARNING - log - Not Found: /favicon.ico
+2025-03-30 12:41:57,848 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 4085
+2025-03-30 12:42:26,878 - WARNING - log - Not Found: /stagiairecreate/
+2025-03-30 12:42:26,879 - WARNING - basehttp - "GET /stagiairecreate/ HTTP/1.1" 404 4104
+2025-03-30 12:43:04,332 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\urls.py changed, reloading.
+2025-03-30 12:43:11,626 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 12:49:58,601 - WARNING - log - Not Found: /stagiairecreate/
+2025-03-30 12:49:58,602 - WARNING - basehttp - "GET /stagiairecreate/ HTTP/1.1" 404 4105
+2025-03-30 12:49:59,786 - WARNING - log - Not Found: /stagiairecreate/
+2025-03-30 12:49:59,788 - WARNING - basehttp - "GET /stagiairecreate/ HTTP/1.1" 404 4105
+2025-03-30 12:50:00,584 - WARNING - log - Not Found: /stagiairecreate/
+2025-03-30 12:50:00,588 - WARNING - basehttp - "GET /stagiairecreate/ HTTP/1.1" 404 4105
+2025-03-30 12:51:57,988 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\urls.py changed, reloading.
+2025-03-30 12:52:00,539 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 12:52:20,590 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 13:02:13,309 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 13:08:14,756 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 13:10:38,176 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 13:14:52,940 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\urls.py changed, reloading.
+2025-03-30 13:14:55,617 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 13:23:11,181 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\urls.py changed, reloading.
+2025-03-30 13:23:13,687 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 13:23:26,958 - WARNING - log - Not Found: /stagiairecreate/
+2025-03-30 13:23:26,960 - WARNING - basehttp - "GET /stagiairecreate/ HTTP/1.1" 404 4106
+2025-03-30 13:26:15,701 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Stagiaire\urls.py changed, reloading.
+2025-03-30 13:26:18,009 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 13:26:27,704 - WARNING - log - Not Found: /stagiairecreate/
+2025-03-30 13:26:27,708 - WARNING - basehttp - "GET /stagiairecreate/ HTTP/1.1" 404 4106
+2025-03-30 13:26:28,556 - WARNING - log - Not Found: /stagiairecreate/
+2025-03-30 13:26:28,558 - WARNING - basehttp - "GET /stagiairecreate/ HTTP/1.1" 404 4106
+2025-03-30 13:26:29,270 - WARNING - log - Not Found: /stagiairecreate/
+2025-03-30 13:26:29,271 - WARNING - basehttp - "GET /stagiairecreate/ HTTP/1.1" 404 4106
+2025-03-30 13:26:30,741 - WARNING - log - Not Found: /stagiairecreate/
+2025-03-30 13:26:30,742 - WARNING - basehttp - "GET /stagiairecreate/ HTTP/1.1" 404 4106
+2025-03-30 13:26:31,620 - WARNING - log - Not Found: /stagiairecreate/
+2025-03-30 13:26:31,621 - WARNING - basehttp - "GET /stagiairecreate/ HTTP/1.1" 404 4106
+2025-03-30 13:29:24,533 - WARNING - log - Not Found: /stagiairecreate/
+2025-03-30 13:29:24,535 - WARNING - basehttp - "GET /stagiairecreate/ HTTP/1.1" 404 4106
+2025-03-30 13:33:58,749 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Stagiaire\urls.py changed, reloading.
+2025-03-30 13:34:00,828 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 13:34:26,977 - WARNING - log - Not Found: /stagiairecreate/
+2025-03-30 13:34:26,979 - WARNING - basehttp - "GET /stagiairecreate/ HTTP/1.1" 404 4106
+2025-03-30 13:34:29,126 - WARNING - log - Not Found: /stagiairecreate/
+2025-03-30 13:34:29,130 - WARNING - basehttp - "GET /stagiairecreate/ HTTP/1.1" 404 4106
+2025-03-30 13:34:46,225 - WARNING - log - Not Found: /stagiairecreate/
+2025-03-30 13:34:46,226 - WARNING - basehttp - "GET /stagiairecreate/ HTTP/1.1" 404 4106
+2025-03-30 13:34:47,763 - WARNING - log - Not Found: /stagiairecreate/
+2025-03-30 13:34:47,764 - WARNING - basehttp - "GET /stagiairecreate/ HTTP/1.1" 404 4106
+2025-03-30 13:34:49,029 - WARNING - log - Not Found: /stagiairecreate/
+2025-03-30 13:34:49,030 - WARNING - basehttp - "GET /stagiairecreate/ HTTP/1.1" 404 4106
+2025-03-30 13:38:10,419 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 13:38:13,862 - INFO - basehttp - "GET / HTTP/1.1" 200 10730
+2025-03-30 13:38:14,761 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-03-30 13:38:14,793 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-03-30 13:38:14,804 - INFO - basehttp - "GET /static/image/congo-2697382_1920.jpg HTTP/1.1" 200 566668
+2025-03-30 13:38:14,823 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-03-30 13:38:15,098 - INFO - basehttp - "GET /static/image/buildings-6956678_1920.jpg HTTP/1.1" 200 617712
+2025-03-30 13:38:22,567 - WARNING - log - Not Found: /stagiairecreate/
+2025-03-30 13:38:22,569 - WARNING - basehttp - "GET /stagiairecreate/ HTTP/1.1" 404 4106
+2025-03-30 13:38:23,394 - WARNING - log - Not Found: /stagiairecreate/
+2025-03-30 13:38:23,395 - WARNING - basehttp - "GET /stagiairecreate/ HTTP/1.1" 404 4106
+2025-03-30 13:38:24,187 - WARNING - log - Not Found: /stagiairecreate/
+2025-03-30 13:38:24,188 - WARNING - basehttp - "GET /stagiairecreate/ HTTP/1.1" 404 4106
+2025-03-30 13:38:26,113 - WARNING - log - Not Found: /stagiairelist/
+2025-03-30 13:38:26,114 - WARNING - basehttp - "GET /stagiairelist/ HTTP/1.1" 404 4098
+2025-03-30 13:38:26,860 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 12631
+2025-03-30 13:38:28,008 - INFO - basehttp - "GET /RespensableOrganisationUnite/1/update/ HTTP/1.1" 200 72049
+2025-03-30 13:38:38,034 - INFO - basehttp - "POST /RespensableOrganisationUnite/1/update/ HTTP/1.1" 200 73134
+2025-03-30 13:39:19,723 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 12631
+2025-03-30 13:39:25,065 - INFO - basehttp - "GET /RespensableOrganisationUnite/2/update/ HTTP/1.1" 200 72039
+2025-03-30 13:39:28,976 - INFO - basehttp - "POST /RespensableOrganisationUnite/2/update/ HTTP/1.1" 200 73134
+2025-03-30 13:42:02,144 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 12631
+2025-03-30 13:42:05,904 - INFO - basehttp - "GET /RespensableOrganisationUnite/1/update/ HTTP/1.1" 200 72054
+2025-03-30 13:42:09,713 - INFO - basehttp - "POST /RespensableOrganisationUnite/1/update/ HTTP/1.1" 200 73139
+2025-03-30 13:45:40,732 - INFO - basehttp - "POST /RespensableOrganisationUnite/1/update/ HTTP/1.1" 200 73257
+2025-03-30 13:45:48,048 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 12631
+2025-03-30 13:45:52,331 - INFO - basehttp - "GET /RespensableOrganisationUnite/1/update/ HTTP/1.1" 200 72170
+2025-03-30 13:45:56,708 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 12631
+2025-03-30 13:46:00,792 - INFO - basehttp - "GET /RespensableOrganisationUnite/2/update/ HTTP/1.1" 200 72160
+2025-03-30 13:46:05,097 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 12631
+2025-03-30 13:46:11,930 - INFO - basehttp - "GET /RespensableOrganisationUnite/1/update/ HTTP/1.1" 200 72170
+2025-03-30 13:46:18,531 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 12631
+2025-03-30 13:46:22,716 - INFO - basehttp - "GET /RespensableOrganisationUnite/2/update/ HTTP/1.1" 200 72160
+2025-03-30 13:46:26,510 - INFO - basehttp - "POST /RespensableOrganisationUnite/2/update/ HTTP/1.1" 302 0
+2025-03-30 13:46:26,552 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 12631
+2025-03-30 13:46:50,170 - INFO - basehttp - "GET /Employee/ HTTP/1.1" 200 10730
+2025-03-30 13:46:58,686 - INFO - basehttp - "POST /Employee/ HTTP/1.1" 302 0
+2025-03-30 13:47:00,898 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 152060
+2025-03-30 13:47:01,056 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-03-30 13:47:01,064 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-03-30 13:47:01,197 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-03-30 13:47:01,200 - INFO - basehttp - "GET /media/employe/Capture_d%C3%A9cran_2025-03-08_160658.png HTTP/1.1" 200 83657
+2025-03-30 13:47:01,232 - WARNING - log - Not Found: /media/
+2025-03-30 13:47:01,234 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 13:49:28,686 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 13:49:32,518 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 13:49:38,033 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 10241
+2025-03-30 13:49:45,258 - INFO - basehttp - "GET /administration/detail/1/ HTTP/1.1" 200 13634
+2025-03-30 13:49:46,595 - INFO - basehttp - "GET /drapeaux/congo-2697382_1920.jpg HTTP/1.1" 200 566668
+2025-03-30 13:49:46,600 - INFO - basehttp - "GET /logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-03-30 13:50:09,896 - INFO - basehttp - "GET /administration/detail/1/ HTTP/1.1" 200 13634
+2025-03-30 13:50:29,725 - INFO - basehttp - "GET /administration/detail/1/ HTTP/1.1" 200 13520
+2025-03-30 13:50:36,176 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 10241
+2025-03-30 13:50:44,640 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 152060
+2025-03-30 13:50:44,909 - WARNING - log - Not Found: /media/
+2025-03-30 13:50:44,911 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 13:54:14,107 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 13:54:17,702 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 13:54:25,592 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 152131
+2025-03-30 13:54:25,869 - WARNING - log - Not Found: /media/
+2025-03-30 13:54:25,872 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 13:55:50,575 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 152131
+2025-03-30 13:55:50,810 - WARNING - log - Not Found: /media/
+2025-03-30 13:55:50,813 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 13:57:56,457 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 152131
+2025-03-30 13:57:56,768 - WARNING - log - Not Found: /media/
+2025-03-30 13:57:56,770 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 13:58:35,540 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 152131
+2025-03-30 13:58:35,659 - WARNING - log - Not Found: /media/
+2025-03-30 13:58:35,662 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 14:00:04,613 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 152133
+2025-03-30 14:00:04,911 - WARNING - log - Not Found: /media/
+2025-03-30 14:00:04,912 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 14:01:20,312 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 152197
+2025-03-30 14:01:20,556 - WARNING - log - Not Found: /media/
+2025-03-30 14:01:20,558 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 14:02:42,918 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 152245
+2025-03-30 14:02:43,173 - WARNING - log - Not Found: /media/
+2025-03-30 14:02:43,174 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 14:04:16,699 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153182
+2025-03-30 14:04:16,822 - WARNING - log - Not Found: /media/
+2025-03-30 14:04:16,824 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 14:04:52,588 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 152245
+2025-03-30 14:04:52,800 - WARNING - log - Not Found: /media/
+2025-03-30 14:04:52,801 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 14:06:08,647 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153219
+2025-03-30 14:06:08,758 - WARNING - log - Not Found: /media/
+2025-03-30 14:06:08,760 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 14:12:25,814 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153264
+2025-03-30 14:12:26,031 - WARNING - log - Not Found: /media/
+2025-03-30 14:12:26,032 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 14:15:36,421 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 14:15:40,294 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 14:15:51,677 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 14:15:54,103 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 14:16:02,817 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153259
+2025-03-30 14:16:03,051 - WARNING - log - Not Found: /media/
+2025-03-30 14:16:03,052 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 14:16:13,618 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153259
+2025-03-30 14:16:13,719 - WARNING - log - Not Found: /media/
+2025-03-30 14:16:13,720 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 14:17:43,791 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 14:17:47,046 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 14:17:52,949 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 14:17:55,621 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 14:18:04,980 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 146643
+2025-03-30 14:18:05,249 - WARNING - log - Not Found: /media/
+2025-03-30 14:18:05,251 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 14:18:37,769 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 14:18:41,150 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 14:19:56,273 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153259
+2025-03-30 14:19:56,489 - WARNING - log - Not Found: /media/
+2025-03-30 14:19:56,490 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 14:21:48,224 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 14:21:54,816 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 14:22:02,163 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 14:22:04,620 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 14:22:24,707 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 14:22:28,228 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 14:22:35,335 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 14:22:37,366 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 14:22:46,918 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 113, in home_view
+    graphique_progression_employes = create_chart_base64(
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 163, in create_chart_base64
+    time_labels = [datetime.strptime(str(t), "%Y-%m-%d") for t in time_data]
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 163, in <listcomp>
+    time_labels = [datetime.strptime(str(t), "%Y-%m-%d") for t in time_data]
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data 'Jan' does not match format '%Y-%m-%d'
+2025-03-30 14:22:46,922 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 101475
+2025-03-30 14:24:37,470 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 14:24:40,738 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 14:26:30,629 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 14:26:32,739 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 14:29:42,233 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 14:29:46,841 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 14:30:23,655 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 14:30:26,578 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 14:30:36,624 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 114, in home_view
+    graphique_progression_employes = create_chart_base64(
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 164, in create_chart_base64
+    time_labels = [datetime.strptime(str(t), "%Y-%m-%d") for t in time_data]
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 164, in <listcomp>
+    time_labels = [datetime.strptime(str(t), "%Y-%m-%d") for t in time_data]
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data 'Jan' does not match format '%Y-%m-%d'
+2025-03-30 14:30:36,629 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 101468
+2025-03-30 14:35:04,764 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 14:35:08,377 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 14:39:18,987 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 14:39:21,822 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 14:39:38,493 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 127, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 166, in create_chart_base64
+    ax.bar(keys, values)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\__init__.py", line 1476, in inner
+    return func(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\axes\_axes.py", line 2492, in bar
+    self._process_unit_info(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\axes\_base.py", line 2585, in _process_unit_info
+    axis.update_units(data)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\axis.py", line 1756, in update_units
+    default = self.converter.default_units(data, self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\category.py", line 105, in default_units
+    axis.set_units(UnitData(data))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\category.py", line 181, in __init__
+    self.update(data)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\category.py", line 214, in update
+    for val in OrderedDict.fromkeys(data):
+TypeError: unhashable type: 'dict'
+2025-03-30 14:39:38,515 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 131761
+2025-03-30 14:41:39,049 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 14:41:42,749 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 14:41:59,581 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 126, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 160, in create_chart_base64
+    ax.bar(list(data.keys()), list(data.values()))  # Assurez-vous que les clés sont une liste de chaînes
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\__init__.py", line 1476, in inner
+    return func(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\axes\_axes.py", line 2492, in bar
+    self._process_unit_info(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\axes\_base.py", line 2585, in _process_unit_info
+    axis.update_units(data)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\axis.py", line 1756, in update_units
+    default = self.converter.default_units(data, self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\category.py", line 105, in default_units
+    axis.set_units(UnitData(data))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\category.py", line 181, in __init__
+    self.update(data)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\category.py", line 214, in update
+    for val in OrderedDict.fromkeys(data):
+TypeError: unhashable type: 'dict'
+2025-03-30 14:41:59,604 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 131496
+2025-03-30 14:42:04,488 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 126, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 160, in create_chart_base64
+    ax.bar(list(data.keys()), list(data.values()))  # Assurez-vous que les clés sont une liste de chaînes
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\__init__.py", line 1476, in inner
+    return func(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\axes\_axes.py", line 2492, in bar
+    self._process_unit_info(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\axes\_base.py", line 2585, in _process_unit_info
+    axis.update_units(data)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\axis.py", line 1756, in update_units
+    default = self.converter.default_units(data, self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\category.py", line 105, in default_units
+    axis.set_units(UnitData(data))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\category.py", line 181, in __init__
+    self.update(data)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\category.py", line 214, in update
+    for val in OrderedDict.fromkeys(data):
+TypeError: unhashable type: 'dict'
+2025-03-30 14:42:04,492 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 131496
+2025-03-30 14:42:09,147 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 126, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 160, in create_chart_base64
+    ax.bar(list(data.keys()), list(data.values()))  # Assurez-vous que les clés sont une liste de chaînes
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\__init__.py", line 1476, in inner
+    return func(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\axes\_axes.py", line 2492, in bar
+    self._process_unit_info(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\axes\_base.py", line 2585, in _process_unit_info
+    axis.update_units(data)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\axis.py", line 1756, in update_units
+    default = self.converter.default_units(data, self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\category.py", line 105, in default_units
+    axis.set_units(UnitData(data))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\category.py", line 181, in __init__
+    self.update(data)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\category.py", line 214, in update
+    for val in OrderedDict.fromkeys(data):
+TypeError: unhashable type: 'dict'
+2025-03-30 14:42:09,152 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 131496
+2025-03-30 14:42:12,711 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 126, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 160, in create_chart_base64
+    ax.bar(list(data.keys()), list(data.values()))  # Assurez-vous que les clés sont une liste de chaînes
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\__init__.py", line 1476, in inner
+    return func(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\axes\_axes.py", line 2492, in bar
+    self._process_unit_info(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\axes\_base.py", line 2585, in _process_unit_info
+    axis.update_units(data)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\axis.py", line 1756, in update_units
+    default = self.converter.default_units(data, self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\category.py", line 105, in default_units
+    axis.set_units(UnitData(data))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\category.py", line 181, in __init__
+    self.update(data)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\category.py", line 214, in update
+    for val in OrderedDict.fromkeys(data):
+TypeError: unhashable type: 'dict'
+2025-03-30 14:42:12,714 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 131496
+2025-03-30 14:42:40,403 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 14:42:45,467 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 14:42:53,028 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153259
+2025-03-30 14:42:53,314 - WARNING - log - Not Found: /media/
+2025-03-30 14:42:53,316 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 14:48:59,367 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 14:49:03,383 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 14:51:20,686 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 14:51:23,932 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 14:51:34,610 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153259
+2025-03-30 14:51:34,903 - WARNING - log - Not Found: /media/
+2025-03-30 14:51:34,905 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 14:53:25,931 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 14:53:30,636 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 14:53:41,857 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 201547
+2025-03-30 14:53:42,134 - WARNING - log - Not Found: /media/
+2025-03-30 14:53:42,136 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 14:56:16,994 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 14:56:22,006 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 14:56:45,688 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 199155
+2025-03-30 14:56:45,978 - WARNING - log - Not Found: /media/
+2025-03-30 14:56:45,980 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 14:57:05,068 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 199155
+2025-03-30 14:57:05,185 - WARNING - log - Not Found: /media/
+2025-03-30 14:57:05,187 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 15:00:24,092 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 15:00:29,656 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:00:40,377 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 226011
+2025-03-30 15:00:40,640 - WARNING - log - Not Found: /media/
+2025-03-30 15:00:40,641 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 15:03:53,300 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 15:03:58,204 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:04:15,629 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 15:04:17,635 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:04:28,902 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 15:04:32,665 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:05:15,197 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 15:05:18,865 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:05:33,426 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 15:05:37,735 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:05:47,639 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 226011
+2025-03-30 15:05:47,912 - WARNING - log - Not Found: /media/
+2025-03-30 15:05:47,913 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 15:06:22,291 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 226011
+2025-03-30 15:06:22,511 - WARNING - log - Not Found: /media/
+2025-03-30 15:06:22,512 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 15:12:46,286 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 15:12:50,898 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:13:11,146 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 110, in home_view
+    graphique_sexe = create_chart_base64(donnees_sexe_responsable, "Progression des hommes et femmes", "Sexe", "Nombre")
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 192, in create_chart_base64
+    ax.set_ylim(0, max(values) * 1.1)  # Ajouter une petite marge au-dessus des valeurs maximales
+ValueError: max() arg is an empty sequence
+2025-03-30 15:13:11,148 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 83497
+2025-03-30 15:14:08,454 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 15:14:11,598 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:14:17,972 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 110, in home_view
+    graphique_sexe = create_chart_base64(donnees_sexe_responsable, "Progression des hommes et femmes", "Sexe", "Nombre")
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 158, in create_chart_base64
+    current_date = datetime.datetime.now()
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+2025-03-30 15:14:17,975 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 82656
+2025-03-30 15:18:13,732 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 15:18:18,809 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:18:47,909 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 15:18:50,647 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:19:09,399 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 108, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 138, in create_chart_base64
+    ax.bar(data.keys(), data.values()) if is_vertical else ax.plot(data.keys(), data.values())
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\__init__.py", line 1476, in inner
+    return func(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\axes\_axes.py", line 2492, in bar
+    self._process_unit_info(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\axes\_base.py", line 2585, in _process_unit_info
+    axis.update_units(data)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\axis.py", line 1756, in update_units
+    default = self.converter.default_units(data, self)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\category.py", line 105, in default_units
+    axis.set_units(UnitData(data))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\category.py", line 181, in __init__
+    self.update(data)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\category.py", line 214, in update
+    for val in OrderedDict.fromkeys(data):
+TypeError: unhashable type: 'dict'
+2025-03-30 15:19:09,415 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 130710
+2025-03-30 15:19:24,712 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 15:19:28,578 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:19:35,908 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 226011
+2025-03-30 15:19:36,184 - WARNING - log - Not Found: /media/
+2025-03-30 15:19:36,185 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 15:20:15,585 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 15:20:19,301 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:20:29,670 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 226011
+2025-03-30 15:20:29,908 - WARNING - log - Not Found: /media/
+2025-03-30 15:20:29,909 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 15:21:23,248 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 15:21:27,536 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:21:58,031 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153259
+2025-03-30 15:21:58,308 - WARNING - log - Not Found: /media/
+2025-03-30 15:21:58,309 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 15:25:18,028 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153272
+2025-03-30 15:25:18,287 - WARNING - log - Not Found: /media/
+2025-03-30 15:25:18,289 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 15:28:22,739 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 15:28:26,147 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:28:40,941 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 15:28:43,882 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:30:24,566 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 15:30:26,443 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:31:30,936 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 15:31:32,983 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:33:41,254 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\administration\views.py changed, reloading.
+2025-03-30 15:33:43,726 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:39:01,747 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\administration\views.py changed, reloading.
+2025-03-30 15:39:04,304 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:39:25,617 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Activation\views.py changed, reloading.
+2025-03-30 15:39:27,900 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:40:06,368 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Activation\views.py changed, reloading.
+2025-03-30 15:40:08,460 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:42:26,963 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Activation\views.py changed, reloading.
+2025-03-30 15:42:29,642 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 15:42:56,821 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Activation\views.py changed, reloading.
+2025-03-30 15:43:00,406 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 16:25:08,591 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Activation\views.py changed, reloading.
+2025-03-30 16:25:11,126 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 16:26:31,930 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Activation\views.py changed, reloading.
+2025-03-30 16:26:34,525 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 16:26:58,382 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 16:29:06,716 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py changed, reloading.
+2025-03-30 16:29:09,044 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 16:31:29,387 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 13454
+2025-03-30 16:31:47,617 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 13454
+2025-03-30 16:31:49,924 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 13454
+2025-03-30 16:31:51,198 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 13454
+2025-03-30 16:31:52,056 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 13454
+2025-03-30 16:31:52,538 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 13454
+2025-03-30 16:31:56,494 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 14064
+2025-03-30 16:31:59,274 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 44999
+2025-03-30 16:32:01,612 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 39705
+2025-03-30 16:32:03,869 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 14064
+2025-03-30 16:32:07,054 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 13454
+2025-03-30 16:32:15,107 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153172
+2025-03-30 16:32:15,381 - WARNING - log - Not Found: /media/
+2025-03-30 16:32:15,383 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 16:32:21,746 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153172
+2025-03-30 16:32:21,879 - WARNING - log - Not Found: /media/
+2025-03-30 16:32:21,881 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 16:32:28,095 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 39705
+2025-03-30 16:32:29,973 - INFO - basehttp - "GET /stagiaire/list/ HTTP/1.1" 200 11381
+2025-03-30 16:32:31,943 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 11077
+2025-03-30 16:32:35,057 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 10141
+2025-03-30 16:32:37,842 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 44999
+2025-03-30 16:36:03,121 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 45026
+2025-03-30 16:37:06,367 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 45026
+2025-03-30 16:37:08,516 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 45026
+2025-03-30 16:39:37,753 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 45025
+2025-03-30 16:39:41,371 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 45025
+2025-03-30 16:39:42,578 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 45025
+2025-03-30 16:39:43,568 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 45025
+2025-03-30 16:39:44,429 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 45025
+2025-03-30 16:39:45,436 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 45025
+2025-03-30 16:39:49,171 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153198
+2025-03-30 16:39:49,364 - WARNING - log - Not Found: /media/
+2025-03-30 16:39:49,365 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 16:39:52,179 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 13480
+2025-03-30 16:39:54,323 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 14090
+2025-03-30 16:39:56,861 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 14090
+2025-03-30 16:39:58,475 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 45025
+2025-03-30 16:40:10,817 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 9802
+2025-03-30 16:40:13,208 - INFO - basehttp - "GET /administration/detail/1/ HTTP/1.1" 200 13696
+2025-03-30 16:40:13,295 - INFO - basehttp - "GET /logos/administration-1867877_1280.jpg HTTP/1.1" 304 0
+2025-03-30 16:40:13,297 - INFO - basehttp - "GET /drapeaux/congo-2697382_1920.jpg HTTP/1.1" 304 0
+2025-03-30 16:42:31,923 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 10036
+2025-03-30 16:42:39,500 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153067
+2025-03-30 16:42:40,329 - WARNING - log - Not Found: /media/
+2025-03-30 16:42:40,336 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 16:42:44,860 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 13349
+2025-03-30 16:42:47,163 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 13959
+2025-03-30 16:42:48,698 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 13959
+2025-03-30 16:42:50,686 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 13959
+2025-03-30 16:42:51,789 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 13959
+2025-03-30 16:42:52,885 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 44894
+2025-03-30 16:42:56,451 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 39600
+2025-03-30 16:43:00,195 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 10036
+2025-03-30 16:43:02,304 - INFO - basehttp - "GET /administration/detail/1/ HTTP/1.1" 200 13524
+2025-03-30 16:49:19,672 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 16:49:25,630 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 16:49:50,303 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 16:49:52,817 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 16:50:06,874 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\administration\views.py changed, reloading.
+2025-03-30 16:50:09,339 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 16:52:17,085 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\settings.py changed, reloading.
+2025-03-30 16:52:18,870 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 16:52:34,787 - ERROR - log - Internal Server Error: /administration/detail/1/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\administration\views.py", line 43, in administration_detail
+    return render(request, 'administration/detail.html', {'administration': administration, 'username':username})
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\base.py", line 173, in render
+    with context.bind_template(self):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\contextlib.py", line 117, in __enter__
+    return next(self.gen)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\context.py", line 251, in bind_template
+    processors = template.engine.template_context_processors + self._processors
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 116, in template_context_processors
+    return tuple(import_string(path) for path in context_processors)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\template\engine.py", line 116, in <genexpr>
+    return tuple(import_string(path) for path in context_processors)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\module_loading.py", line 30, in import_string
+    return cached_import(module_path, class_name)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\utils\module_loading.py", line 15, in cached_import
+    module = import_module(module_path)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'administration.context_processors'
+2025-03-30 16:52:34,799 - ERROR - basehttp - "GET /administration/detail/1/ HTTP/1.1" 500 123895
+2025-03-30 16:53:49,284 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\administration\views.py changed, reloading.
+2025-03-30 16:53:52,005 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 16:54:13,583 - INFO - basehttp - "GET /administration/detail/1/ HTTP/1.1" 200 13524
+2025-03-30 16:54:26,742 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 10245
+2025-03-30 16:54:31,581 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153067
+2025-03-30 16:54:31,785 - WARNING - log - Not Found: /media/
+2025-03-30 16:54:31,787 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 16:54:33,840 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 13349
+2025-03-30 16:54:35,606 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 13959
+2025-03-30 16:54:36,994 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 13959
+2025-03-30 16:54:38,293 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 44894
+2025-03-30 16:54:40,107 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 222390
+2025-03-30 16:54:42,234 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 10972
+2025-03-30 16:54:45,623 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 10245
+2025-03-30 16:55:02,208 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 10972
+2025-03-30 16:55:04,442 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 10972
+2025-03-30 16:55:10,915 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 10245
+2025-03-30 16:55:50,534 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 16:55:54,279 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 16:55:59,747 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 13349
+2025-03-30 16:56:04,103 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153276
+2025-03-30 16:56:04,382 - WARNING - log - Not Found: /media/
+2025-03-30 16:56:04,383 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 16:56:07,930 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 13349
+2025-03-30 16:56:08,373 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 50288)
+2025-03-30 16:56:11,411 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153276
+2025-03-30 16:56:11,524 - WARNING - log - Not Found: /media/
+2025-03-30 16:56:11,527 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 16:57:29,429 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 16:57:32,684 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 16:57:56,362 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py changed, reloading.
+2025-03-30 16:57:58,452 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 16:58:09,198 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\fonction\views.py changed, reloading.
+2025-03-30 16:58:11,253 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 16:58:25,728 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\OrganizationalUnit\views.py changed, reloading.
+2025-03-30 16:58:27,792 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 16:58:39,426 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\RespensableOrganisationUnite\views.py changed, reloading.
+2025-03-30 16:58:41,545 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 16:58:50,373 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\specialite\views.py changed, reloading.
+2025-03-30 16:58:52,392 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 16:59:02,757 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Stagiaire\views.py changed, reloading.
+2025-03-30 16:59:04,988 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 16:59:09,584 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153276
+2025-03-30 16:59:09,865 - WARNING - log - Not Found: /media/
+2025-03-30 16:59:09,869 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 16:59:19,895 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 13349
+2025-03-30 16:59:24,959 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 49884)
+2025-03-30 16:59:27,075 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 13349
+2025-03-30 16:59:28,771 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 49900)
+2025-03-30 16:59:28,929 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 49901)
+2025-03-30 16:59:29,108 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 14168
+2025-03-30 16:59:51,484 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\unite\views.py changed, reloading.
+2025-03-30 16:59:56,489 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 17:00:20,448 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Conge\views.py changed, reloading.
+2025-03-30 17:00:23,267 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 17:00:42,139 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Activation\views.py changed, reloading.
+2025-03-30 17:00:44,911 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 17:00:47,546 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 14168
+2025-03-30 17:01:05,875 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 13558
+2025-03-30 17:01:08,335 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 14168
+2025-03-30 17:01:09,983 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 45103
+2025-03-30 17:01:11,935 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 39809
+2025-03-30 17:01:14,681 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 222599
+2025-03-30 17:01:17,353 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 12635
+2025-03-30 17:01:19,439 - INFO - basehttp - "GET /stagiaire/list/ HTTP/1.1" 200 11485
+2025-03-30 17:01:21,485 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 11181
+2025-03-30 17:01:26,275 - INFO - basehttp - "GET /export/ HTTP/1.1" 200 12743
+2025-03-30 17:01:31,413 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153276
+2025-03-30 17:01:31,658 - WARNING - log - Not Found: /media/
+2025-03-30 17:01:31,663 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 17:01:35,764 - INFO - basehttp - "GET /export/ HTTP/1.1" 200 12743
+2025-03-30 17:01:40,694 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153276
+2025-03-30 17:01:40,835 - WARNING - log - Not Found: /media/
+2025-03-30 17:01:40,837 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 17:01:43,689 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 10245
+2025-03-30 17:01:49,760 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153276
+2025-03-30 17:01:49,893 - WARNING - log - Not Found: /media/
+2025-03-30 17:01:49,895 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 17:01:57,647 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 10245
+2025-03-30 17:02:00,220 - INFO - basehttp - "GET /administration/create/ HTTP/1.1" 200 11548
+2025-03-30 17:02:06,692 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 10245
+2025-03-30 17:02:11,991 - INFO - basehttp - "GET /administration/detail/1/ HTTP/1.1" 200 13524
+2025-03-30 17:02:14,152 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 10245
+2025-03-30 17:02:16,540 - INFO - basehttp - "GET /administration/modify/1/ HTTP/1.1" 200 12124
+2025-03-30 17:02:20,342 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 10245
+2025-03-30 17:04:02,527 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 17:04:06,284 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 17:12:07,616 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 17:12:10,353 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 17:12:24,409 - INFO - basehttp - "GET /export/ HTTP/1.1" 200 12743
+2025-03-30 17:12:38,295 - INFO - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 200 48247
+2025-03-30 17:18:11,707 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 17:18:14,690 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 17:18:22,118 - INFO - basehttp - "GET /export/ HTTP/1.1" 200 12743
+2025-03-30 17:18:32,636 - INFO - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 200 48329
+2025-03-30 17:24:58,157 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 17:25:01,011 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 17:27:26,996 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 17:27:29,396 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 17:28:02,137 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 17:28:04,239 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 17:34:23,258 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 17:34:26,361 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 17:35:08,499 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 17:35:10,979 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 17:35:19,724 - INFO - basehttp - "GET /export/ HTTP/1.1" 200 12743
+2025-03-30 17:35:31,857 - ERROR - log - Internal Server Error: /export_to_word/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 233, in export_to_word
+    run.font.color.rgb = (255, 255, 255)  # Pour l'effet filigrane, on peut ajuster la couleur
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\docx\dml\color.py", line 45, in rgb
+    rPr.get_or_add_color().val = value
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\docx\oxml\xmlchemy.py", line 268, in set_attr_value
+    str_value = self._simple_type.to_xml(value)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\docx\oxml\simpletypes.py", line 30, in to_xml
+    cls.validate(value)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\docx\oxml\simpletypes.py", line 245, in validate
+    raise ValueError(
+ValueError: rgb color value must be RGBColor object, got <class 'tuple'> (255, 255, 255)
+2025-03-30 17:35:31,862 - ERROR - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 500 84554
+2025-03-30 17:37:37,312 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 17:37:40,321 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 17:37:58,888 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 17:38:01,692 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 17:38:12,472 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 49263)
+2025-03-30 17:38:16,491 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 49265)
+2025-03-30 17:38:16,730 - INFO - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 200 615111
+2025-03-30 17:39:55,433 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 17:39:59,036 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 17:40:16,159 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 17:40:18,744 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 17:46:47,996 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 17:46:50,727 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 17:47:50,284 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 17:47:52,564 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 17:48:00,505 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 17:48:02,761 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 17:48:13,991 - INFO - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 200 615111
+2025-03-30 17:48:52,600 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-03-30 17:48:55,742 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 17:50:34,470 - INFO - basehttp - "GET /export/ HTTP/1.1" 200 13186
+2025-03-30 17:50:52,772 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 64208)
+2025-03-30 17:50:54,383 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 64209)
+2025-03-30 17:50:55,505 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 64216)
+2025-03-30 17:50:56,539 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 64214)
+2025-03-30 17:50:56,744 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 64222)
+2025-03-30 17:50:57,002 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 64221)
+2025-03-30 17:50:59,198 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 64226)
+2025-03-30 17:50:59,391 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153719
+2025-03-30 17:50:59,633 - WARNING - log - Not Found: /media/
+2025-03-30 17:50:59,635 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 17:51:42,356 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153724
+2025-03-30 17:51:42,593 - WARNING - log - Not Found: /media/
+2025-03-30 17:51:42,594 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 17:52:10,108 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153725
+2025-03-30 17:52:10,215 - WARNING - log - Not Found: /media/
+2025-03-30 17:52:10,217 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 17:52:51,932 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153724
+2025-03-30 17:52:52,158 - WARNING - log - Not Found: /media/
+2025-03-30 17:52:52,159 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 17:53:25,398 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153725
+2025-03-30 17:53:25,499 - WARNING - log - Not Found: /media/
+2025-03-30 17:53:25,500 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 17:53:51,124 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153730
+2025-03-30 17:53:51,231 - WARNING - log - Not Found: /media/
+2025-03-30 17:53:51,232 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 17:53:56,140 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153730
+2025-03-30 17:53:56,258 - WARNING - log - Not Found: /media/
+2025-03-30 17:53:56,261 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 17:54:59,570 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153762
+2025-03-30 17:54:59,670 - WARNING - log - Not Found: /media/
+2025-03-30 17:54:59,672 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 17:55:28,509 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153762
+2025-03-30 17:55:28,632 - WARNING - log - Not Found: /media/
+2025-03-30 17:55:28,635 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 17:58:12,881 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153896
+2025-03-30 17:58:13,161 - WARNING - log - Not Found: /media/
+2025-03-30 17:58:13,163 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 17:58:21,784 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 14788
+2025-03-30 17:58:29,261 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 153896
+2025-03-30 17:58:29,443 - WARNING - log - Not Found: /media/
+2025-03-30 17:58:29,445 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 18:02:00,650 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 156164
+2025-03-30 18:02:00,876 - WARNING - log - Not Found: /media/
+2025-03-30 18:02:00,879 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 18:02:03,632 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 16446
+2025-03-30 18:02:04,564 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 16446
+2025-03-30 18:02:11,365 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 17056
+2025-03-30 18:02:19,644 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 47991
+2025-03-30 18:02:24,140 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 42697
+2025-03-30 18:05:04,329 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 43142
+2025-03-30 18:05:36,244 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 42697
+2025-03-30 18:06:02,691 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 156164
+2025-03-30 18:06:02,918 - WARNING - log - Not Found: /media/
+2025-03-30 18:06:02,920 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 18:16:13,865 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 151867
+2025-03-30 18:16:14,096 - WARNING - log - Not Found: /media/
+2025-03-30 18:16:14,097 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 18:16:25,851 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 151867
+2025-03-30 18:16:25,948 - WARNING - log - Not Found: /media/
+2025-03-30 18:16:25,950 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 18:16:31,492 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 12149
+2025-03-30 18:16:32,456 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 60217)
+2025-03-30 18:16:32,758 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 12149
+2025-03-30 18:16:34,267 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 38400
+2025-03-30 18:16:35,750 - INFO - basehttp - "GET /stagiaire/list/ HTTP/1.1" 200 10076
+2025-03-30 18:16:36,636 - INFO - basehttp - "GET /stagiaire/list/ HTTP/1.1" 200 10076
+2025-03-30 18:16:50,770 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 18:16:54,826 - INFO - basehttp - "GET / HTTP/1.1" 200 9325
+2025-03-30 18:17:17,584 - INFO - basehttp - "GET /stagiaire/list/ HTTP/1.1" 200 14373
+2025-03-30 18:17:22,623 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 15523
+2025-03-30 18:17:24,508 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 225487
+2025-03-30 18:17:25,692 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 225487
+2025-03-30 18:24:28,696 - INFO - autoreload - Watching for file changes with StatReloader
+2025-03-30 18:24:33,646 - INFO - basehttp - "GET / HTTP/1.1" 200 13624
+2025-03-30 18:24:50,977 - INFO - basehttp - "POST / HTTP/1.1" 302 0
+2025-03-30 18:24:52,928 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 156166
+2025-03-30 18:24:53,181 - WARNING - log - Not Found: /media/
+2025-03-30 18:24:53,184 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-03-30 18:25:00,691 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 16448
+2025-03-30 18:25:03,786 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 17058
+2025-03-30 18:25:06,753 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 47993
+2025-03-30 18:25:09,319 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 42699
+2025-03-30 18:25:15,862 - INFO - basehttp - "GET / HTTP/1.1" 200 13624

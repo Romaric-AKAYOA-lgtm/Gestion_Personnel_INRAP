@@ -9,7 +9,3 @@ class Administration(models.Model):
     devise_pays = models.CharField(max_length=50)
     drapeau = models.ImageField(upload_to='drapeaux/')  # Champ pour le drapeau du pays
 
-    def __str__(self):
-        return self.nom
-    class Meta:
-        app_label = 'administration'

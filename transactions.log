@@ -21932,3 +21932,569 @@ ValueError: rgb color value must be RGBColor object, got <class 'tuple'> (255, 2
 2025-03-30 18:25:06,753 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 47993
 2025-03-30 18:25:09,319 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 42699
 2025-03-30 18:25:15,862 - INFO - basehttp - "GET / HTTP/1.1" 200 13624
+2025-04-02 14:29:21,819 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-02 14:29:28,622 - INFO - basehttp - "GET / HTTP/1.1" 200 13624
+2025-04-02 14:29:30,426 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-04-02 14:29:30,441 - INFO - basehttp - "GET /logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-04-02 14:29:30,451 - INFO - basehttp - "GET /drapeaux/congo-2697382_1920.jpg HTTP/1.1" 200 566668
+2025-04-02 14:29:40,362 - INFO - basehttp - "POST / HTTP/1.1" 302 0
+2025-04-02 14:29:42,337 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 156166
+2025-04-02 14:29:42,530 - INFO - basehttp - "GET /media/employe/Capture_d%C3%A9cran_2025-03-08_160658.png HTTP/1.1" 200 83657
+2025-04-02 14:29:42,623 - WARNING - log - Not Found: /media/
+2025-04-02 14:29:42,625 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-04-02 14:29:55,202 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 16448
+2025-04-02 14:29:59,687 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 156166
+2025-04-02 14:29:59,822 - WARNING - log - Not Found: /media/
+2025-04-02 14:29:59,828 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-04-02 14:34:39,239 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 16448
+2025-04-02 14:34:42,265 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 156166
+2025-04-02 14:34:42,481 - WARNING - log - Not Found: /media/
+2025-04-02 14:34:42,484 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-04-02 14:34:58,725 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 16448
+2025-04-02 14:36:20,587 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 17058
+2025-04-02 14:36:46,176 - INFO - basehttp - "GET /fonction/creer/ HTTP/1.1" 200 13082
+2025-04-02 14:36:49,170 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 17058
+2025-04-02 14:37:02,354 - INFO - basehttp - "GET /fonction/recherche/?criteres=designation&query=Charg%C3%A9+du+protocole HTTP/1.1" 200 13488
+2025-04-02 14:37:26,078 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 17058
+2025-04-02 14:37:28,922 - INFO - basehttp - "GET /fonction/recherche/?criteres=designation&query=XXX HTTP/1.1" 200 13160
+2025-04-02 14:37:31,942 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 17058
+2025-04-02 14:37:33,461 - INFO - basehttp - "GET /fonction/creer/ HTTP/1.1" 200 13082
+2025-04-02 14:37:36,096 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 17058
+2025-04-02 14:37:38,032 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 47993
+2025-04-02 14:38:10,245 - INFO - basehttp - "GET /specialite/recherche/?filter=designation&query=Administration HTTP/1.1" 200 14126
+2025-04-02 14:38:22,994 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 47993
+2025-04-02 14:38:37,347 - INFO - basehttp - "GET /specialite/58/modifier/ HTTP/1.1" 200 13179
+2025-04-02 14:38:39,965 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 47993
+2025-04-02 14:39:07,892 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 42699
+2025-04-02 14:42:11,212 - INFO - basehttp - "GET /OrganizationalUnit/21/update/ HTTP/1.1" 200 22036
+2025-04-02 14:42:24,960 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 42699
+2025-04-02 14:42:46,314 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 225489
+2025-04-02 14:43:57,729 - INFO - basehttp - "GET /Employee/1/update/ HTTP/1.1" 200 25243
+2025-04-02 14:44:44,266 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 225489
+2025-04-02 14:44:52,999 - INFO - basehttp - "GET /Employee/create/ HTTP/1.1" 200 26052
+2025-04-02 14:46:00,990 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 225489
+2025-04-02 14:46:03,511 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 47993
+2025-04-02 14:46:05,048 - INFO - basehttp - "GET /specialite/creer/ HTTP/1.1" 200 13087
+2025-04-02 14:46:09,067 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 47993
+2025-04-02 14:46:11,285 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 42699
+2025-04-02 14:46:15,267 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 225489
+2025-04-02 14:46:17,665 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 15525
+2025-04-02 14:46:25,202 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 156166
+2025-04-02 14:46:25,392 - WARNING - log - Not Found: /media/
+2025-04-02 14:46:25,394 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-04-02 14:46:28,771 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 15525
+2025-04-02 14:47:57,158 - INFO - basehttp - "GET /stagiaire/list/ HTTP/1.1" 200 14375
+2025-04-02 14:48:00,950 - INFO - basehttp - "GET /stagiaire/ HTTP/1.1" 200 18747
+2025-04-02 14:49:54,910 - INFO - basehttp - "POST /stagiaire/ HTTP/1.1" 302 0
+2025-04-02 14:49:54,944 - INFO - basehttp - "GET /stagiaire/list/ HTTP/1.1" 200 15314
+2025-04-02 14:50:03,216 - INFO - basehttp - "GET /stagiaire/modify/1/ HTTP/1.1" 200 18789
+2025-04-02 14:50:06,196 - INFO - basehttp - "GET /stagiaire/list/ HTTP/1.1" 200 15314
+2025-04-02 14:51:20,709 - INFO - basehttp - "GET /stagiaire/modify/1/ HTTP/1.1" 200 18789
+2025-04-02 14:55:17,217 - INFO - basehttp - "GET /stagiaire/list/ HTTP/1.1" 200 15314
+2025-04-02 14:55:26,920 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 14071
+2025-04-02 14:55:34,921 - INFO - basehttp - "GET /conge/conges/ajouter/ HTTP/1.1" 200 37106
+2025-04-01 22:31:26,501 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-01 22:31:40,658 - INFO - basehttp - "GET / HTTP/1.1" 200 13624
+2025-04-01 22:31:42,803 - INFO - basehttp - "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155845
+2025-04-01 22:31:42,818 - INFO - basehttp - "GET /logos/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-04-01 22:31:42,862 - INFO - basehttp - "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 78743
+2025-04-01 22:31:42,869 - INFO - basehttp - "GET /drapeaux/congo-2697382_1920.jpg HTTP/1.1" 200 566668
+2025-04-01 22:31:42,928 - INFO - basehttp - "GET /static/image/buildings-6956678_1920.jpg HTTP/1.1" 200 617712
+2025-04-01 22:31:43,366 - WARNING - log - Not Found: /favicon.ico
+2025-04-01 22:31:43,368 - WARNING - basehttp - "GET /favicon.ico HTTP/1.1" 404 4087
+2025-04-01 22:32:07,570 - INFO - basehttp - "POST / HTTP/1.1" 302 0
+2025-04-01 22:32:10,220 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 156166
+2025-04-01 22:32:10,370 - INFO - basehttp - "GET /static/image/city-182223_1280.jpg HTTP/1.1" 200 376515
+2025-04-01 22:32:10,376 - INFO - basehttp - "GET /static/image/administration-1867877_1280.jpg HTTP/1.1" 200 407089
+2025-04-01 22:32:10,393 - INFO - basehttp - "GET /static/image/istockphoto-2162033406-1024x1024.jpg HTTP/1.1" 200 62104
+2025-04-01 22:32:10,401 - INFO - basehttp - "GET /media/employe/Capture_d%C3%A9cran_2025-03-08_160658.png HTTP/1.1" 200 83657
+2025-04-01 22:32:10,411 - INFO - basehttp - "GET /static/image/city-7352352_1280.jpg HTTP/1.1" 200 445704
+2025-04-01 22:32:10,545 - WARNING - log - Not Found: /media/
+2025-04-01 22:32:10,547 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-04-01 22:32:14,416 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 14071
+2025-04-01 22:32:16,835 - INFO - basehttp - "GET /conge/conges/ajouter/ HTTP/1.1" 200 37106
+2025-04-01 22:32:27,412 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 14071
+2025-04-01 22:32:38,450 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 156166
+2025-04-01 22:32:38,641 - WARNING - log - Not Found: /media/
+2025-04-01 22:32:38,646 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-04-01 22:32:40,728 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 156166
+2025-04-01 22:32:40,868 - WARNING - log - Not Found: /media/
+2025-04-01 22:32:40,873 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-04-01 22:32:50,449 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 47993
+2025-04-01 22:32:51,979 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 17058
+2025-04-01 22:32:56,079 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 14071
+2025-04-01 22:33:54,881 - INFO - basehttp - "GET /conge/conges/ajouter/ HTTP/1.1" 200 37106
+2025-04-01 22:34:05,003 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 14071
+2025-04-01 22:34:53,875 - INFO - basehttp - "GET /conge/conges/ajouter/ HTTP/1.1" 200 37106
+2025-04-01 22:35:52,583 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 14071
+2025-04-01 22:38:13,867 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 156166
+2025-04-01 22:38:14,111 - WARNING - log - Not Found: /media/
+2025-04-01 22:38:14,118 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-04-01 22:38:17,428 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 14071
+2025-04-01 22:39:05,931 - INFO - basehttp - "GET /conge/conges/ajouter/ HTTP/1.1" 200 37106
+2025-04-01 22:39:20,591 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 14071
+2025-04-01 22:39:59,308 - INFO - basehttp - "GET /conge/conges/ajouter/ HTTP/1.1" 200 37106
+2025-04-01 22:40:21,927 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 14071
+2025-04-01 22:40:25,742 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 156166
+2025-04-01 22:40:25,912 - WARNING - log - Not Found: /media/
+2025-04-01 22:40:25,914 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-04-01 22:41:51,733 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 225489
+2025-04-01 22:41:53,078 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 225489
+2025-04-01 22:42:03,558 - INFO - basehttp - "GET /Employee/1/update/ HTTP/1.1" 200 25243
+2025-04-01 22:42:45,332 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 225489
+2025-04-01 22:43:10,450 - INFO - basehttp - "GET /export/ HTTP/1.1" 200 15633
+2025-04-01 22:44:29,316 - INFO - basehttp - "GET /export_to_word/?sections=employes&sections=employes_recents&sections=employes_en_conge&sections=employes_revenant_de_conge&sections=employes_depart_retraite&sections=employes_retraites&sections=stagiaires HTTP/1.1" 200 48269
+2025-04-01 22:51:37,474 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 156166
+2025-04-01 22:51:37,685 - WARNING - log - Not Found: /media/
+2025-04-01 22:51:37,687 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-04-01 22:51:45,016 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 16448
+2025-04-01 22:51:46,339 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 17058
+2025-04-01 22:51:47,872 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 47993
+2025-04-01 22:51:49,708 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 42699
+2025-04-01 22:52:42,513 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 15525
+2025-04-01 22:53:07,953 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 225489
+2025-04-01 22:54:01,404 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 50435)
+2025-04-01 22:54:01,428 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 42699
+2025-04-01 22:54:03,399 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 42699
+2025-04-01 22:54:04,197 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 47993
+2025-04-01 22:54:15,829 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 156166
+2025-04-01 22:54:16,022 - WARNING - log - Not Found: /media/
+2025-04-01 22:54:16,025 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-04-01 23:02:18,354 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 16448
+2025-04-01 23:02:19,548 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 17058
+2025-04-01 23:02:21,193 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 47993
+2025-04-01 23:02:24,086 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 42699
+2025-04-01 23:02:26,150 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 225489
+2025-04-01 23:02:26,665 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 50488)
+2025-04-01 23:02:26,690 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 15525
+2025-04-01 23:02:27,809 - INFO - basehttp - - Broken pipe from ('127.0.0.1', 50489)
+2025-04-01 23:02:27,855 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 14071
+2025-04-01 23:02:30,421 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 13135
+2025-04-01 23:02:32,169 - INFO - basehttp - "GET /export/ HTTP/1.1" 200 15633
+2025-04-01 23:02:36,416 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 156166
+2025-04-01 23:02:36,728 - WARNING - log - Not Found: /media/
+2025-04-01 23:02:36,731 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-04-01 23:02:40,731 - INFO - basehttp - "GET /administration/list/ HTTP/1.1" 200 13135
+2025-04-01 23:02:43,838 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 156166
+2025-04-01 23:02:44,020 - WARNING - log - Not Found: /media/
+2025-04-01 23:02:44,027 - WARNING - basehttp - "GET /media/ HTTP/1.1" 404 4017
+2025-04-01 23:03:35,891 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 16448
+2025-04-01 23:03:36,020 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 16448
+2025-04-01 23:03:36,686 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 17058
+2025-04-01 23:03:37,910 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 16448
+2025-04-23 09:49:18,598 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-23 09:51:53,378 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-23 09:51:56,237 - ERROR - log - Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'gestion_personnel_inrap_db.activation_activation' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Employee\views.py", line 131, in login_view
+    activation = Activation.objects.first()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1057, in first
+    for obj in queryset[:1]:
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 398, in __iter__
+    self._fetch_all()
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'gestion_personnel_inrap_db.activation_activation' doesn't exist")
+2025-04-23 09:51:56,255 - ERROR - basehttp - "GET / HTTP/1.1" 500 157700
+2025-04-23 09:52:57,885 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-23 09:53:48,850 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-23 09:53:53,331 - INFO - basehttp - "GET / HTTP/1.1" 302 0
+2025-04-23 09:53:53,401 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 13223
+2025-04-23 09:53:54,642 - INFO - basehttp - "GET /static/image/buildings-6956678_1920.jpg HTTP/1.1" 200 617712
+2025-04-23 09:54:39,322 - WARNING - log - Not Found: /admin
+2025-04-23 09:54:39,323 - WARNING - basehttp - "GET /admin HTTP/1.1" 404 4063
+2025-04-23 09:54:41,252 - WARNING - log - Not Found: /admin
+2025-04-23 09:54:41,253 - WARNING - basehttp - "GET /admin HTTP/1.1" 404 4063
+2025-04-23 09:54:47,657 - INFO - basehttp - "GET /admin/ HTTP/1.1" 302 0
+2025-04-23 09:54:47,763 - INFO - basehttp - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+2025-04-23 09:55:01,638 - INFO - basehttp - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2025-04-23 09:55:01,702 - INFO - basehttp - "GET /admin/ HTTP/1.1" 200 12706
+2025-04-23 09:55:05,271 - INFO - basehttp - "GET /admin/Activation/activation/ HTTP/1.1" 200 12711
+2025-04-23 09:55:05,383 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-23 09:55:07,297 - INFO - basehttp - "GET /admin/Activation/activation/add/ HTTP/1.1" 200 14279
+2025-04-23 09:55:07,393 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-23 09:55:11,442 - INFO - basehttp - "GET /static/admin/img/calendar-icons.svg HTTP/1.1" 200 1094
+2025-04-23 09:55:17,597 - INFO - basehttp - "POST /admin/Activation/activation/add/ HTTP/1.1" 302 0
+2025-04-23 09:55:17,678 - INFO - basehttp - "GET /admin/Activation/activation/ HTTP/1.1" 200 14644
+2025-04-23 09:55:17,757 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-23 09:55:26,911 - WARNING - log - Forbidden (CSRF token from POST incorrect.): /Activation/page/
+2025-04-23 09:55:26,912 - WARNING - basehttp - "POST /Activation/page/ HTTP/1.1" 403 2518
+2025-04-23 09:55:28,982 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 13223
+2025-04-23 09:55:30,451 - INFO - basehttp - "POST /Activation/page/ HTTP/1.1" 302 0
+2025-04-23 09:55:30,475 - INFO - basehttp - "GET /home/ HTTP/1.1" 302 0
+2025-04-23 09:55:30,503 - INFO - basehttp - "GET / HTTP/1.1" 200 13415
+2025-04-23 09:55:45,035 - INFO - basehttp - "GET /admin/ HTTP/1.1" 200 13121
+2025-04-23 09:55:54,199 - INFO - basehttp - "GET /admin/Employee/employee/ HTTP/1.1" 200 12689
+2025-04-23 09:55:54,275 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-23 09:55:56,327 - INFO - basehttp - "GET /admin/Employee/employee/add/ HTTP/1.1" 200 28039
+2025-04-23 09:55:56,411 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-23 09:56:53,005 - INFO - basehttp - "GET /admin/specialite/specialite/add/?_to_field=id&_popup=1 HTTP/1.1" 200 4456
+2025-04-23 09:56:53,071 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-23 09:57:00,080 - INFO - basehttp - "POST /admin/specialite/specialite/add/?_to_field=id&_popup=1 HTTP/1.1" 200 332
+2025-04-23 09:57:00,141 - INFO - basehttp - "GET /static/admin/js/popup_response.js HTTP/1.1" 200 551
+2025-04-23 09:57:26,859 - INFO - basehttp - "POST /admin/Employee/employee/add/ HTTP/1.1" 302 0
+2025-04-23 09:57:26,912 - INFO - basehttp - "GET /admin/Employee/employee/ HTTP/1.1" 200 14079
+2025-04-23 09:57:27,026 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-23 09:57:42,856 - INFO - basehttp - "GET / HTTP/1.1" 200 13415
+2025-04-23 09:57:55,474 - INFO - basehttp - "POST / HTTP/1.1" 302 0
+2025-04-23 09:57:57,214 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 114, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 147, in create_chart_base64
+    if isinstance(values[0], dict):
+IndexError: list index out of range
+2025-04-23 09:57:57,218 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 83591
+2025-04-23 09:58:01,507 - INFO - basehttp - "POST / HTTP/1.1" 302 0
+2025-04-23 09:58:02,856 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 114, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 147, in create_chart_base64
+    if isinstance(values[0], dict):
+IndexError: list index out of range
+2025-04-23 09:58:02,858 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 83591
+2025-04-23 09:58:20,912 - INFO - basehttp - "POST / HTTP/1.1" 302 0
+2025-04-23 09:58:22,288 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 114, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 147, in create_chart_base64
+    if isinstance(values[0], dict):
+IndexError: list index out of range
+2025-04-23 09:58:22,291 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 83591
+2025-04-23 10:02:15,396 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 114, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 147, in create_chart_base64
+    if isinstance(values[0], dict):
+IndexError: list index out of range
+2025-04-23 10:02:15,399 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 83591
+2025-04-23 10:02:17,594 - INFO - basehttp - "GET / HTTP/1.1" 200 13415
+2025-04-23 10:02:20,412 - INFO - basehttp - "GET / HTTP/1.1" 200 13415
+2025-04-23 10:02:22,659 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-04-23 10:02:23,049 - INFO - basehttp - "POST / HTTP/1.1" 302 0
+2025-04-23 10:02:23,092 - INFO - basehttp - "GET /admin/ HTTP/1.1" 200 13729
+2025-04-23 10:02:42,891 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-23 10:02:48,773 - INFO - basehttp - "POST / HTTP/1.1" 302 0
+2025-04-23 10:02:51,954 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 111, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 144, in create_chart_base64
+    if isinstance(values[0], dict):
+IndexError: list index out of range
+2025-04-23 10:02:51,960 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 83416
+2025-04-23 10:02:55,745 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 13223
+2025-04-23 10:02:57,585 - INFO - basehttp - "POST /Activation/page/ HTTP/1.1" 302 0
+2025-04-23 10:02:58,942 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 111, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 144, in create_chart_base64
+    if isinstance(values[0], dict):
+IndexError: list index out of range
+2025-04-23 10:02:58,945 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 83432
+2025-04-23 10:03:11,095 - INFO - basehttp - "GET /admin/Activation/activation/ HTTP/1.1" 200 14348
+2025-04-23 10:03:11,193 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-23 10:03:26,000 - INFO - basehttp - "POST /Activation/page/ HTTP/1.1" 302 0
+2025-04-23 10:03:27,360 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 111, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 144, in create_chart_base64
+    if isinstance(values[0], dict):
+IndexError: list index out of range
+2025-04-23 10:03:27,362 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 83432
+2025-04-23 10:04:31,211 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-04-23 10:04:35,646 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-23 10:04:49,266 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 108, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 141, in create_chart_base64
+    if isinstance(values[0], dict):
+IndexError: list index out of range
+2025-04-23 10:04:49,270 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 83162
+2025-04-23 10:04:53,754 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 13223
+2025-04-23 10:04:55,609 - INFO - basehttp - "POST /Activation/page/ HTTP/1.1" 302 0
+2025-04-23 10:04:57,015 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 108, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 141, in create_chart_base64
+    if isinstance(values[0], dict):
+IndexError: list index out of range
+2025-04-23 10:04:57,018 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 83162
+2025-04-23 10:05:06,006 - INFO - basehttp - "GET /admin/Activation/activation/1/change/ HTTP/1.1" 200 14835
+2025-04-23 10:05:06,122 - INFO - basehttp - "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2025-04-23 10:05:21,576 - INFO - basehttp - "GET /Activation/page/ HTTP/1.1" 200 13223
+2025-04-23 10:05:24,493 - INFO - basehttp - "POST /Activation/page/ HTTP/1.1" 302 0
+2025-04-23 10:05:25,873 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 108, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 141, in create_chart_base64
+    if isinstance(values[0], dict):
+IndexError: list index out of range
+2025-04-23 10:05:25,876 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 83162
+2025-04-23 10:06:32,826 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-04-23 10:06:41,997 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-23 10:06:53,462 - INFO - basehttp - "POST /Activation/page/ HTTP/1.1" 302 0
+2025-04-23 10:06:55,098 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 116, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 149, in create_chart_base64
+    if isinstance(values[0], dict):
+IndexError: list index out of range
+2025-04-23 10:06:55,101 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 83607
+2025-04-23 10:09:23,332 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 116, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 149, in create_chart_base64
+    if isinstance(values[0], dict):
+IndexError: list index out of range
+2025-04-23 10:09:23,334 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 83607
+2025-04-23 10:10:50,746 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-04-23 10:11:01,829 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-23 10:11:08,237 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 116, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 130, in create_chart_base64
+    if isinstance(values[0], dict):
+IndexError: list index out of range
+2025-04-23 10:11:08,241 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 83497
+2025-04-23 10:11:21,137 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-04-23 10:11:23,972 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-23 10:13:08,279 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-04-23 10:13:10,239 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-23 10:13:14,677 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 21405
+2025-04-23 10:13:23,602 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 13032
+2025-04-23 10:13:24,786 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 13164
+2025-04-23 10:13:25,855 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 13299
+2025-04-23 10:13:27,378 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 13444
+2025-04-23 10:13:28,670 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 14623
+2025-04-23 10:13:33,559 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 13819
+2025-04-23 10:13:35,513 - INFO - basehttp - "GET /stagiaire/list/ HTTP/1.1" 200 13328
+2025-04-23 10:13:38,690 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 21405
+2025-04-23 10:15:00,666 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 13032
+2025-04-23 10:15:02,149 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 13164
+2025-04-23 10:15:03,385 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 21405
+2025-04-23 10:16:35,832 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-04-23 10:16:39,597 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-23 10:16:44,880 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 116, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 149, in create_chart_base64
+    if isinstance(values[0], dict):
+IndexError: list index out of range
+2025-04-23 10:16:44,893 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 83600
+2025-04-23 10:18:52,054 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-04-23 10:19:01,654 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-23 10:19:10,202 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 116, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 149, in create_chart_base64
+    if isinstance(values[0], dict):
+IndexError: list index out of range
+2025-04-23 10:19:10,205 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 83600
+2025-04-23 10:19:31,556 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-04-23 10:19:37,324 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-23 10:21:11,867 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 116, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 149, in create_chart_base64
+    if isinstance(values[0], dict):
+IndexError: list index out of range
+2025-04-23 10:21:11,870 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 83600
+2025-04-23 10:21:22,816 - INFO - basehttp - "GET / HTTP/1.1" 200 13415
+2025-04-23 10:21:36,355 - INFO - basehttp - "POST / HTTP/1.1" 302 0
+2025-04-23 10:21:37,732 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 116, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 149, in create_chart_base64
+    if isinstance(values[0], dict):
+IndexError: list index out of range
+2025-04-23 10:21:37,735 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 83591
+2025-04-23 10:22:46,671 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-04-23 10:22:53,854 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-23 10:22:59,842 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 116, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 132, in create_chart_base64
+    if isinstance(values[0], dict):
+IndexError: list index out of range
+2025-04-23 10:22:59,845 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 83493
+2025-04-23 10:23:25,388 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-04-23 10:23:34,788 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-23 10:24:00,213 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-04-23 10:24:15,612 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-23 10:24:22,332 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 21405
+2025-04-23 10:24:29,271 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 13032
+2025-04-23 10:27:15,836 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-23 10:27:28,077 - INFO - basehttp - "GET / HTTP/1.1" 200 13421
+2025-04-23 10:27:34,153 - INFO - basehttp - "POST / HTTP/1.1" 302 0
+2025-04-23 10:27:34,378 - INFO - basehttp - "GET /admin/ HTTP/1.1" 200 13729
+2025-04-23 10:27:51,018 - INFO - basehttp - "POST / HTTP/1.1" 302 0
+2025-04-23 10:27:51,044 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 21411
+2025-04-23 10:28:12,994 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 21405
+2025-04-23 10:28:15,128 - INFO - basehttp - "GET /unite/ HTTP/1.1" 200 13032
+2025-04-23 10:28:16,084 - INFO - basehttp - "GET /fonction/ HTTP/1.1" 200 13164
+2025-04-23 10:28:17,272 - INFO - basehttp - "GET /specialite/ HTTP/1.1" 200 13299
+2025-04-23 10:28:20,512 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 13444
+2025-04-23 10:28:22,147 - INFO - basehttp - "GET /OrganizationalUnit/ HTTP/1.1" 200 13444
+2025-04-23 10:28:23,316 - INFO - basehttp - "GET /Employee/Employee HTTP/1.1" 200 14623
+2025-04-23 10:28:28,762 - INFO - basehttp - "GET /RespensableOrganisationUnite/ HTTP/1.1" 200 13819
+2025-04-23 10:28:30,124 - INFO - basehttp - "GET /stagiaire/list/ HTTP/1.1" 200 13328
+2025-04-23 10:28:31,822 - INFO - basehttp - "GET /conge/conges/ HTTP/1.1" 200 13086
+2025-04-23 10:28:32,969 - INFO - basehttp - "GET /export/ HTTP/1.1" 200 15424
+2025-04-23 10:28:35,713 - INFO - basehttp - "GET /home/ HTTP/1.1" 200 21405
+2025-04-23 10:29:00,650 - INFO - autoreload - C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py changed, reloading.
+2025-04-23 10:29:07,804 - INFO - autoreload - Watching for file changes with StatReloader
+2025-04-23 10:29:25,388 - ERROR - log - Internal Server Error: /home/
+Traceback (most recent call last):
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\DAII IATITUDE\AppData\Local\Programs\Python\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 116, in home_view
+    graphique_repartition = create_chart_base64(repartition_sexe_par_unite, "Répartition des hommes et femmes par unité", "Unité Organisationnelle", "Nombre", True)
+  File "C:\Users\DAII IATITUDE\Desktop\Projet\Gestion_Personnel_INRAP\Gestion_Personnel_INRAP\views.py", line 149, in create_chart_base64
+    if isinstance(values[0], dict):
+IndexError: list index out of range
+2025-04-23 10:29:25,392 - ERROR - basehttp - "GET /home/ HTTP/1.1" 500 83598
+2025-04-23 10:30:06,409 - WARNING - log - Not Found: /visiteur/
+2025-04-23 10:30:06,410 - WARNING - basehttp - "GET /visiteur/ HTTP/1.1" 404 4078
+2025-04-23 10:30:19,391 - INFO - basehttp - "GET / HTTP/1.1" 200 13415
+2025-04-23 10:30:27,387 - WARNING - log - Not Found: /visiteur/
+2025-04-23 10:30:27,388 - WARNING - basehttp - "GET /visiteur/ HTTP/1.1" 404 4078
+2025-04-23 10:30:39,981 - WARNING - log - Not Found: /visiteur/
+2025-04-23 10:30:39,982 - WARNING - basehttp - "GET /visiteur/ HTTP/1.1" 404 4078
+2025-04-23 10:30:44,770 - WARNING - log - Not Found: /visiteur/
+2025-04-23 10:30:44,771 - WARNING - basehttp - "GET /visiteur/ HTTP/1.1" 404 4078

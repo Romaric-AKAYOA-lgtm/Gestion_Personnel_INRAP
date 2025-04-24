@@ -22,10 +22,12 @@ def home_view(request):
     if not activation or not activation.is_valid():
         return redirect("Activation:activation_page")
 
-    # Récupération du nom d'utilisateur depuis la session
     username = get_username_from_session(request)
+
+    # Assurez-vous que le nom d'utilisateur est disponible dans la session
     if not username:
-        return redirect('login')
+        return redirect('login')  # Redirige vers la page de connexion si pas de nom d'utilisateur dans la session
+
 
     # Obtenir la date d'aujourd'hui
     today = timezone.now().date()
